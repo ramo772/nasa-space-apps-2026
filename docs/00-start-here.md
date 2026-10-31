@@ -11,6 +11,7 @@
 | Team process / work status | `docs/team/working-agreement.md`, `docs/team/board.md`, `docs/team/project-config.md` |
 | GitHub initial configuration | `docs/team/github-setup.md` |
 | Meeting notes / converting to action | `docs/team/meetings.md`, `docs/team/meeting-notes/`, `docs/process/meeting-workflow.md` |
+| Bootcamp / workshop takeaways | `docs/workshops/` (unverified notes; not decisions) |
 | AI skills / planning | `docs/process/ai-workflows.md`, installed `SKILL.md` files |
 | Final submission / pitch | `docs/submission/checklist.md` |
 
