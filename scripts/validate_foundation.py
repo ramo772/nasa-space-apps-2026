@@ -3,7 +3,7 @@
 from pathlib import Path
 import sys
 root = Path(__file__).resolve().parent.parent
-names = ["process-meeting", "meeting-notes", "create-issues", "sync-docs", "sync-board", "start-ticket", "grill-with-doc", "review-implementation"]
+names = ["process-meeting", "meeting-notes", "create-issues", "create-wiki", "sync-docs", "sync-board", "start-ticket", "grill-with-doc", "review-implementation"]
 errors = []
 for name in names:
     copies = []
@@ -24,4 +24,4 @@ if errors:
     print("Foundation validation FAILED:")
     for err in errors: print(" -", err)
     sys.exit(1)
-print("Foundation validation passed: 8 skill families and essential docs present.")
+print(f"Foundation validation passed: {len(names)} skill families and essential docs present.")

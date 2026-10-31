@@ -8,7 +8,7 @@ description: Coordinate post-meeting processing: draft minutes, obtain approval,
 1. Run `meeting-notes` first. Extract source, classification, stable action IDs, attendees and unknowns.
 2. **Approval checkpoint A:** present a one-screen summary of confirmed decisions vs proposed ideas, actions/owners/deadlines and unresolved questions. Ask the meeting organizer/TL to approve; do not write remotely before approval.
 3. After approval, store the meeting record in a branch and propose documentation PR.
-4. Use `sync-docs` for approved decisions only. Identify canonical docs and show targeted diffs.
+4. Use `sync-docs` for approved decisions only. Identify canonical docs and show targeted diffs. When meeting knowledge needs a **new** page rather than an edit to an existing one, hand it to `create-wiki`; proposals and unapproved material stay in the meeting note.
 5. Use `create-issues` for approved actions/new planned features after duplicate checks. Connect each issue URL to the meeting action ID.
 6. Use `sync-board` only for approved issues and project field changes not handled by auto-add.
 7. **Approval checkpoint B:** show exact GitHub write plan (files, issues, board fields) before executing remote mutations; the same TL approval can cover changes shown together.
