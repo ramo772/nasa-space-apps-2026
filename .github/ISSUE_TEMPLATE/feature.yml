@@ -1,0 +1,47 @@
+name: Approved Feature
+description: Scope a demo-relevant feature after team triage
+title: "[Feature] "
+labels: ["feature"]
+body:
+  - type: input
+    id: parent
+    attributes:
+      label: Parent idea / milestone link
+      placeholder: "#123"
+  - type: textarea
+    id: story
+    attributes:
+      label: Goal and user story
+      description: Who needs what, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: ac
+    attributes:
+      label: Acceptance criteria
+      placeholder: "- [ ] Given ... When ... Then ..."
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Wiki, original data source, approved identity, art references and decision links
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Plan / integration boundaries / out of scope
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options: ["P0 - essential demo", "P1 - useful", "P2 - bonus"]
+    validations:
+      required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: Verification / demo steps
+    validations:
+      required: true

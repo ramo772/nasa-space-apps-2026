@@ -1,0 +1,28 @@
+name: Bug
+description: Report a reproducible defect
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Expected vs actual
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps, logs or screenshots (redact secrets)
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Demo impact and safe workaround
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Severity
+      options: ["P0 - demo broken", "P1 - significant", "P2 - cosmetic"]
+    validations:
+      required: true

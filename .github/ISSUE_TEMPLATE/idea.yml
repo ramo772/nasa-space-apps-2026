@@ -1,0 +1,33 @@
+name: Idea / Proposal
+description: Capture a team idea without committing to build it
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / opportunity
+      description: What user/science problem does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed idea and user value
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: NASA evidence, sources or references
+  - type: textarea
+    id: cost
+    attributes:
+      label: Estimated effort, dependencies and demo impact
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Suggested priority
+      options: ["P0 - essential demo", "P1 - useful", "P2 - bonus"]
+    validations:
+      required: true

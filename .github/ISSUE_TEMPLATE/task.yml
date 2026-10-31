@@ -1,0 +1,36 @@
+name: Team Task / Meeting Action
+description: Track one approved preparation or engineering action from a meeting
+title: "[Task] "
+labels: ["task"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Meeting and action reference
+      description: E.g. docs/team/meeting-notes/YYYY-MM-DD-name.md (ACT-01)
+      placeholder: "docs/team/meeting-notes/... (ACT-01)"
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Required outcome
+      placeholder: "Produce / verify / decide ..."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance / verification
+      placeholder: "- [ ] Condition to mark done"
+    validations:
+      required: true
+  - type: textarea
+    id: docs
+    attributes:
+      label: Related docs / dependencies
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options: ["P0", "P1", "P2", "TBD"]
