@@ -12,7 +12,7 @@
 | GitHub initial configuration | `docs/team/github-setup.md` |
 | Meeting notes / converting to action | `docs/team/meetings.md`, `docs/team/meeting-notes/`, `docs/process/meeting-workflow.md` |
 | Bootcamp / workshop takeaways | `docs/workshops/` (unverified notes; not decisions) |
-| Critical thinking / challenge selection (2026-10-31) | `docs/workshops/2026-10-31-critical-thinking-session.md` (unverified notes; not decisions) |
+| Critical thinking / challenge selection (session 2026-10-30) | `docs/workshops/2026-10-31-critical-thinking-session.md` (unverified notes; not decisions) |
 | AI skills / planning | `docs/process/ai-workflows.md`, installed `SKILL.md` files |
 | Final submission / pitch | `docs/submission/checklist.md` |
 
