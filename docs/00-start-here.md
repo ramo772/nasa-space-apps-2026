@@ -12,6 +12,7 @@
 | GitHub initial configuration | `docs/team/github-setup.md` |
 | Meeting notes / converting to action | `docs/team/meetings.md`, `docs/team/meeting-notes/`, `docs/process/meeting-workflow.md` |
 | Bootcamp / workshop takeaways | `docs/workshops/` (unverified notes; not decisions) |
+| API, rate limits, dataset choice (bootcamp 2026-10-30) | `docs/workshops/2026-10-30-bootcamp-api-data-integration.md` (unverified notes; not decisions; dataset URLs registered in `docs/research/source-register.md`) |
 | AI skills / planning | `docs/process/ai-workflows.md`, installed `SKILL.md` files |
 | Final submission / pitch | `docs/submission/checklist.md` |
 
