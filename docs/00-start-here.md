@@ -12,6 +12,7 @@
 | GitHub initial configuration | `docs/team/github-setup.md` |
 | Meeting notes / converting to action | `docs/team/meetings.md`, `docs/team/meeting-notes/`, `docs/process/meeting-workflow.md` |
 | Bootcamp / workshop takeaways | `docs/workshops/` (unverified notes; not decisions) |
+| Storytelling for project pitches | `docs/workshops/storytelling-project-pitches.md` (draft workshop reference) |
 | AI skills / planning | `docs/process/ai-workflows.md`, installed `SKILL.md` files |
 | Final submission / pitch | `docs/submission/checklist.md` |
 
