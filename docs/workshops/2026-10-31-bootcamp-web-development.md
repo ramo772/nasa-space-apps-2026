@@ -7,7 +7,8 @@
 **Source:** manual notes from a bootcamp web-development workshop. No recording, slides or
 handout was provided; session date, presenter and organizer are TBD.
 **Related:** `docs/technical/architecture.md`, `docs/submission/checklist.md`,
-`docs/design/art-direction.md`, `docs/design/identity.md`, `docs/team/github-setup.md`
+`docs/design/art-direction.md`, `docs/design/identity.md`, `docs/team/github-setup.md`,
+`docs/workshops/2026-10-30-bootcamp-api-data-integration.md`
 
 ## Purpose
 Record one teammate's takeaways from the bootcamp's web-development workshop so the team can
