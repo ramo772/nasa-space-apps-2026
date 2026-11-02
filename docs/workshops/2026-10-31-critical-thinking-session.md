@@ -2,9 +2,9 @@
 
 **Status:** Draft
 **Type:** notes
-**Created:** 2026-10-31   **Last reviewed:** TBD
-**Contributor:** TBD
-**Source:** Manual handwritten notes (2 photographed pages) from a "Critical thinking session". Session date, presenter and organizer are TBD. No recording, slides or handout was provided.
+**Created:** 2026-10-31   **Last reviewed:** 2026-11-02
+**Contributor:** Engy Refaai
+**Source:** Manual handwritten notes (2 photographed pages) from a "Critical thinking session" at the NASA Space Apps Cairo 2026 bootcamp, Slot 1. Session date: 2026-10-30. Presenter: Dr. Afnan Barakat. Organizer: NASA Space Apps Cairo. No recording, slides or handout was provided.
 **Related:** `docs/product/challenge-and-mvp.md`, `docs/research/source-register.md`, `docs/submission/checklist.md`, `docs/workshops/2026-10-31-bootcamp-web-development.md`
 
 ## Purpose
