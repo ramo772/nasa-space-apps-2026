@@ -2,9 +2,9 @@
 
 **Status:** Draft
 **Type:** notes
-**Created:** 2026-10-31   **Last reviewed:** TBD
+**Created:** 2026-10-31   **Last reviewed:** 2026-11-02
 **Contributor:** Engy Refaai
-**Source:** Manual handwritten notes (2 photographed pages) from a "Critical thinking session". Session date, presenter and organizer are TBD. No recording, slides or handout was provided.
+**Source:** Manual handwritten notes (2 photographed pages) from a "Critical thinking session" at the NASA Space Apps Cairo 2026 bootcamp, Slot 1. Session date: 2026-10-30. Presenter: Dr. Afnan Barakat. Organizer: NASA Space Apps Cairo. No recording, slides or handout was provided.
 **Related:** `docs/product/challenge-and-mvp.md`, `docs/research/source-register.md`, `docs/submission/checklist.md`, `docs/workshops/2026-10-31-bootcamp-web-development.md`
 
 ## Purpose
@@ -40,9 +40,7 @@ A strong idea should have the following:
 ## Open questions / uncertainty
 - Are the four "strong idea" criteria the official judging criteria, or the presenter's own advice? Not stated in the notes; verify against the official 2026 rules.
 - Do SCAMPER and Six Thinking Hats belong to the **Ideate** step? The notes list them separately and do not link them to a step.
-- The notes stop at step 3 (Ideate). Whether the session covered later design thinking steps (e.g., prototype, test) is unknown.
-- Presenter, session date and organizer: TBD.
 - "Use of NASA data" has a link to our process: any dataset the team adopts must be registered in `docs/research/source-register.md`. No dataset has been chosen yet.
 
 ## Sources and attribution
-- Handwritten manual notes relayed by a teammate (Engy Refaai). No NASA dataset, scientific claim or official rule text is quoted or asserted in this page, so no row was added to `docs/research/source-register.md`.
+- Handwritten manual notes relayed by (Engy Refaai). No NASA dataset, scientific claim or official rule text is quoted or asserted in this page, so no row was added to `docs/research/source-register.md`.
