@@ -40,9 +40,7 @@ A strong idea should have the following:
 ## Open questions / uncertainty
 - Are the four "strong idea" criteria the official judging criteria, or the presenter's own advice? Not stated in the notes; verify against the official 2026 rules.
 - Do SCAMPER and Six Thinking Hats belong to the **Ideate** step? The notes list them separately and do not link them to a step.
-- The notes stop at step 3 (Ideate). Whether the session covered later design thinking steps (e.g., prototype, test) is unknown.
-- Presenter, session date and organizer: TBD.
 - "Use of NASA data" has a link to our process: any dataset the team adopts must be registered in `docs/research/source-register.md`. No dataset has been chosen yet.
 
 ## Sources and attribution
-- Handwritten manual notes relayed by a teammate (name TBD). No NASA dataset, scientific claim or official rule text is quoted or asserted in this page, so no row was added to `docs/research/source-register.md`.
+- Handwritten manual notes relayed by (Engy Refaai). No NASA dataset, scientific claim or official rule text is quoted or asserted in this page, so no row was added to `docs/research/source-register.md`.
