@@ -8,8 +8,8 @@ This is not a complete catalogue of every game submitted to NASA Space Apps. It 
 
 ## Files
 
-- [interactive-games.md](interactive-games.md) — Case studies, award recognition, project formats, verified descriptions, public links, comparisons, and lessons for our game.
-- [sources.md](sources.md) — Official award announcements, team and project pages, demos, and verification notes.
+- [interactive-games.md](Previous_Global_Winners/interactive-games.md) — Case studies, award recognition, project formats, verified descriptions, public links, comparisons, and lessons for our game.
+- [sources.md](Previous_Global_Winners/sources.md) — Official award announcements, team and project pages, demos, and verification notes.
 ## Key Findings
 
 1. **Make science affect gameplay.** LunarTech Ensemble used lunar seismic data in an immersive game. Zumorroda-X used mini-games to explore agricultural challenges, while Eco-Metropolis used city-building decisions to teach sustainability.
@@ -29,11 +29,11 @@ Our current game concept begins with a character waking up somewhere unfamiliar 
 The following projects are especially useful references for developing this concept:
 | Priority | Project | What to Study |
 |---|---|---|
-| 1 | [LunarTech Ensemble](interactive-games.md#lunartech-ensemble--2023-global-winner) | Space exploration and scientific integration |
-| 2 | [TerraTales](interactive-games.md#terratales--2024-global-winner) | Character-led storytelling and gradual context |
-| 3 | [Eco-Metropolis](interactive-games.md#eco-metropolis--2024-global-winner) | Player decisions and consequences |
-| 4 | [Zumorroda-X](interactive-games.md#zumorroda-x--2025-global-winner) | Multiple mechanics and mini-games |
-| 5 | [Team Voyagers](interactive-games.md#team-voyagers--2023-global-winner) | Narrative-based science communication |
+| 1 | [LunarTech Ensemble](Previous_Global_Winners/interactive-games.md#lunartech-ensemble-2023-global-winner) | Space exploration and scientific integration |
+| 2 | [TerraTales](Previous_Global_Winners/interactive-games.md#terratales-2024-global-winner) | Character-led storytelling and gradual context |
+| 3 | [Eco-Metropolis](Previous_Global_Winners/interactive-games.md#eco-metropolis-2024-global-winner) | Player decisions and consequences |
+| 4 | [Zumorroda-X](Previous_Global_Winners/interactive-games.md#zumorroda-x-2025-global-winner) | Multiple mechanics and mini-games |
+| 5 | [Team Voyagers](Previous_Global_Winners/interactive-games.md#team-voyagers-2023-global-winner) | Narrative-based science communication |
 
 ## Research Standards
 
@@ -60,4 +60,4 @@ These are two separate teams and projects and should not be confused.
 
 NASA's 2025 announcement confirms **Zumorroda-X** as the Art & Technology Global Award winner.
 
-Further details and references are available in [sources.md](sources.md).
+Further details and references are available in [sources.md](Previous_Global_Winners/sources.md).
