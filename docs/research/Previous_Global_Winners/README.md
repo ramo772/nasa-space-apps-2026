@@ -1,6 +1,5 @@
-# Previous NASA Space Apps Global Winners and Interactive Games
-
-This folder contains a curated research collection of NASA Space Apps projects from 2023–2025 that can serve as references for our team developing an interactive game for the **Space Mission Design Game** challenge.
+# Purpose
+To research previous NASA Space Apps winning projects, learn from their gameplay and storytelling approaches, and gather inspiration for designing our own interactive game for the **Space Mission Design Game** challenge.
 
 The research focuses on interactive games and game-like experiences, storytelling, exploration, simulation, scientific interaction, and gameplay mechanics.
 
@@ -9,7 +8,7 @@ This is not a complete catalogue of every game submitted to NASA Space Apps. It 
 ## Files
 
 - [interactive-games.md](interactive-games.md) — Case studies, award recognition, project formats, verified descriptions, public links, comparisons, and lessons for our game.
-- [sources.md](sources.md) — Official award announcements, team and project pages, demos, and verification notes.
+- [sources.md](../../resources/sources.md) — Official award announcements, team and project pages, demos, and verification notes.
 ## Key Findings
 
 1. **Make science affect gameplay.** LunarTech Ensemble used lunar seismic data in an immersive game. Zumorroda-X used mini-games to explore agricultural challenges, while Eco-Metropolis used city-building decisions to teach sustainability.
@@ -60,4 +59,4 @@ These are two separate teams and projects and should not be confused.
 
 NASA's 2025 announcement confirms **Zumorroda-X** as the Art & Technology Global Award winner.
 
-Further details and references are available in [sources.md](sources.md).
+Further details and references are available in [sources.md](../../resources/sources.md).
