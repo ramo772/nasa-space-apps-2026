@@ -5,7 +5,7 @@ references for gameplay, narrative design, exploration, simulation, or
 communicating science through interaction.
 > **Recognition labels are distinct:** Global Winner, Global Finalist,
 > and Honorable Mention are not interchangeable. See
-> [`sources.md`](sources.md).
+> [`sources.md`](../../resources/sources.md).
 ## 1. Egyptian Global Winners
 
 ### Zumorroda-X (2025 Global Winner)
