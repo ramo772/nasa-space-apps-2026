@@ -4,6 +4,7 @@
 **Type:** meeting notes  
 **Created:** 2026-11-03  
 **Last reviewed:** 2026-11-04
+
 **Contributor:** Rana — notes prepared from the supplied meeting slides and Arabic transcription. The person who prepared the original notes is not identified.  
 **Source:** Screenshots of the meeting presentation and the supplied Arabic speech-to-text transcript (`transcription_1.txt`). The transcript is automatic and contains repeated words, unclear phrases and recognition mistakes. This document explains the parts that can be understood from the slides and transcript without guessing missing details. The presenter’s name, exact meeting date, venue and recording link were not provided.  
 **Related:** None. These notes document one meeting session and are not linked to a software project, backend, repository or team technical documentation.
@@ -665,7 +666,6 @@ The companion ZIP contains the supplied screenshots in the `images/` folder. The
 | ![Reference 02](../resources/3-11-2026-1st_session/reference-02.png) | What is a challenge? — definition and challenge-page anatomy |
 | ![Reference 03](../resources/3-11-2026-1st_session/reference-03.png) | Challenge list and example NASA Space Apps challenge page |
 | ![Reference 04](../resources/3-11-2026-1st_session/reference-04.png) | Challenge anatomy — summary and background |
-| ![Reference 05](../resources/3-11-2026-1st_session/reference-05.png) | Repeated/enlarged summary and background slide |
 | ![Reference 06](../resources/3-11-2026-1st_session/reference-06.png) | Challenge objectives and potential considerations |
 | ![Reference 07](../resources/3-11-2026-1st_session/reference-07.png) | Difficulty levels and subject tags |
 | ![Reference 08](../resources/3-11-2026-1st_session/reference-08.png) | The 3-read method |
@@ -673,7 +673,6 @@ The companion ZIP contains the supplied screenshots in the `images/` folder. The
 | ![Reference 10](../resources/3-11-2026-1st_session/reference-10.png) | The four questions to answer for any challenge |
 | ![Reference 11](../resources/3-11-2026-1st_session/reference-11.png) | Impact × Feasibility × Time × Team Skills |
 | ![Reference 12](../resources/3-11-2026-1st_session/reference-12.png) | Example challenge scoring table |
-| ![Reference 13](../resources/3-11-2026-1st_session/reference-13.png) | Repeated capture of the scoring method |
 | ![Reference 14](../resources/3-11-2026-1st_session/reference-14.png) | Common mistakes when choosing a challenge |
 | ![Reference 15](../resources/3-11-2026-1st_session/reference-15.png) | Walkthrough |
 | ![Reference 16](../resources/3-11-2026-1st_session/reference-16.png) | Structuring your project |
