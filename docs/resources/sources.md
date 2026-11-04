@@ -1,7 +1,7 @@
 # Sources and Verification Notes
 
 This file records the public sources used for
-[`interactive-games.md`](../research/interactive-games.md). Official NASA Space
+[`interactive-games.md`](../research/Previous_Global_Winners/interactive-games.md). Official NASA Space
 Apps, NASA, and GLOBE sources are prioritized for award status and
 project descriptions.
 
