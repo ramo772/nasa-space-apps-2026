@@ -21,6 +21,7 @@ Controls:
 - Fullscreen.
 - Rec mode hides the controls and the cursor.
 - If `assets/narration.mp3` is missing, the picture and the score still play.
+- If `assets/clips/wake.mp4`, `plan.mp4`, or `launch.mp4` is missing, that scene keeps its still plates. The plates are not a character performance. See `ASSETS.md`.
 
 Keyboard: Space play/pause, F fullscreen, R rec mode, M mute, Left/Right seek by 2 seconds.
 
