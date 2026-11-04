@@ -181,16 +181,68 @@
     .crew-head h2 { font-size: 3.15em; color: var(--cream); text-shadow: 0.05em 0.06em 0 #6e2f81; }
     .crew-head p { margin: 0.45em 0 0; letter-spacing: 0.16em; text-transform: uppercase; color: #c9b6da; font-size: 0.95em; font-weight: 800; }
     .crew-grid { position: absolute; left: 6.2em; right: 6.2em; top: 9.2em; bottom: 6.4em; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 0.75em 1.1em; }
-    .member { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0.55em 0.6em 0.4em; border-radius: 0.8em;
-      background: linear-gradient(180deg, rgba(42, 24, 74, 0.92), rgba(14, 10, 32, 0.92)); border: 0.07em solid rgba(150, 235, 255, 0.22); opacity: 0; min-width: 0; }
-    .member { justify-content: center; }
+    .member { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0.55em 0.6em 0.4em; border-radius: 0.8em;
+      background: linear-gradient(180deg, rgba(42, 24, 74, 0.92), rgba(14, 10, 32, 0.92)); border: 0.07em solid rgba(150, 235, 255, 0.22); opacity: 0; min-width: 0;
+      cursor: pointer; }
+    .member:focus-visible { outline: 0.14em solid var(--pick, var(--cyan)); outline-offset: 0.16em; }
+    .member .shell { display: flex; flex-direction: column; align-items: center; width: 100%; transform-origin: 50% 85%;
+      transition: transform 0.34s cubic-bezier(0.2, 0.85, 0.2, 1), filter 0.3s ease; }
     .member .photo { width: 12.6em; height: 12.6em; border-radius: 0.7em; overflow: hidden; border: 0.1em solid rgba(130, 240, 255, 0.45);
-      background: radial-gradient(circle at 50% 32%, #6a3d86, #24143e 72%); position: relative; flex: none; }
-    .member .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
+      background: radial-gradient(circle at 50% 32%, #6a3d86, #24143e 72%); position: relative; flex: none;
+      transition: border-color 0.28s ease, box-shadow 0.28s ease; }
+    .member .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; transform: scale(1); transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .member .sheen { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen;
+      background: linear-gradient(115deg, transparent 34%, rgba(255, 244, 223, 0.62) 48%, transparent 62%); transform: translateX(-130%); }
+    .member .brackets { position: absolute; inset: 0.38em; pointer-events: none; opacity: 0; transition: opacity 0.2s ease; }
+    .member .brackets i { position: absolute; width: 0.9em; height: 0.9em; border: 0.12em solid var(--pick, var(--cyan)); }
+    .member .brackets i:nth-child(1) { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+    .member .brackets i:nth-child(2) { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+    .member .brackets i:nth-child(3) { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+    .member .brackets i:nth-child(4) { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+    .member .lock { position: absolute; top: 0.42em; right: 0.42em; z-index: 2; padding: 0.2em 0.48em; border-radius: 99em;
+      background: var(--pick, var(--cyan)); color: #141018; font-size: 0.62em; font-weight: 900; letter-spacing: 0.12em;
+      opacity: 0; transform: translateY(-0.35em) scale(0.86); transition: opacity 0.2s ease, transform 0.28s cubic-bezier(0.2, 0.9, 0.2, 1); }
+    .member .lock .on { display: none; }
+    .member.locked .lock { background: var(--lime); }
+    .member.locked .lock .idle { display: none; }
+    .member.locked .lock .on { display: inline; }
+    .crew-grid:hover .member .shell,
+    .crew-grid:focus-within .member .shell { filter: saturate(0.62) brightness(0.74); }
+    .crew-grid:hover .member:hover .shell,
+    .crew-grid:hover .member.locked .shell,
+    .crew-grid:focus-within .member:focus-visible .shell,
+    .crew-grid:focus-within .member.locked .shell,
+    .member:hover .shell,
+    .member:focus-visible .shell,
+    .member.locked .shell { filter: none; transform: translateY(-0.42em) scale(1.035); }
+    .member:hover .photo,
+    .member:focus-visible .photo,
+    .member.locked .photo { border-color: var(--pick, var(--cyan)); box-shadow: 0 0.7em 1.1em rgba(0, 0, 0, 0.34), 0 0 0 0.08em var(--pick, var(--cyan)), 0 0 1.15em var(--pick, var(--cyan)); }
+    .member:hover .photo img,
+    .member:focus-visible .photo img,
+    .member.locked .photo img { transform: scale(1.08); }
+    .member:hover .brackets,
+    .member:focus-visible .brackets,
+    .member.locked .brackets,
+    .member:hover .lock,
+    .member:focus-visible .lock,
+    .member.locked .lock { opacity: 1; }
+    .member:hover .lock,
+    .member:focus-visible .lock,
+    .member.locked .lock { transform: none; }
+    .member:hover .sheen,
+    .member:focus-visible .sheen { transition: transform 0.62s ease; transform: translateX(130%); }
+    .member.locked { border-color: rgba(214, 255, 122, 0.85); box-shadow: 0 0 1.3em rgba(214, 255, 122, 0.22); }
+    @media (prefers-reduced-motion: reduce) {
+      .member .shell, .member .photo, .member .photo img, .member .lock, .member .brackets { transition: none; }
+      .member:hover .shell, .member:focus-visible .shell, .member.locked .shell,
+      .member:hover .photo img, .member:focus-visible .photo img, .member.locked .photo img { transform: none; }
+    }
     .ph { position: absolute; inset: 0; display: grid; place-items: center; color: #f0e6f8; font-size: 0.78em; font-weight: 900; letter-spacing: 0.12em; text-align: center; line-height: 1.35; }
     .ph::before { content: ""; width: 2.5em; height: 2.5em; border-radius: 50%; background: #9a69b8; position: absolute; top: 1.5em; }
     .ph span { position: relative; margin-top: 3.2em; }
-    .member h3 { margin: 0.4em 0 0.12em; font-size: 1.28em; line-height: 1.1; }
+    .member h3 { margin: 0.4em 0 0.12em; font-size: 1.28em; line-height: 1.1; transition: color 0.25s ease; }
+    .member:hover h3, .member:focus-visible h3, .member.locked h3 { color: var(--cream); }
     .member .title { margin: 0; color: var(--cyan); font-size: 0.92em; font-weight: 800; letter-spacing: 0.04em; line-height: 1.25; text-transform: uppercase; max-width: 16em; }
     .credits-note { margin: 0.45em 0 0; text-align: center; color: #cbb9df; font-size: 0.92em; letter-spacing: 0.08em; font-weight: 750; }
 
@@ -452,7 +504,7 @@
      * Arabic is the voice-over script. Drop a recording at assets/narration.mp3.
      * The score is synthesized in this page after Start. It is original: a bow-string
      * at the wake-up, then a comedy bed and effects. It is not music from another film.
-     * Replace TEAM titles if the team assigns them. Blank photo = labeled placeholder.
+     * TEAM titles come from the handwritten role list, plus Team Lead for Omar. Blank photo = labeled placeholder.
      * MEDIA is the clip list. Each entry has source, scene start, timeline duration,
      * and source in-point. A missing file keeps the still plates. Those plates are
      * not facial or body animation.
@@ -505,17 +557,17 @@
     };
 
     /**
-     * Names are the six people recorded in the 2026-11-01 meeting notes.
-     * Project titles are not assigned in the repo, so the title line stays pending.
-     * Drop portraits on the photo paths. A missing file falls back to a labeled frame.
+     * Names follow the portrait files. Titles are the handwritten role list,
+     * with Team Lead added for Omar Khaled.
+     * A missing photo falls back to a labeled frame.
      */
     const TEAM = [
-      { name: "Omar Khaled", title: "Title pending", photo: "assets/team-01.jpg" },
-      { name: "Abduallah Waleed", title: "Title pending", photo: "assets/team-02.jpg" },
-      { name: "Shahnda Elmasry", title: "Title pending", photo: "assets/team-03.jpg" },
-      { name: "Engy Refaai", title: "Title pending", photo: "assets/team-04.jpg" },
-      { name: "Rana Emad", title: "Title pending", photo: "assets/team-05.jpg" },
-      { name: "Rokia Abdelsattar", title: "Title pending", photo: "assets/team-06.jpg" }
+      { name: "Omar Khaled", title: "Team Lead, Software Engineer", photo: "assets/team-01.jpg" },
+      { name: "Abdullah Waleed", title: "Art Director", photo: "assets/team-02.jpg" },
+      { name: "Shahnda Elmasry", title: "Scientific Researcher", photo: "assets/team-03.jpg" },
+      { name: "Engy Refaai", title: "Game Developer", photo: "assets/team-04.jpg" },
+      { name: "Rana Emad", title: "Data Science", photo: "assets/team-05.jpg" },
+      { name: "Rokiya Abdelsattar", title: "Content Creator", photo: "assets/team-06.jpg" }
     ];
 
     const MEDIA = [
@@ -550,6 +602,7 @@
     }
     const slotNodes = [...slotsHost.children];
 
+    const crewColors = ["#7af6ff", "#ff6b9d", "#ff9a62", "#d6ff7a", "#c9a6ff", "#ffd36a"];
     function mountTeam() {
       $("crewGrid").innerHTML = TEAM.map((m, i) => {
         const n = String(i + 1).padStart(2, "0");
@@ -557,11 +610,31 @@
         const media = m.photo
           ? '<img src="' + m.photo + '" alt="Portrait of ' + m.name + '">'
           : '<div class="ph"><span>PHOTO ' + n + '</span></div>';
-        return '<article class="member"><div class="photo">' + media +
-          '</div><h3>' + m.name + '</h3><p class="title">' + title + '</p></article>';
+        return '<article class="member" tabindex="0" role="button" aria-pressed="false" aria-label="' + m.name + ", " + title + '">' +
+          '<div class="shell"><div class="photo">' + media +
+          '<span class="sheen" aria-hidden="true"></span>' +
+          '<span class="brackets" aria-hidden="true"><i></i><i></i><i></i><i></i></span>' +
+          '<span class="lock" aria-hidden="true"><b class="idle">READY</b><b class="on">LOCKED</b></span>' +
+          '</div><h3>' + m.name + '</h3><p class="title">' + title + '</p></div></article>';
       }).join("");
       members.splice(0, members.length, ...document.querySelectorAll("#crewGrid .member"));
       members.forEach((m, i) => {
+        m.style.setProperty("--pick", crewColors[i % crewColors.length]);
+        const choose = () => {
+          const turnOn = !m.classList.contains("locked");
+          members.forEach((other) => {
+            other.classList.remove("locked");
+            other.setAttribute("aria-pressed", "false");
+          });
+          if (turnOn) {
+            m.classList.add("locked");
+            m.setAttribute("aria-pressed", "true");
+          }
+        };
+        m.addEventListener("click", choose);
+        m.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") { e.preventDefault(); choose(); }
+        });
         const img = m.querySelector("img");
         if (!img) return;
         img.addEventListener("error", () => {

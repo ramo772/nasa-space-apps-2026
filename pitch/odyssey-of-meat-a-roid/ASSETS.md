@@ -41,4 +41,4 @@ Checked 2026-11-04: none of these files are in the folder.
 
 To connect a clip, export a 16:9 file with no baked-in captions, put it at the path above, and reload. To trim the head of a longer file, raise that entry's `inPoint`. Only the clip whose window contains the master time is allowed to play. Pause, seek, and replay move that clip from the master clock.
 
-`assets/narration.mp3` is still optional. `assets/team-01.jpg` through `assets/team-06.jpg` are the six credit portraits. Those portrait files are not in the folder yet. Names in `TEAM` are the six people named in the 2026-11-01 meeting notes. Project titles are not assigned in the repo, so the title line reads "Title pending" until the team fills it.
+`assets/narration.mp3` is still optional. `assets/team-01.jpg` through `assets/team-06.jpg` are the six supplied credit portraits. Titles are Team Lead, Software Engineer; Art Director; Scientific Researcher; Game Developer; Data Science; and Content Creator.
