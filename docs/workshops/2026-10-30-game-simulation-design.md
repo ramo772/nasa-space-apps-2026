@@ -9,12 +9,11 @@
 
 ## Purpose
 Record the game and simulation design workshop (Slot 2, 2026-10-30) so the team can reuse it
-once a challenge is selected. **Nothing here is a team decision, an approved architecture or an
-official competition rule.** The instructor was Marwan Ayyad. The notes combine the
+once a challenge is selected. The instructor was Marwan Ayyad. The notes combine the
 contributor's handwritten notes with her own summary of the instructor's public slide deck;
 slide wording and images are not reproduced. Every number in a demo is a teaching number unless
 stated otherwise. Winner and award claims are as presented in the slides and are attributed to
-them, not asserted as verified NASA statements.
+them.
 
 ## Content
 
@@ -66,9 +65,9 @@ it burns up. Teaching numbers.
   game-rules level.
 
 ### How the winning projects used games — according to the instructor's slides
-The facts below are as presented in the slides, which cite NASA's global winner announcements
-and the teams' project pages. The contributor accepts them as presented; they were not
-independently checked for this page.
+The facts below are as presented in the instructor's slides, which cite NASA's global winner
+announcements and the teams' project pages. They are attributed to the instructor's slides, not
+presented as independently confirmed NASA announcements.
 - **Zumorroda-X, "Henry's Farm Adventures" (Egypt, 2025)** — mini games where the player is a
   farmer travelling the world and reacting to heat waves, flooding and other environmental
   events. Lesson: put the player in someone else's shoes and let data arrive as events. The
@@ -157,8 +156,8 @@ blocks of a game. Her reading of her Arabic notes, paraphrased in English:
 mosquito against humans — follow heat, bite, carry blood to a jar while humans swat, spray, clap
 and listen for the buzz. He asked the audience to watch it and name one thing they would change.
 
-## Possible follow-ups, not decisions
-Recorded candidates for later discussion; **none is approved, scheduled or owned.**
+## Possible follow-ups
+Recorded candidates for later discussion.
 - Once a challenge is chosen, run the 20-minute spec exercise before any app code. The resulting
   spec would be a proposal, not authorization to build.
 - Decide the game tool only after the challenge and the team's skills are known; the slides list
@@ -172,8 +171,7 @@ Adopting any of these requires a real issue and, where relevant, a decision-log 
 
 ## Open questions / uncertainty
 - **Winner and award claims.** The winner, award and team-count figures come from the
-  instructor's slides and were not checked against NASA's announcements. They are attributed to
-  the slides throughout.
+  instructor's slides. They are attributed to the slides throughout.
 - **Teaching numbers.** None of the demo numbers (Mars, lunar night, rover, re-entry corridor)
   is mission data. No dataset has been adopted.
 - **Tool choice.** Which game tool the team will use is not decided; the slides only list options.
@@ -183,8 +181,7 @@ Adopting any of these requires a real issue and, where relevant, a decision-log 
   not be opened from the reviewer's machine on 2026-11-02 (untrusted TLS chain, the same issue
   recorded in the API workshop page). The contributor reports they load. Both are linked, and
   the award labels remain the slides' claims.
-- **Team-count figure.** The 18,860-team figure is stated for 2025 in the slides; it was not
-  verified.
+- **Team-count figure.** The 18,860-team figure is stated for 2025 in the instructor's slides.
 - **Tools and AI agents.** The named tools and agents were not evaluated by this team. No paid
   service may be adopted without TL consent (`docs/team/working-agreement.md`).
 - **Discord invite.** It is a community invite, not an official event channel, and may expire.

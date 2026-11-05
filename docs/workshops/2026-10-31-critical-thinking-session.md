@@ -8,7 +8,7 @@
 **Related:** `docs/product/challenge-and-mvp.md`, `docs/research/source-register.md`, `docs/submission/checklist.md`, `docs/workshops/2026-10-31-bootcamp-web-development.md`
 
 ## Purpose
-Record one teammate's takeaways from the critical thinking session so the team can use them when selecting the challenge and shaping the idea. **Nothing here is a team decision or a verified official rule.** The criteria below are the session's advice, not the official NASA judging criteria; confirm those against the official 2026 rules before relying on them.
+Record one teammate's takeaways from the critical thinking session so the team can use them when selecting the challenge and shaping the idea. The criteria below are the session's advice, not the official NASA judging criteria; confirm those against the official 2026 rules before relying on them.
 
 ## Content
 

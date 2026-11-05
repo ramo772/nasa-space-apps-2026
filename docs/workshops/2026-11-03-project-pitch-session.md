@@ -105,11 +105,11 @@ For a 30-second video:
 ## Open Questions / Uncertainty
 
 - The exact weighting of the five evaluation criteria was not specified.
-- The stated 90–95% evaluation figure regarding presentation was not independently verified as an official NASA judging rule.
+- The stated 90–95% evaluation figure regarding presentation was mentioned by the presenter during the session; it is not presented here as an official NASA judging rule.
 - No specific video-editing tools or AI platforms were identified.
 
 ## Sources and Attribution
 
 - Workshop video: `Farah Talk(1)-compressed.mp4`.
 - Original session notes provided by the team.
-- Evaluation criteria and production recommendations are documented from the session notes and should not be interpreted as independently verified official NASA judging rules.
+- Evaluation criteria and production recommendations are documented from the session notes.

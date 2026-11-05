@@ -9,7 +9,7 @@
 
 ## Purpose
 
-Capture the workshop's practical storytelling method for a future Space Apps pitch and demo. These notes come from the supplied slides. They are not a transcript, a team decision, or an official 2026 submission rule. The team's challenge and product story remain TBD.
+Capture the workshop's practical storytelling method for a future Space Apps pitch and demo. These notes come from the supplied slides. The team's challenge and product story remain TBD.
 
 ## Content
 
@@ -22,7 +22,7 @@ The deck asks a storyteller to help a judge **understand** one clear idea, **bel
 - The deck names **character, goal, conflict, stakes, action, result, and conclusion** as story elements. In a project pitch, make the user's goal and difficulty legible before listing features.
 - Show both **chronology** (what happened next) and **cause and consequence** (why the next step followed). Check every transition: can the audience explain why one step leads to another?
 - **And–But–Therefore** is offered as an optional drafting tool: establish the situation, name the difficulty, then explain the response. Read the finished sentence naturally; the formula is a writing aid, not required wording.
-- The presenter uses a college project called *Cells* to model the move from a repeated file-search problem to a proposed navigation concept. The deck explicitly calls its interface diagram an educational reconstruction and the proposal **not a tested speed result**. Its figures and story are attributed to the presenter's recollection, not independently verified here.
+- The presenter uses a college project called *Cells* to model the move from a repeated file-search problem to a proposed navigation concept. The deck explicitly calls its interface diagram an educational reconstruction and the proposal **not a tested speed result**. Its figures and story are attributed to the presenter's recollection.
 
 ### Opening and explanation choices
 
@@ -57,7 +57,7 @@ Use wording that fits the project's stage: **proposal** for an idea, **prototype
 
 - The deck includes media examples, but these notes summarize only the slide text and do not analyze the media or its spoken words.
 - The supplied PDF has 38 pages while its visible slide labels run through 49; missing slides or speaker commentary may add context. This note does not fill those gaps by guessing.
-- The team's challenge, target audience, product claims, and final pitch remain TBD. The 60–90-second opening is a workshop practice target, not a verified event rule.
+- The team's challenge, target audience, product claims, and final pitch remain TBD. The 60–90-second opening is a workshop practice target.
 
 ## Sources and attribution
 

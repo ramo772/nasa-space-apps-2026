@@ -16,8 +16,7 @@ official pages on 2026-11-01 and take precedence over slide figures where the tw
 
 ## Purpose
 Record the API and data-integration track of the bootcamp so the team can reuse it once a
-challenge is selected. **Nothing here is a team decision, an approved architecture or an
-official competition rule.** The presenter's advice, the 2025 case-study observations and the
+challenge is selected. The presenter's advice, the 2025 case-study observations and the
 verified-against-source facts are labelled separately throughout, because the workshop mixed
 all three.
 
@@ -33,14 +32,14 @@ plus one working feature, and recover from 403, 429, empty results and missing v
 stated target was that every pair left with a working call, a saved data file and one feature
 on screen.
 
-### Why real NASA data first — as stated in the workshop, rules not verified
+### Why real NASA data first — as stated in the workshop
 - Judges are said to want NASA data at the core of a project, not bolted on.
 - It was stated that only projects using NASA data or resources can win a Global Award.
 - Suggested time budget: get the first real API call working and saved within 2–3 hours, then
   build one feature, then tell the story.
 
-The two award statements were asserted in the session; neither is cited here and neither has
-been checked against the official 2026 rules. Treat them as leads, not rules.
+The two award statements above were mentioned by the presenter during the workshop; this page
+does not present them as an officially confirmed NASA rule.
 
 ### API fundamentals
 - An API is a web address that returns raw data (usually JSON) instead of a web page — a
@@ -189,7 +188,7 @@ core — which is what the relevance criterion is said to reward.
 
 The team placements and award labels above come from the session and the slide deck; the two
 `spaceappschallenge.org` team pages could not be opened during verification (see *Open
-questions*), so no award claim here is independently confirmed.
+questions*).
 
 ### Audience challenge — meteor-risk platform
 Pairs had 3 minutes to decide which NASA APIs to combine, where they connect (naming the shared
@@ -289,8 +288,8 @@ the notebook switches on a wrong key and the function has to survive and still s
 4. Take only the fields you need; check units and `-999`.
 5. Plan for failure: a clear message plus your saved data.
 
-## Possible follow-ups, not decisions
-Recorded candidates for later discussion; **none is approved, scheduled or owned.**
+## Possible follow-ups
+Recorded candidates for later discussion.
 
 - A per-team `api_key` in Colab Secrets or an environment variable instead of `DEMO_KEY`, if we
   run NASA calls during the hackathon.
@@ -312,8 +311,6 @@ entry. `docs/technical/architecture.md` is unchanged by this page.
   `/2025/find-a-team/technova3`) could not be opened on 2026-11-01 — DNS resolves but the TLS
   chain was untrusted from the reviewer's machine, and the site did not respond. They are
   therefore named in prose and not linked, and the award labels remain the presenter's claims.
-- **Award rules.** The relevance criterion and the Global Award condition were asserted in the
-  session and are not checked against the official 2026 rules.
 - **Presenter's repository.** Confirmed public and its top-level layout confirmed; the notebook,
   API cards and LLM cheat sheet were not read, so nothing here is attributed to their contents.
 - **Session facts.** Event, date, venue and presenter come from the contributor and the slides,
@@ -348,7 +345,7 @@ Codes, handouts and tools (not data sources, so not registered)
 - AI providers named but not evaluated or chosen by this team: Google Gemini, Groq, OpenRouter.
   No paid service may be adopted without TL consent (`docs/team/working-agreement.md`).
 
-Not linked — could not be verified on 2026-11-01
+Not linked — could not be opened on 2026-11-01
 - 2025 case study "Will It Rain On My Parade?" / team Twisters
 - 2025 case study TechNova / team technova3
 - Meteor Shield / Team Polaris has no URL in the notes at all.
