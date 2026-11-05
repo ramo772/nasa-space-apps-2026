@@ -656,6 +656,13 @@ The supplied slides do not provide a detailed Manus tutorial, workflow or techni
 
 The transcription contains speech-recognition errors and repeated or incomplete phrases. Where the intended meaning was clear from the slides and surrounding explanation, it has been rewritten in simple English. Where the exact meaning could not be established, it has been marked as unclear rather than completed by guesswork.
 
+Additional points from another set of notes of the same session
+Notes by Rokiya Abdelsattar from the live session video (https://www.facebook.com/share/v/19tsEyjcGn/), recorded as verified.
+
+Proposal outline: Problem, Solution, Methodology, Expected Results.
+Resources to check before choosing a challenge: datasets (NASA and CSA), software tools and scientific research such as papers and studies. A lack of available resources or datasets is a common reason teams do not finish.
+Credits: teams that attended the Bootcamp training sessions get higher priority when accessing limited Credits. According to the team, these are Manus AI credits (10,000 free credits), which fits the roadmap session "Hackathon Mode with Manus AI" on 8 November. How to claim them, the deadline and who is eligible are not known yet.
+
 ## Image references
 
 The companion ZIP contains the supplied screenshots in the `images/` folder. The images are numbered by upload order. Some screenshots are repeated or enlarged captures of the same slide.
