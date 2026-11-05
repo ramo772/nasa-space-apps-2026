@@ -1,13 +1,22 @@
-# Purpose
-To research previous NASA Space Apps winning projects, learn from their gameplay and storytelling approaches, and gather inspiration for designing our own interactive game for the **Space Mission Design Game** challenge.
+# Previous Global Winners — research
+
+**Status:** Draft  
+**Type:** research  
+**Created:** 2026-11-03   **Last reviewed:** 2026-11-05  
+**Contributor:** Rana (GitHub: @Rana2340)  
+**Source:** official NASA announcements and team project pages listed in `docs/resources/sources.md`  
+**Related:** `docs/resources/sources.md`, `docs/resources/workshop-materials.md`, `docs/workshops/2026-10-30-game-simulation-design.md`
+
+## Purpose
+To research previous NASA Space Apps winning projects, learn from their gameplay and storytelling approaches, and gather inspiration for designing an interactive game for the **Space Mission Design Game** challenge.
 
 The research focuses on interactive games and game-like experiences, storytelling, exploration, simulation, scientific interaction, and gameplay mechanics.
 
-This is not a complete catalogue of every game submitted to NASA Space Apps. It is a selected collection of projects with useful lessons for our game.
+This is not a complete catalogue of every game submitted to NASA Space Apps. It is a selected collection of projects with useful lessons for game design.
 
 ## Files
 
-- [interactive-games.md](interactive-games.md) — Case studies, award recognition, project formats, verified descriptions, public links, comparisons, and lessons for our game.
+- [interactive-games.md](interactive-games.md) — Case studies, award recognition, project formats, verified descriptions, public links, comparisons, and lessons for game design.
 - [sources.md](../../resources/sources.md) — Official award announcements, team and project pages, demos, and verification notes.
 ## Key Findings
 
@@ -21,9 +30,9 @@ This is not a complete catalogue of every game submitted to NASA Space Apps. It 
 
 5. **Keep recognition labels accurate.** Global Winner, Global Finalist, and Honorable Mention are different recognition statuses and should not be used interchangeably.
 
-## Shortlist for Our 2D Mystery/Adventure Game
+## Shortlist for the Team's Starting Game Concept
 
-Our current game concept begins with a character waking up somewhere unfamiliar and gradually discovering why they are there.
+The team's starting idea, as described by Rana: a character wakes up somewhere unfamiliar and the player gradually discovers the situation through exploration and clues. This is a working idea. The team's selected challenge is Space Mission Design Game (see the [2026-11-01 meeting notes](../../team/meeting-notes/2026-11-01-challenge-decision-and-team-setup.md)), and the team's proposed pitch concept is in [pitch/odyssey-of-meat-a-roid/README.md](../../../pitch/odyssey-of-meat-a-roid/README.md), where the character wakes up on the wrong planet and the player plans a mission to get him home. The game design itself has not been formally decided.
 
 The following projects are especially useful references for developing this concept:
 | Priority | Project | What to Study |
@@ -46,7 +55,7 @@ To keep the research reliable:
 - This is a selected collection of projects with game-design relevance, not a ranking of all Space Apps winners.
 - Global Winners, Global Finalists, and Honorable Mentions are identified separately.
 
-## Important Attribution Correction
+## Verification note
 
 The initial research notes contained an incorrect attribution concerning the 2023 projects.
 
