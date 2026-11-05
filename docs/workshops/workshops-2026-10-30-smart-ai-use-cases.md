@@ -1,9 +1,13 @@
 # Smart AI Use Cases — Understanding AI Models and Agents
 
 **Status:** Draft  
-**Type:** Workshop Notes  
-**Created:** 2026-10-30  
-**Last reviewed:** 2026-11-04  
+**Type:** notes  
+**Created:** 2026-11-04  
+**Last reviewed:** 2026-11-05  
+**Contributor:** Rokiya Abdelsattar (GitHub: @RokiyaAbdElsatar)  
+**Source:** Recording of the bootcamp talk by Eng. Youssef El-Refaey (shared on Facebook: https://www.facebook.com/share/v/1Diq9H6hgR/), summarised in the contributor's own words. Session date: 2026-10-30.  
+**Related:** `docs/process/ai-workflows.md`, `docs/resources/README.md`
+
 **Presenter:** Eng. Youssef El-Refaey  
 **Role:** Co-founder at BB & MSK AI  
 **Session topic:** Smart AI Use Cases — AI Models, Parameters, Context Windows, AI Agents, and Multimodal Models.
@@ -84,7 +88,7 @@ The examples mentioned during the session included:
 
 The speaker also mentioned that 2 million tokens represent approximately 1.5 million words.
 
-*Note: These figures are reproduced from the session notes and are not independently verified model specifications.*
+*These figures are as stated by the speaker during the session.*
 
 ### 7. Multimodal Models
 
@@ -134,7 +138,8 @@ The increase in Context Window capacity has enabled more advanced AI application
 
 ## Sources and Attribution
 
-- Workshop video: `Video Project 2-compressed`.
-- Content summarized from the provided session notes.
+- Workshop video: [Facebook recording — Smart AI Use Cases](https://www.facebook.com/share/v/1Diq9H6hgR/).
+- Presenter: Eng. Youssef El-Refaey.
+- Content summarized from the recording in the contributor's own words.
 - Examples, analogies, and explanations are attributed to the presenter.
-- Technical figures are documented as mentioned during the session and should not be treated as independently verified specifications.
+- Technical figures are documented as stated by the speaker during the session.
