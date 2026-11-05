@@ -11,14 +11,13 @@
 
 ## Purpose
 
-One place where teammates find links to workshop and reference material instead of digging through chat history. This folder is an index, not a copy: each workshop keeps its own takeaways in `docs/workshops/`, verified NASA datasets stay in `docs/research/source-register.md`, and these pages only point to them. Listing something here is **not** a team decision and does not adopt a tool, dataset or design.
+One place where teammates find links to workshop and reference material instead of digging through chat history. This folder is an index, not a copy: each workshop keeps its own takeaways in `docs/workshops/`, verified NASA datasets stay in `docs/research/source-register.md`, and these pages only point to them.
 
 ## Rules
 
 - Links only. Do not commit slide decks, PDFs, zips, saved web pages or QR images; link to them instead.
 - Each link keeps its "checked on" note. Only what was actually opened is marked verified.
 - No keys, tokens, passwords, or personal contact details of instructors or teammates.
-- This folder is not a decision log: listing a tool or idea here does not mean the team chose it.
 - Add new links in a small PR.
 
 ## Pages

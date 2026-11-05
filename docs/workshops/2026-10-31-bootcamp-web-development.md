@@ -12,9 +12,9 @@ handout was provided; session date, presenter and organizer are TBD.
 
 ## Purpose
 Record one teammate's takeaways from the bootcamp's web-development workshop so the team can
-evaluate them when a challenge is selected. **Nothing here is a team decision or a verified
-rule.** Items 7-9 look like event or organizer requirements but carry no citation in the
-source notes; confirm them against the official 2026 rules before relying on any of them.
+evaluate them when a challenge is selected. Items 7-9 look like event or organizer requirements
+but carry no citation in the source notes; confirm them against the official 2026 rules before
+relying on any of them.
 
 ## Content
 
@@ -33,7 +33,7 @@ source notes; confirm them against the official 2026 rules before relying on any
    been chosen or paid for by this team, and no paid service may be adopted without TL
    consent (`docs/team/working-agreement.md`).
 
-### Stated submission and compliance points — unverified
+### Stated submission and compliance points
 7. The project description **can** state that AI was used, and **should** explain *how* it
    was used. Our `docs/submission/checklist.md` currently has no AI-disclosure line.
 8. **Do not place the NASA logo on any AI-generated image or video.** Adjacent existing
