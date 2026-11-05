@@ -28,6 +28,7 @@ One place where teammates find links to workshop and reference material instead 
 | [Workshop materials](workshop-materials.md) | Workshop pages, speakers, materials links and past winners |
 | [NASA data and APIs](nasa-data-and-apis.md) | NASA API documentation, datasets and quick pointers |
 | [Tools and AI tools](tools.md) | Tools named in the workshops; none chosen |
+| [Winner research sources](sources.md) | Official award announcements, team and project pages, and verification notes for `docs/research/Previous_Global_Winners/` |
 
 ## Open questions / uncertainty
 

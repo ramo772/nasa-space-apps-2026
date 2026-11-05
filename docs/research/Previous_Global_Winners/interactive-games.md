@@ -1,8 +1,16 @@
 # Interactive Games and Game-Like Projects: Case Studies
 
+**Status:** Draft  
+**Type:** research  
+**Created:** 2026-11-03   **Last reviewed:** 2026-11-05  
+**Contributor:** Rana (GitHub: @Rana2340)  
+**Source:** official NASA announcements and team project pages listed in `docs/resources/sources.md`  
+**Related:** `docs/resources/sources.md`, `docs/resources/workshop-materials.md`, `docs/workshops/2026-10-30-game-simulation-design.md`
+
 Selected NASA Space Apps projects from 2023–2025 that provide useful
 references for gameplay, narrative design, exploration, simulation, or
 communicating science through interaction.
+
 > **Recognition labels are distinct:** Global Winner, Global Finalist,
 > and Honorable Mention are not interchangeable. See
 > [`sources.md`](../../resources/sources.md).
@@ -28,8 +36,20 @@ communicating science through interaction.
   theme.
 - **Official source:** [NASA's 2025 Global Winners
   announcement](https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/).
-- **Playable demo / source repository:** Not verified in the reviewed
-  sources.
+- **Public resources:** [NASA Space Apps team
+  page](https://www.spaceappschallenge.org/2025/find-a-team/zumorroda-x/)
+  (linked from NASA's announcement; the contributor opened it in her
+  browser on 2026-10-31 and it lists the game website and the demo video
+  below).
+- **Game website:** [henrysfarmadventures.vercel.app](https://henrysfarmadventures.vercel.app/)
+  (listed on the team page; the contributor opened and played it on
+  2026-10-31; the assistant confirmed on 2026-11-05 that the site loads)
+- **Demo video:** [Google Drive file "nasa
+  demo.mp4"](https://drive.google.com/file/d/1P-sOTecG2uO2eLu3UabS0PXWLYUKaF4p/view?usp=sharing)
+  (listed on the team page; the contributor opened it on 2026-10-31; the
+  assistant saw only the file name).
+- **Demo:** the video above and the website.
+  **Source repository:** not found in the reviewed sources.
 
 ### TerraTales (2024 Global Winner)
 
@@ -125,6 +145,8 @@ communicating science through interaction.
   interaction to help the player understand a process; connect the
   learning objective to the story.
 - **Public resources:** [NASA's 2023 Global Winners
+  announcement](https://science.nasa.gov/directorates/smd/2023-nasa-international-space-apps-challenge-announces-10-global-winners/)
+  · [Space Apps live
   announcement](https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/)
   · [NASA Space Apps team/project
   profile](https://www.spaceappschallenge.org/2023/find-a-team/team-voyagers/?tab=project).
@@ -288,11 +310,15 @@ The player should learn what is needed to progress from the experience
 itself. Explanations can support the game, but should not replace
 meaningful interaction.
 
-## 6. Application to Our 2D Mystery/Adventure Game
+## 6. Application to an Example 2D Mystery/Adventure Concept
 
-Our current premise: a character wakes up in an unfamiliar environment
-and does not initially know why. The player gradually discovers the
-situation through exploration and clues.
+As an illustration, imagine a character who wakes up in an unfamiliar
+environment and does not initially know why. The player gradually
+discovers the situation through exploration and clues. This is an
+example concept used only to organise this research, not a team
+decision. The team's selected challenge is Space Mission Design Game;
+the game design itself has not been decided (see the [2026-11-01
+meeting notes](../../team/meeting-notes/2026-11-01-challenge-decision-and-team-setup.md)).
 
 These are design directions inspired by the case studies, not claims
 about what those teams built:
@@ -313,7 +339,7 @@ about what those teams built:
 
 ### Reference-to-Feature Mapping
 
-| Our design need | Reference | What to study |
+| Design need | Reference | What to study |
 |---|---|---|
 | Space exploration | LunarTech Ensemble | Presenting lunar seismic science through an immersive game |
 | Story context | TerraTales / Team Voyagers | Using narrative to organize information and give it meaning |
