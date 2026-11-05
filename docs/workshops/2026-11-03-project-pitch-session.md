@@ -1,9 +1,11 @@
 # 30-Second Project Pitch — How to Tell Your Story
 
 **Status:** Draft  
-**Type:** Workshop Notes  
+**Type:** notes  
+**Session date:** 2026-10-30  
+**Presenter:** Farah Khaled  
 **Created:** 2026-11-03  
-**Last reviewed:** 2026-11-03  
+**Last reviewed:** 2026-11-05  
 **Source:** Farah Talk — Workshop Video  
 **Session topic:** How to deliver a compelling 30-second project pitch.
 

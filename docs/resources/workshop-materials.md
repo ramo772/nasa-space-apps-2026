@@ -8,12 +8,14 @@ Workshop pages, speakers, materials links, and past winners from the sessions. S
 
 | Name | Link | Speaker | What it is for |
 |---|---|---|---|
+| Bootcamp orientation session | [workshops/2026-10-28-bootcamp-orientation-session.md](../workshops/2026-10-28-bootcamp-orientation-session.md) | Marwa (IEEE Young Professionals) | Workshop notes, 2026-10-28 |
 | Game and simulation design (Slot 2) | [workshops/2026-10-30-game-simulation-design.md](../workshops/2026-10-30-game-simulation-design.md) | Marwan Ayyad | Workshop notes, 2026-10-30 |
 | API and data integration (Slot 1) | [workshops/2026-10-30-bootcamp-api-data-integration.md](../workshops/2026-10-30-bootcamp-api-data-integration.md) | Ahmed Khaled Moghazy | Workshop notes, 2026-10-30 |
-| Web development bootcamp | [workshops/2026-10-31-bootcamp-web-development.md](../workshops/2026-10-31-bootcamp-web-development.md) | not recorded on the page | Workshop notes; file date 2026-10-31, session date TBD |
+| Smart AI use cases | [workshops/2026-10-30-smart-ai-use-cases.md](../workshops/2026-10-30-smart-ai-use-cases.md) | Eng. Youssef El-Refaey | Workshop notes, 2026-10-30 |
+| Web development bootcamp | [workshops/2026-10-31-bootcamp-web-development.md](../workshops/2026-10-31-bootcamp-web-development.md) | Mohamed Elmenoufy | Workshop notes; file date 2026-10-31, session date 2026-10-30 |
 | Critical thinking session | [workshops/2026-10-31-critical-thinking-session.md](../workshops/2026-10-31-critical-thinking-session.md) | Dr. Afnan Barakat | Workshop notes, 2026-10-30 |
 | Storytelling: The Anatomy of a Story | [workshops/2026-11-01-anatomy-of-storytelling.md](../workshops/2026-11-01-anatomy-of-storytelling.md) | Naiier Eldeeb | Workshop notes, 2026-10-30 |
-| 30-second project pitch | [workshops/2026-11-03-project-pitch-session.md](../workshops/2026-11-03-project-pitch-session.md) | not recorded on the page | Workshop notes; file date 2026-11-03, session date TBD |
+| 30-second project pitch | [workshops/2026-11-03-project-pitch-session.md](../workshops/2026-11-03-project-pitch-session.md) | Farah Khaled | Workshop notes; file date 2026-11-03, session date 2026-10-30 |
 | Game design slide deck | <https://marwan0.github.io/space-apps-game-design/> | Marwan Ayyad | The workshop slides — checked 2026-11-03 |
 | AI game prompt page | <https://marwan0.github.io/space-apps-game-design/prompt.html> | Marwan Ayyad | Prompt that turns a spec into a playable draft — checked 2026-11-03 |
 | Example game: Lunar Night | <https://marwan0.github.io/space-apps-game-design/examples/lunar-night.html> | Marwan Ayyad | Example game built from that prompt — checked 2026-11-03 |

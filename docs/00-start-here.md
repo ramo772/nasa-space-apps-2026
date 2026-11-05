@@ -12,13 +12,16 @@
 | GitHub initial configuration | `docs/team/github-setup.md` |
 | Meeting notes / converting to action | `docs/team/meetings.md`, `docs/team/meeting-notes/`, `docs/process/meeting-workflow.md` |
 | Bootcamp / workshop takeaways | `docs/workshops/` |
+| NASA Space Apps 2026 — Bootcamp Orientation Session (session date 2026-10-28) | `docs/workshops/2026-10-28-bootcamp-orientation-session.md` |
 | API, rate limits, dataset choice (bootcamp 2026-10-30) | `docs/workshops/2026-10-30-bootcamp-api-data-integration.md` (dataset URLs registered in `docs/research/source-register.md`) |
 | Game and simulation design (bootcamp 2026-10-30, Slot 2) | `docs/workshops/2026-10-30-game-simulation-design.md` |
 | Critical thinking session — how to choose the right challenge (session date 2026-10-30) | `docs/workshops/2026-10-31-critical-thinking-session.md` |
 | The Anatomy of a Story — storytelling workshop (session date 2026-10-30) | `docs/workshops/2026-11-01-anatomy-of-storytelling.md` |
-| Bootcamp workshop — web development track (session date TBD) | `docs/workshops/2026-10-31-bootcamp-web-development.md` |
-| 30-Second Project Pitch — How to Tell Your Story (session date TBD) | `docs/workshops/2026-11-03-project-pitch-session.md` |
-| Team resources and workshop links | `docs/resources/README.md` (verified links only; no slide decks or copied material) |
+| Bootcamp workshop — web development track (session date 2026-10-30) | `docs/workshops/2026-10-31-bootcamp-web-development.md` |
+| 30-Second Project Pitch — How to Tell Your Story (session date 2026-10-30) | `docs/workshops/2026-11-03-project-pitch-session.md` |
+| Smart AI Use Cases — Understanding AI Models and Agents (session date 2026-10-30) | `docs/workshops/2026-10-30-smart-ai-use-cases.md` |
+| Previous Space Apps winners (game design research) | `docs/research/Previous_Global_Winners/README.md`, `docs/resources/sources.md` — draft research |
+| Team resources and workshop links | `docs/resources/README.md` |
 | AI skills / planning | `docs/process/ai-workflows.md`, installed `SKILL.md` files |
 | Final submission / pitch | `docs/submission/checklist.md` |
 

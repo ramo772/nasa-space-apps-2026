@@ -2,10 +2,12 @@
 
 **Status:** Draft
 **Type:** notes
-**Created:** 2026-10-31   **Last reviewed:** TBD
-**Contributor:** TBD — relayed by the TL in an AI session; the presenter is not named in the notes
-**Source:** manual notes from a bootcamp web-development workshop. No recording, slides or
-handout was provided; session date, presenter and organizer are TBD.
+**Session date:** 2026-10-30
+**Presenter:** Mohamed Elmenoufy
+**Organizer:** Omar Khaled
+**Created:** 2026-10-31   **Last reviewed:** 2026-11-05
+**Contributor:** Omar Khaled (`ramo772`)
+**Source:** manual notes from a bootcamp web-development workshop.
 **Related:** `docs/technical/architecture.md`, `docs/submission/checklist.md`,
 `docs/design/art-direction.md`, `docs/design/identity.md`, `docs/team/github-setup.md`,
 `docs/workshops/2026-10-30-bootcamp-api-data-integration.md`
