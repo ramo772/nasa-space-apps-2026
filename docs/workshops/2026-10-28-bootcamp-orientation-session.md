@@ -1,13 +1,13 @@
 # NASA Space Apps 2026 — Bootcamp Orientation Session
 
 **Status:** Draft  
-**Type:** Workshop Notes  
-**Session Date:** 2026-10-28  
+**Type:** notes  
+**Session date:** 2026-10-28  
 **Created:** 2026-11-03  
-**Last reviewed:** 2026-11-03  
-**Event:** NASA Space Apps Challenge — Cairo Local Event  
-**Speaker:** Marwa  
-**Organizer:** IEEE Young Professionals
+**Last reviewed:** 2026-11-05  
+**Contributor:** Rokiya Abdelsattar (GitHub: @RokiyaAbdElsatar)  
+**Source:** NASA Space Apps Cairo, "Bootcamp Orientation Session 2026" (official video on the Space Apps Cairo YouTube channel, published 2026-10-28): https://youtu.be/HypCukOW7Kc. Summarised in the contributor's own words.  
+**Related:** `docs/resources/official.md`, `docs/resources/README.md`, `docs/workshops/`
 
 ## Purpose
 
@@ -29,9 +29,9 @@ A key message is that participation is open to people from different backgrounds
 
 - The Cairo local event is organized by **IEEE Young Professionals**.
 - The Cairo event has been running since 2015.
-- Cairo teams achieved global recognition in previous editions:
-  - **2024:** Thera Tales.
-  - **2025:** Zomoroda.
+- Cairo teams achieved global recognition in previous editions, according to the speaker's claims:
+  - **2024:** TerraTales (Cairo).
+  - **2025:** Zumorroda-X (Egypt).
 - The local hackathon provides participants with an opportunity to collaborate, develop solutions, and compete as part of the global challenge.
 
 ### Bootcamp Information
@@ -44,12 +44,11 @@ A key message is that participation is open to people from different backgrounds
 
 ### Hackathon and Bootcamp Dates
 
-The session mentioned the following dates:
+The session and event dates are:
 
-- **Bootcamp:** Friday, September 6.
-- **Cairo Local Hackathon:** September 13–14.
-
-These dates are recorded as stated during the session; the year and calendar consistency should be confirmed.
+- **Orientation session:** 2026-10-28.
+- **Bootcamp (Nile University):** Friday, 2026-10-30.
+- **Cairo local hackathon:** 2026-11-13 to 2026-11-14.
 
 ### Team Formation and Diversity
 
@@ -133,14 +132,13 @@ Important announcements may include:
 - What is the official registration link for the Cairo local hackathon?
 - What is the detailed bootcamp agenda?
 - Which technical workshops require participants to bring laptops?
-- Are the September 6 and September 13–14 dates confirmed for the relevant edition? The year and weekday/date consistency need verification.
 - What are the exact five questions recommended for evaluating a challenge? The session summary mentions preparing five questions but does not list their wording.
 
 ## Sources and Attribution
 
-- Uploaded workshop notes: `Bootcamp Orientation Session 2026.md`.
+- Official video: [NASA Space Apps Cairo — Bootcamp Orientation Session 2026](https://youtu.be/HypCukOW7Kc).
 - Session speaker: Marwa.
 - Event organizer: IEEE Young Professionals.
-- Information documented from the provided session summary.
+- Information summarized in the contributor's own words from the official session video.
 
-The event details and recommendations are recorded from the provided source and have not been independently verified.
+The event details and recommendations are documented based on the source above and have not been independently verified.
