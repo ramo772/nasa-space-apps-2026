@@ -30,9 +30,9 @@ This is not a complete catalogue of every game submitted to NASA Space Apps. It 
 
 5. **Keep recognition labels accurate.** Global Winner, Global Finalist, and Honorable Mention are different recognition statuses and should not be used interchangeably.
 
-## Shortlist for an Example 2D Mystery/Adventure Concept
+## Shortlist for the Team's Starting Game Concept
 
-As an illustration, imagine a character waking up somewhere unfamiliar and gradually discovering why they are there. This is an example concept used only to organise this research, not a team decision. The team's selected challenge is Space Mission Design Game; the game design itself has not been decided (see the [2026-11-01 meeting notes](../../team/meeting-notes/2026-11-01-challenge-decision-and-team-setup.md)).
+The team's starting idea, as described by Rana: a character wakes up somewhere unfamiliar and the player gradually discovers the situation through exploration and clues. This is a working idea. The team's selected challenge is Space Mission Design Game (see the [2026-11-01 meeting notes](../../team/meeting-notes/2026-11-01-challenge-decision-and-team-setup.md)), and the team's proposed pitch concept is in [pitch/odyssey-of-meat-a-roid/README.md](../../../pitch/odyssey-of-meat-a-roid/README.md), where the character wakes up on the wrong planet and the player plans a mission to get him home. The game design itself has not been formally decided.
 
 The following projects are especially useful references for developing this concept:
 | Priority | Project | What to Study |

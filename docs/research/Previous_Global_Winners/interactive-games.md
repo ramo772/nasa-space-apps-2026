@@ -310,15 +310,18 @@ The player should learn what is needed to progress from the experience
 itself. Explanations can support the game, but should not replace
 meaningful interaction.
 
-## 6. Application to an Example 2D Mystery/Adventure Concept
+## 6. Application to the Team's Starting Game Concept
 
-As an illustration, imagine a character who wakes up in an unfamiliar
-environment and does not initially know why. The player gradually
-discovers the situation through exploration and clues. This is an
-example concept used only to organise this research, not a team
-decision. The team's selected challenge is Space Mission Design Game;
-the game design itself has not been decided (see the [2026-11-01
-meeting notes](../../team/meeting-notes/2026-11-01-challenge-decision-and-team-setup.md)).
+The team's starting idea, as described by Rana: a character wakes up
+somewhere unfamiliar and the player gradually discovers the situation
+through exploration and clues. This is a working idea. The team's
+selected challenge is Space Mission Design Game (see the [2026-11-01
+meeting notes](../../team/meeting-notes/2026-11-01-challenge-decision-and-team-setup.md)),
+and the team's proposed pitch concept is in
+[pitch/odyssey-of-meat-a-roid/README.md](../../../pitch/odyssey-of-meat-a-roid/README.md),
+where the character wakes up on the wrong planet and the player plans a
+mission to get him home. The game design itself has not been formally
+decided.
 
 These are design directions inspired by the case studies, not claims
 about what those teams built:
