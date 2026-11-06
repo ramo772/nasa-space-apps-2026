@@ -27,6 +27,7 @@ A **challenge-agnostic** engineering and coordination foundation for six teammat
 - Post-meeting chain: `process-meeting` → `meeting-notes` → `sync-docs` → `create-issues` → `sync-board`.
 - Knowledge capture: `create-wiki` turns any teammate's notes, research or findings into one attributed `docs/` page (approval-gated, PR only).
 - Implementation chain: `start-ticket` → `grill-with-doc` → plan → code → `review-implementation`.
+- Library/API documentation: the shared `find-docs` skill uses Context7; see [requirements and usage](docs/process/ai-workflows.md#context7-documentation-lookup).
 
 **Safety:** skills use approval gates; they cannot access GitHub without a connected CLI/MCP and adequate permissions. An instruction is not a guarantee that an agent read every file; verify the documents actually read in its response and PR.
 
