@@ -3,7 +3,7 @@
 from pathlib import Path
 import sys
 root = Path(__file__).resolve().parent.parent
-names = ["process-meeting", "meeting-notes", "create-issues", "create-wiki", "sync-docs", "sync-board", "start-ticket", "grill-with-doc", "review-implementation"]
+names = ["process-meeting", "meeting-notes", "create-issues", "create-wiki", "sync-docs", "sync-board", "start-ticket", "grill-with-doc", "review-implementation", "find-docs"]
 errors = []
 for name in names:
     copies = []
