@@ -4,7 +4,7 @@
 **Type:** reference  
 **Back to index:** [Team resources](README.md)
 
-Workshop pages, speakers, materials links, and past winners from the sessions. Slide files are not included yet. Award labels are the instructors' claims; the NASA announcements below confirm the global winner lists.
+Workshop pages, speakers, materials links, and past winners from the sessions. Award labels are the instructors' claims; the NASA announcements below confirm the global winner lists.
 
 | Name | Link | Speaker | What it is for |
 |---|---|---|---|
@@ -29,3 +29,16 @@ Workshop pages, speakers, materials links, and past winners from the sessions. S
 | TechNova (2025) | <https://www.spaceappschallenge.org/2025/find-a-team/technova3> | Ahmed Khaled Moghazy | Past winner cited on his slides — confirmed by the contributor in a browser on 2026-11-03, not opened by the assistant (same TLS issue) |
 | NASA 2025 global winners | <https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/> | — | Official award announcement — checked 2026-11-03 |
 | NASA 2024 global winners | <https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/> | — | Official award announcement — checked 2026-11-03 |
+
+## Slide files in this repository
+
+| File | Workshop | Speaker | Size | Permission |
+|---|---|---|---|---|
+| Apis and Data Integration.pdf | [API and data integration workshop](../workshops/2026-10-30-bootcamp-api-data-integration.md) | Ahmed Khaled Moghazy | 12.08 MB | shared with the speaker's permission, as reported by the contributor |
+| Storytelling.pdf | [The Anatomy of a Story](../workshops/2026-11-01-anatomy-of-storytelling.md) | Naiier Eldeeb | 1.52 MB | shared with the speaker's permission, as reported by the contributor |
+| Game Development.pdf | [Game and simulation design](../workshops/2026-10-30-game-simulation-design.md) | Marwan Ayyad | 4.57 MB | shared with the speaker's permission, as reported by the contributor |
+| AI Tools in Hackathon.pdf | AI tools in the hackathon | Ezz El-din Elsharkawy | 1.19 MB | shared with the speaker's permission, as reported by the contributor |
+| Ai and Machine Learning.pdf | AI and machine learning | Abdelrahman Elmoghazy | 0.51 MB | shared with the speaker's permission, as reported by the contributor |
+| Video Editing.pdf | Video editing | Abdelrahman Ashraf | 1.56 MB | shared with the speaker's permission, as reported by the contributor |
+
+Only the workshops listed here have slide files in this repository; other workshops, such as the web development workshop, have none.
