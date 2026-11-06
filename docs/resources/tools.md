@@ -16,9 +16,19 @@ Tools named in the bootcamp sessions. None of these is a team choice; tool selec
 | HTML and canvas | — | Browser games; no official site recorded — see the game design workshop page |
 | AI tools named in the API workshop: Gemini, Groq, OpenRouter | — | Named on the slides but not evaluated or chosen; any paid service needs TL consent |
 
+---
 
-<hr>
-<hr>
+## AI & Creative Tools
+
+| Name | Link | What it is for |
+|---|---|---|
+| AI Prompt Generator (QuillBot) | [QuillBot](https://quillbot.com/ai-writing-tools/ai-prompt-generator) | Generating AI prompts |
+| Prompt Optimizer | [Prompt Optimizer](https://promptoptimizer.tools/) | Improving and optimizing prompts |
+| Presentation Tool | [Prezi](https://prezi.com/craft) | Creating presentations |
+| AI Visual Content Tool | [Higgsfield](https://higgsfield.ai/) | Creating AI-generated visual content |
+| AI Voice Generation | [ElevenLabs](https://elevenlabs.io/) | AI voice generation and audio content |
+
+---
 
 ## Video & Content Creation Tools
 
