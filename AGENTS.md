@@ -1,6 +1,6 @@
 # Team AI rules (canonical)
 
-This is a **six-person NASA Space Apps team foundation**. The actual competition challenge has **not been selected**. Focus on a small, high-quality workflow. Do not start implementing challenge-specific features prematurely; confirm official rules.
+This is a **six-person NASA Space Apps team foundation**. The selected challenge is **Space Mission Design Game** (DEC-002). Application work is **on hold** for preparation only (DEC-006 in `docs/technical/decisions.md`). Focus on a small, high-quality workflow. Do not start implementing challenge-specific features prematurely; confirm official rules.
 
 ## Before any task
 1. Read `docs/00-start-here.md` and `docs/team/project-config.md` when GitHub operations are involved.

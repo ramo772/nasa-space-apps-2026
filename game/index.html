@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odyssey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#prompt">Skip to the game prompt</a>
+  <p class="sr" id="about">Get the ship home. Walk into the workshop and press E on a build. The asteroid on the sign is a NASA rock on the way. Click the ground or use WASD to move.</p>
+  <canvas id="space"></canvas>
+  <header class="hud-top">
+    <div class="stack">
+      <p class="brand">The Odyssey of Meat-a-Roid</p>
+      <p id="objective">Walk to the hangar.</p>
+      <div id="meters"></div>
+      <div id="voice" class="voice"></div>
+    </div>
+    <div class="facts">
+      <p id="fact-pill">Asking NASA…</p>
+      <p id="story-pill" class="fine">Mass, power, and budget are game rules.</p>
+    </div>
+  </header>
+  <p id="prompt"></p>
+  <div id="debrief" hidden></div>
+  <pre id="selftest" class="sr"></pre>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* Generated from design/tokens.json by scripts/build-tokens.mjs. Do not edit. */
+:root {
+  --color-background: #071A33;
+  --color-surface: #0E2A4B;
+  --color-surface-raised: #15375A;
+  --color-text: #FFF3D6;
+  --color-text-on-light: #071A33;
+  --color-muted-text: #B9D3E4;
+  --color-primary: #18D2F2;
+  --color-accent: #FF8A1F;
+  --color-danger: #FF625E;
+  --color-success: #69D59D;
+  --color-focus: #FFE15C;
+  --color-border: #2D5C7A;
+  --font-family: Inter, system-ui, sans-serif;
+  --font-display-family: Space Grotesk, Inter, system-ui, sans-serif;
+  --font-data-family: Inter, system-ui, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+  --spacing-unit: 4px;
+  --spacing-control-min-height: 44px;
+  --stroke-thin: 1px;
+  --stroke-standard: 2px;
+  --stroke-emphasis: 4px;
+  --motion-quick: 120ms;
+  --motion-standard: 220ms;
+  --motion-deliberate: 360ms;
+  --shadow-card: 0 10px 30px rgba(7, 26, 51, 0.35);
+  --shadow-focus: 0 0 0 3px #FFE15C;
+}
