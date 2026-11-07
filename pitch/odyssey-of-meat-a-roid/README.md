@@ -21,6 +21,7 @@ Controls:
 - Fullscreen.
 - Rec mode hides the controls and the cursor.
 - If `assets/narration.mp3` is missing, the picture and the score still play.
+- If `assets/clips/wake.mp4`, `plan.mp4`, or `launch.mp4` is missing, that scene keeps its still plates. The plates are not a character performance. See `ASSETS.md`.
 
 Keyboard: Space play/pause, F fullscreen, R rec mode, M mute, Left/Right seek by 2 seconds.
 
@@ -28,7 +29,7 @@ A link can open a paused frame: `index.html#t=42&rec`.
 
 ## Replace the six team members
 
-1. Put real portraits in this folder as `assets/team-01.jpg` through `assets/team-06.jpg`. Square photos, at least 800×800, work best.
+1. The current portraits are `assets/team-01.jpg` through `assets/team-06.jpg`. To replace one, use the same path. Square photos, at least 800×800, work best.
 2. Open `index.html` and find `const TEAM`.
 3. Set each person’s real name, real title, and photo path:
 

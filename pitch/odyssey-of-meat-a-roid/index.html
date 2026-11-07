@@ -35,11 +35,17 @@
     }
     #film { position: absolute; inset: 0; overflow: hidden; background: #100814; }
     .scene { position: absolute; inset: 0; opacity: 0; overflow: hidden; }
-    .plate { position: absolute; inset: -2%; width: 104%; height: 104%; object-fit: cover; object-position: center center; opacity: 0; }
-    .scrim-left { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8, 3, 18, 0.88) 0%, rgba(8, 3, 18, 0.55) 34%, rgba(8, 3, 18, 0.05) 58%, rgba(8, 3, 18, 0.25) 100%); }
+    .world { position: absolute; inset: -8%; z-index: 1; transform-origin: 50% 42%; will-change: transform; }
+    .action { position: absolute; inset: 0; z-index: 6; transform-origin: 50% 46%; will-change: transform; }
+    .plate { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 0; }
+    .clip { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 0; background: #100814; }
+    .scrim-left { position: absolute; inset: 0; z-index: 5; background: linear-gradient(90deg, rgba(8, 3, 18, 0.88) 0%, rgba(8, 3, 18, 0.55) 34%, rgba(8, 3, 18, 0.05) 58%, rgba(8, 3, 18, 0.25) 100%); }
     .scrim-bottom { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6, 2, 14, 0.2), transparent 28%, transparent 62%, rgba(6, 2, 14, 0.72)); }
     .vignette { position: absolute; inset: 0; z-index: 40; pointer-events: none; background: radial-gradient(ellipse at center, transparent 52%, rgba(4, 0, 12, 0.45) 100%); }
-    .grain { position: absolute; inset: -20%; z-index: 41; pointer-events: none; opacity: 0.07; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E"); }
+    .grain { position: absolute; inset: -20%; z-index: 41; pointer-events: none; opacity: 0.07; will-change: transform; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E"); }
+    #atmosphere { position: absolute; inset: 0; z-index: 3; width: 100%; height: 100%; pointer-events: none; }
+    #engineGlow { position: absolute; z-index: 3; left: 34%; bottom: -18%; width: 36%; height: 52%; pointer-events: none; opacity: 0; mix-blend-mode: screen; background: radial-gradient(circle, rgba(255, 154, 98, 0.55), rgba(255, 107, 157, 0.12) 42%, transparent 70%); }
+    #relay { position: absolute; z-index: 8; width: 3.2em; height: 1.4em; opacity: 0; pointer-events: none; }
     #flash { position: absolute; inset: 0; z-index: 60; background: #fff4ea; opacity: 0; pointer-events: none; }
     .kicker { font-size: 1.15em; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--cyan); }
     .display { font-family: "Arial Black", "Segoe UI", sans-serif; text-transform: uppercase; letter-spacing: 0.01em; line-height: 0.92; margin: 0; }
@@ -50,10 +56,10 @@
       background: var(--cream); color: #1a1022; border: 0.16em solid #1a1022; border-radius: 0.35em;
       padding: 0.42em 0.75em; font-family: "Arial Black", "Segoe UI", sans-serif; font-size: 2.15em;
       line-height: 1; white-space: nowrap; box-shadow: 0.28em 0.32em 0 var(--pink); opacity: 0; }
-    #subtitle { position: absolute; z-index: 32; left: 50%; bottom: 2.5em; transform: translateX(-50%);
+    #subtitle { position: absolute; z-index: 32; left: 50%; bottom: 6.6em; transform: translateX(-50%);
       max-width: 72em; padding: 0.38em 0.75em; border-radius: 0.28em; background: rgba(6, 3, 14, 0.84);
       font-size: 1.52em; font-weight: 700; line-height: 1.28; text-align: center; opacity: 0; }
-    #subtitle.show { opacity: 1; }
+    /* #subtitle.show { opacity: 1; } */
 
     /* Scene 1 */
     #shadowPass { position: absolute; z-index: 4; top: -10%; width: 22%; height: 130%;
@@ -67,17 +73,22 @@
     .critter u { position: absolute; left: 0.8em; bottom: -0.7em; width: 4.4em; height: 0.9em; border-left: 0.28em solid #5a3278; border-right: 0.28em solid #5a3278; }
 
     /* Scene 2 */
-    .map-card { position: absolute; z-index: 5; right: 4.4em; top: 4.2em; width: 32em; height: 17.2em; padding: 1.1em 1.2em; }
+    .map-card { position: absolute; z-index: 5; right: 4.4em; top: 4.2em; width: 32em; height: 17.2em; padding: 1.1em 1.2em;
       border-radius: 0.9em; border: 0.08em solid var(--line); background: rgba(7, 10, 32, 0.78);
-      box-shadow: 0 1em 2.4em rgba(0, 0, 0, 0.35), inset 0 0 1.5em rgba(90, 240, 255, 0.08); }
+      box-shadow: 0 1em 2.4em rgba(0, 0, 0, 0.35), inset 0 0 1.5em rgba(90, 240, 255, 0.08); transform-origin: 70% 40%; }
     .map-sky { position: absolute; left: 1em; right: 1em; top: 2.6em; bottom: 1em; border-radius: 0.55em; overflow: hidden;
       background: radial-gradient(circle at 75% 30%, rgba(120, 245, 255, 0.25), transparent 22%), #07091c; }
     .map-sky::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(#fff 0 0.07em, transparent 0.09em); background-size: 2.2em 2.2em; opacity: 0.45; }
-    .route { position: absolute; left: 12%; top: 58%; width: 68%; height: 28%; border-top: 0.18em dashed var(--cyan); border-radius: 50%; transform: rotate(-8deg); }
-    .pin { position: absolute; width: 1.05em; height: 1.05em; border-radius: 50%; border: 0.14em solid #fff; }
-    .pin.you { left: 14%; bottom: 18%; background: var(--pink); }
-    .pin.home { right: 12%; top: 22%; background: var(--lime); box-shadow: 0 0 0.8em var(--lime); }
-    .home-word { position: absolute; right: 8%; top: 38%; color: var(--lime); font-weight: 900; letter-spacing: 0.14em; font-size: 1.15em; }
+    .map-svg, #routeSvg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+    .map-svg { z-index: 1; }
+    #routeSvg { z-index: 2; }
+    #mapPath, #routeHome { fill: none; stroke: var(--cyan); stroke-width: 5; stroke-linecap: round; filter: drop-shadow(0 0 0.35em rgba(122, 246, 255, 0.85)); }
+    #routeCrater { fill: none; stroke: var(--orange); stroke-width: 5; stroke-linecap: round; filter: drop-shadow(0 0 0.3em rgba(255, 154, 98, 0.7)); }
+    .map-craft { position: absolute; z-index: 2; width: 1.7em; height: 0.75em; margin: 0; border-width: 0.1em; opacity: 0; }
+    .pin { position: absolute; z-index: 2; width: 1.05em; height: 1.05em; border-radius: 50%; border: 0.14em solid #fff; }
+    .pin.you { left: 6%; bottom: 16%; background: var(--pink); }
+    .pin.home { right: 5%; top: 10%; background: var(--lime); box-shadow: 0 0 0.8em var(--lime); }
+    .home-word { position: absolute; z-index: 2; right: 7%; top: 26%; color: var(--lime); font-weight: 900; letter-spacing: 0.14em; font-size: 1.15em; }
     .stamp { position: absolute; z-index: 6; right: 8em; bottom: 8.5em; width: 16em; padding: 0.7em 0.8em; background: #f6e7cf; color: #241428;
       transform: rotate(6deg); font-weight: 800; box-shadow: 0.4em 0.5em 1.4em rgba(0, 0, 0, 0.35); }
 
@@ -98,12 +109,12 @@
     .sim-head span { color: var(--cyan); font-size: 0.95em; font-weight: 800; letter-spacing: 0.08em; }
     .orbit { position: relative; margin: 1em 1em 0; height: 16.5em; border-radius: 0.7em; overflow: hidden;
       background: linear-gradient(180deg, #0c1230, #24143f 70%, #3a1848); }
-    .orbit::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(#fff 0 0.06em, transparent 0.08em); background-size: 2.4em 2.4em; opacity: 0.35; }
+    #orbitFx { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
     .blob { position: absolute; border-radius: 50%; }
     .blob.a { width: 9em; height: 9em; left: -2em; bottom: -3em; background: linear-gradient(135deg, #ff8eb4, #7d4de0); }
     .blob.b { width: 4.6em; height: 4.6em; right: 2.2em; top: 1.6em; background: linear-gradient(135deg, #b9ffd0, #3ec7de); }
-    .ship { position: absolute; z-index: 2; width: 3.3em; height: 1.45em; border-radius: 60% 50% 40% 30%; background: #f4fbff; border: 0.16em solid #6d45a8; }
-    .ship::before { content: ""; position: absolute; left: -1.15em; top: 0.28em; border-top: 0.38em solid transparent; border-bottom: 0.38em solid transparent; border-right: 1.25em solid var(--orange); }
+    .ship { position: absolute; z-index: 4; left: 0; top: 0; width: 3.3em; height: 1.45em; margin: 0; border-radius: 60% 50% 40% 30%; background: #f4fbff; border: 0.16em solid #6d45a8; transform-origin: 50% 50%; }
+    .ship::before { content: ""; position: absolute; left: -1.15em; top: 0.28em; border-top: 0.38em solid transparent; border-bottom: 0.38em solid transparent; border-right: 1.25em solid var(--orange); filter: drop-shadow(0 0 0.35em var(--pink)); }
     .puff { position: absolute; width: 7em; height: 3.2em; opacity: 0; }
     .puff i { position: absolute; bottom: 0; width: 2.4em; height: 2.4em; border-radius: 50%; background: #c987d8; filter: blur(0.12em); }
     .puff i:nth-child(2) { left: 2em; bottom: 0.6em; } .puff i:nth-child(3) { left: 4.2em; }
@@ -122,15 +133,21 @@
     #reaction .plate { object-position: center 20%; }
     #reaction .attempt { position: absolute; left: 5em; top: 4.2em; color: var(--orange); border: 0.12em solid var(--orange); padding: 0.25em 0.5em; font-weight: 900; letter-spacing: 0.14em; transform: rotate(-6deg); }
     #modes { position: absolute; z-index: 7; left: 5.4em; right: 5.4em; top: 4.6em; bottom: 8.6em; }
-    .mode-banner { margin: 0.35em 0 0.7em; font-family: "Arial Black", "Segoe UI", sans-serif; font-size: 1.55em; letter-spacing: 0.03em; color: var(--cream); }
+    .mode-banner { margin: 0.2em 0 0.55em; }
+    .mode-banner .solo-line, .mode-banner .crew-line { font-family: "Arial Black", "Segoe UI", sans-serif; letter-spacing: 0.03em; color: var(--cream); line-height: 1.05; }
+    .mode-banner .solo-line { font-size: 2.15em; }
+    .mode-banner .crew-line { margin-top: 0.12em; font-size: 1.35em; color: var(--cyan); }
     .mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1em; }
     .mode { min-height: 10.5em; padding: 1em 1.15em; border-radius: 0.9em; border: 0.1em solid var(--line); background: rgba(10, 8, 30, 0.88); }
     .mode h3 { margin: 0.15em 0 0.3em; font-size: 1.85em; }
     .mode p { margin: 0; font-size: 1.2em; line-height: 1.35; color: #efe7f6; }
     .mode em { display: block; margin-top: 0.55em; font-style: normal; color: var(--lime); font-weight: 800; letter-spacing: 0.06em; font-size: 0.95em; }
     .crew-play { margin-top: 0.8em; padding: 0.8em 1em; border-radius: 0.9em; border: 0.08em solid var(--line); background: rgba(8, 8, 26, 0.88); display: grid; grid-template-columns: 1.15fr 1fr auto; gap: 1em; align-items: center; }
-    .slots { display: flex; gap: 0.7em; min-height: 5.4em; align-items: flex-end; }
-    .slot { width: 4.6em; height: 4.6em; border-radius: 0.7em; display: grid; place-items: center; font-weight: 900; background: #2a1848; border: 0.1em solid rgba(255, 255, 255, 0.16); }
+    .slots { position: relative; width: 22em; height: 5.4em; }
+    .slot { position: absolute; left: 0; bottom: 0; width: 4.6em; height: 4.6em; border-radius: 0.7em; display: grid; place-items: center; font-weight: 900; background: #2a1848; border: 0.1em solid rgba(255, 255, 255, 0.16); }
+    .slot span { font-size: 0.72em; letter-spacing: 0.04em; }
+    .plan-chips { display: flex; flex-wrap: wrap; gap: 0.35em; margin-top: 0.45em; min-height: 1.6em; }
+    .plan-chips i { display: inline-block; font-style: normal; padding: 0.18em 0.45em; border-radius: 99em; background: rgba(122, 246, 255, 0.14); border: 0.06em solid var(--line); font-size: 0.78em; letter-spacing: 0.04em; opacity: 0; }
     .slot.on { background: var(--c, var(--cyan)); color: #1a1020; }
     .shared { font-size: 1.2em; font-weight: 800; line-height: 1.35; }
     .shared b { color: var(--cyan); }
@@ -164,18 +181,70 @@
     .crew-head h2 { font-size: 3.15em; color: var(--cream); text-shadow: 0.05em 0.06em 0 #6e2f81; }
     .crew-head p { margin: 0.45em 0 0; letter-spacing: 0.16em; text-transform: uppercase; color: #c9b6da; font-size: 0.95em; font-weight: 800; }
     .crew-grid { position: absolute; left: 6.2em; right: 6.2em; top: 9.2em; bottom: 6.4em; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 0.75em 1.1em; }
-    .member { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0.55em 0.6em 0.4em; border-radius: 0.8em;
-      background: linear-gradient(180deg, rgba(42, 24, 74, 0.92), rgba(14, 10, 32, 0.92)); border: 0.07em solid rgba(150, 235, 255, 0.22); opacity: 0; min-width: 0; }
-    .member { justify-content: center; }
+    .member { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0.55em 0.6em 0.4em; border-radius: 0.8em;
+      background: linear-gradient(180deg, rgba(42, 24, 74, 0.92), rgba(14, 10, 32, 0.92)); border: 0.07em solid rgba(150, 235, 255, 0.22); opacity: 0; min-width: 0;
+      cursor: pointer; }
+    .member:focus-visible { outline: 0.14em solid var(--pick, var(--cyan)); outline-offset: 0.16em; }
+    .member .shell { display: flex; flex-direction: column; align-items: center; width: 100%; transform-origin: 50% 85%;
+      transition: transform 0.34s cubic-bezier(0.2, 0.85, 0.2, 1), filter 0.3s ease; }
     .member .photo { width: 12.6em; height: 12.6em; border-radius: 0.7em; overflow: hidden; border: 0.1em solid rgba(130, 240, 255, 0.45);
-      background: radial-gradient(circle at 50% 32%, #6a3d86, #24143e 72%); position: relative; flex: none; }
-    .member .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
+      background: radial-gradient(circle at 50% 32%, #6a3d86, #24143e 72%); position: relative; flex: none;
+      transition: border-color 0.28s ease, box-shadow 0.28s ease; }
+    .member .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; transform: scale(1); transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .member .sheen { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen;
+      background: linear-gradient(115deg, transparent 34%, rgba(255, 244, 223, 0.62) 48%, transparent 62%); transform: translateX(-130%); }
+    .member .brackets { position: absolute; inset: 0.38em; pointer-events: none; opacity: 0; transition: opacity 0.2s ease; }
+    .member .brackets i { position: absolute; width: 0.9em; height: 0.9em; border: 0.12em solid var(--pick, var(--cyan)); }
+    .member .brackets i:nth-child(1) { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+    .member .brackets i:nth-child(2) { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+    .member .brackets i:nth-child(3) { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+    .member .brackets i:nth-child(4) { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+    .member .lock { position: absolute; top: 0.42em; right: 0.42em; z-index: 2; padding: 0.2em 0.48em; border-radius: 99em;
+      background: var(--pick, var(--cyan)); color: #141018; font-size: 0.62em; font-weight: 900; letter-spacing: 0.12em;
+      opacity: 0; transform: translateY(-0.35em) scale(0.86); transition: opacity 0.2s ease, transform 0.28s cubic-bezier(0.2, 0.9, 0.2, 1); }
+    .member .lock .on { display: none; }
+    .member.locked .lock { background: var(--lime); }
+    .member.locked .lock .idle { display: none; }
+    .member.locked .lock .on { display: inline; }
+    .crew-grid:hover .member .shell,
+    .crew-grid:focus-within .member .shell { filter: saturate(0.62) brightness(0.74); }
+    .crew-grid:hover .member:hover .shell,
+    .crew-grid:hover .member.locked .shell,
+    .crew-grid:focus-within .member:focus-visible .shell,
+    .crew-grid:focus-within .member.locked .shell,
+    .member:hover .shell,
+    .member:focus-visible .shell,
+    .member.locked .shell { filter: none; transform: translateY(-0.42em) scale(1.035); }
+    .member:hover .photo,
+    .member:focus-visible .photo,
+    .member.locked .photo { border-color: var(--pick, var(--cyan)); box-shadow: 0 0.7em 1.1em rgba(0, 0, 0, 0.34), 0 0 0 0.08em var(--pick, var(--cyan)), 0 0 1.15em var(--pick, var(--cyan)); }
+    .member:hover .photo img,
+    .member:focus-visible .photo img,
+    .member.locked .photo img { transform: scale(1.08); }
+    .member:hover .brackets,
+    .member:focus-visible .brackets,
+    .member.locked .brackets,
+    .member:hover .lock,
+    .member:focus-visible .lock,
+    .member.locked .lock { opacity: 1; }
+    .member:hover .lock,
+    .member:focus-visible .lock,
+    .member.locked .lock { transform: none; }
+    .member:hover .sheen,
+    .member:focus-visible .sheen { transition: transform 0.62s ease; transform: translateX(130%); }
+    .member.locked { border-color: rgba(214, 255, 122, 0.85); box-shadow: 0 0 1.3em rgba(214, 255, 122, 0.22); }
+    @media (prefers-reduced-motion: reduce) {
+      .member .shell, .member .photo, .member .photo img, .member .lock, .member .brackets { transition: none; }
+      .member:hover .shell, .member:focus-visible .shell, .member.locked .shell,
+      .member:hover .photo img, .member:focus-visible .photo img, .member.locked .photo img { transform: none; }
+    }
     .ph { position: absolute; inset: 0; display: grid; place-items: center; color: #f0e6f8; font-size: 0.78em; font-weight: 900; letter-spacing: 0.12em; text-align: center; line-height: 1.35; }
     .ph::before { content: ""; width: 2.5em; height: 2.5em; border-radius: 50%; background: #9a69b8; position: absolute; top: 1.5em; }
     .ph span { position: relative; margin-top: 3.2em; }
-    .member h3 { margin: 0.4em 0 0.12em; font-size: 1.28em; line-height: 1.1; }
+    .member h3 { margin: 0.4em 0 0.12em; font-size: 1.28em; line-height: 1.1; transition: color 0.25s ease; }
+    .member:hover h3, .member:focus-visible h3, .member.locked h3 { color: var(--cream); }
     .member .title { margin: 0; color: var(--cyan); font-size: 0.92em; font-weight: 800; letter-spacing: 0.04em; line-height: 1.25; text-transform: uppercase; max-width: 16em; }
-    .member .slot-id { margin-top: 0.2em; color: #9d90ae; font-size: 0.72em; letter-spacing: 0.14em; font-weight: 800; }
+    .credits-note { margin: 0.45em 0 0; text-align: center; color: #cbb9df; font-size: 0.92em; letter-spacing: 0.08em; font-weight: 750; }
 
     #startOverlay { position: absolute; inset: 0; z-index: 80; display: grid; place-items: center; text-align: center;
       background: radial-gradient(circle at 50% 40%, rgba(90, 30, 80, 0.35), rgba(5, 2, 12, 0.94) 70%); }
@@ -201,7 +270,8 @@
     #timeBug { position: absolute; z-index: 45; top: 1.3em; right: 1.6em; font-size: 0.85em; color: rgba(255, 255, 255, 0.7); font-variant-numeric: tabular-nums; }
     #pauseFlag { position: absolute; z-index: 70; top: 1.3em; left: 50%; transform: translateX(-50%); font-size: 1em; letter-spacing: 0.16em; font-weight: 900; opacity: 0; }
     body.paused #pauseFlag { opacity: 0.85; }
-    body.recording #pauseFlag { opacity: 0; }
+    body.ended #pauseFlag, body.recording #pauseFlag, body.recording #timeBug { opacity: 0; }
+    body.recording #startOverlay { opacity: 0; pointer-events: none; }
     @media (max-width: 800px) { .wide-label { display: none; } #controls { grid-template-columns: repeat(4, auto) 1fr auto; } }
   </style>
   <script>
@@ -213,45 +283,60 @@
     <div id="stage">
       <div id="film">
         <section class="scene" id="s1" aria-label="The worst morning ever">
-          <img class="plate" id="plateAsleep" alt="The inventor sleeps">
-          <img class="plate" id="plateOne" alt="">
-          <img class="plate" id="plateAwake" alt="The inventor wakes, confused">
-          <div id="shadowPass"></div>
-          <div class="morning-label" id="morningLabel">
-            <div class="kicker">07:00 • Local bed, probably</div>
-            <b class="display">A normal<br>morning.</b>
+          <div class="world" id="s1world">
+            <img class="plate" id="plateAsleep" alt="The inventor sleeps">
+            <img class="plate" id="plateOne" alt="">
+            <img class="plate" id="plateAwake" alt="The inventor wakes, confused">
+            <img class="plate" id="plateWide" alt="An absurd alien landscape with the inventor stranded on the right">
+            <img class="plate" id="plateLook" alt="The inventor stares into the camera">
+            <video class="clip" id="clipWake" playsinline muted preload="metadata" poster="assets/face-asleep.jpg" aria-label="Waking up on the alien planet"></video>
+            <div id="shadowPass"></div>
           </div>
-          <img class="plate" id="plateWide" alt="An absurd alien landscape with the inventor stranded on the right">
-          <div class="critter" id="critter"><i></i><u></u></div>
-          <img class="plate" id="plateLook" alt="The inventor stares into the camera">
+          <div class="action" id="s1action">
+            <div class="morning-label" id="morningLabel">
+              <div class="kicker">07:00 • Local bed, probably</div>
+              <b class="display">A normal<br>morning.</b>
+            </div>
+            <div class="critter" id="critter"><i></i><u></u></div>
+          </div>
           <div class="meme" id="memeWrong">POV: you woke up on the wrong planet.</div>
         </section>
 
         <section class="scene" id="s2" aria-label="Operation get home">
-          <img class="plate" id="plateDevice" alt="The inventor scrambles to start a battered device">
-          <img class="plate" id="plateConfident" alt="The inventor shows a ridiculous first plan">
-          <div class="scrim-bottom"></div>
-          <div class="story" id="premise">
-            <div class="kicker">Operation Get Home</div>
-            <h2 class="display">Help him design<br>a mission home.</h2>
-            <p>How do you learn to plan a space mission?</p>
-            <p>The problem: beginners need to see the trade-offs.</p>
+          <div class="world" id="s2world">
+            <img class="plate" id="plateDevice" alt="The inventor scrambles to start a battered device">
+            <img class="plate" id="plateConfident" alt="The inventor shows a ridiculous first plan">
+            <video class="clip" id="clipPlan" playsinline muted preload="metadata" poster="assets/device.jpg" aria-label="Reacting to the star map and planning the mission"></video>
+            <div class="scrim-bottom"></div>
           </div>
-          <div class="map-card" id="mapCard">
-            <div class="kicker">Handheld // star map</div>
-            <div class="map-sky">
-              <div class="route" id="mapRoute"></div>
-              <div class="pin you"></div>
-              <div class="pin home" id="homePin"></div>
-              <div class="home-word">HOME</div>
+          <div class="action" id="s2action">
+            <div class="story" id="premise">
+              <div class="kicker">Operation Get Home</div>
+              <h2 class="display">Help him design<br>a mission home.</h2>
+              <p>How do you learn to plan a space mission?</p>
+              <p>The problem: beginners need to see the trade-offs.</p>
             </div>
+            <div class="map-card" id="mapCard">
+              <div class="kicker">Handheld // star map</div>
+              <div class="map-sky">
+                <svg class="map-svg" id="mapSvg" viewBox="0 0 640 280" preserveAspectRatio="none" aria-hidden="true">
+                  <path id="mapPath" d="M 54 214 C 150 196, 230 108, 330 96 C 450 80, 520 58, 588 46"></path>
+                </svg>
+                <div class="ship map-craft" id="mapCraft"></div>
+                <div class="pin you"></div>
+                <div class="pin home" id="homePin"></div>
+                <div class="home-word">HOME</div>
+              </div>
+            </div>
+            <div class="stamp" id="draftStamp">FIRST DRAFT<br>Rocket. House on top.<br>Probably fine.</div>
           </div>
-          <div class="stamp" id="draftStamp">FIRST DRAFT<br>Rocket. House on top.<br>Probably fine.</div>
           <div class="meme" id="memeConfidence">Confidence: 100%. Plan: loading…</div>
         </section>
 
         <section class="scene" id="s3" aria-label="Chaos becomes gameplay">
-          <img class="plate" id="plateSimBg" alt="">
+          <div class="world" id="s3world">
+            <img class="plate" id="plateSimBg" alt="">
+          </div>
           <div class="tag">Concept simulation • not orbital physics</div>
           <div class="console" id="console">
             <aside class="stack">
@@ -262,7 +347,12 @@
             <div class="sim">
               <div class="sim-head"><h3>MISSION CONSOLE</h3><span id="simStatus">ILLUSTRATIVE GAME UNITS</span></div>
               <div class="orbit" id="orbit">
-                <div class="blob a"></div><div class="blob b"></div>
+                <canvas id="orbitFx" aria-hidden="true"></canvas>
+                <div class="blob a"></div><div class="blob b" id="homeBlob"></div>
+                <svg id="routeSvg" viewBox="0 0 640 280" preserveAspectRatio="none" aria-hidden="true">
+                  <path id="routeHome" d="M 54 214 C 150 196, 230 108, 330 96 C 450 80, 520 58, 588 46"></path>
+                  <path id="routeCrater" d="M 54 214 C 160 200, 250 176, 340 188 C 430 200, 490 236, 548 258"></path>
+                </svg>
                 <div class="ship" id="ship"></div>
                 <div class="puff" id="puff"><i></i><i></i><i></i></div>
               </div>
@@ -273,21 +363,26 @@
                   <div class="row load" id="loadRow"><span>LOAD</span><div class="bar"><i id="loadBar"></i></div><b id="loadVal">52</b></div>
                 </div>
                 <div class="glass">
-                  <div class="eq">More supplies <b>↑</b><br>More load <b>↑</b><br>The plan adjusts</div>
-                  <span class="fine">A learning rule inside the game. Not a real spacecraft measurement.</span>
+                  <div class="eq" id="eqCopy">More supplies <b>↑</b><br>More load <b>↑</b><br>The plan adjusts</div>
+                  <span class="fine" id="eqFine">A learning rule inside the game. Not a real spacecraft measurement.</span>
                 </div>
               </div>
               <div class="badge" id="improved">IMPROVED RESULT</div>
             </div>
           </div>
           <div id="reaction">
-            <img class="plate" id="plateFail" alt="The inventor reacts after a harmless failed attempt">
+            <div class="world" id="reactWorld">
+              <img class="plate" id="plateFail" alt="The inventor reacts after a harmless failed attempt">
+            </div>
             <div class="attempt">ATTEMPT 01</div>
             <div class="meme" id="memePlan">Okay. New plan.</div>
           </div>
           <div id="modes">
             <div class="kicker">Proposed play modes</div>
-            <div class="mode-banner">GO SOLO &nbsp;/&nbsp; BRING YOUR CREW — UP TO 4 PLAYERS</div>
+            <div class="mode-banner">
+              <div class="solo-line" id="goSolo">GO SOLO</div>
+              <div class="crew-line" id="orCrew">OR BRING YOUR CREW — UP TO 4 PLAYERS</div>
+            </div>
             <div class="mode-grid">
               <article class="mode" id="soloCard">
                 <div class="kicker">Complete alone</div>
@@ -307,7 +402,11 @@
                 <div class="kicker">Player slots</div>
                 <div class="slots" id="slots"></div>
               </div>
-              <div class="shared" id="sharedCall"><b>SHARED DECISION</b><br>Waiting for the crew…</div>
+              <div class="shared" id="sharedCall"><b>SHARED MISSION PLAN</b><br><span id="sharedText">One player, then the crew.</span>
+                <div class="plan-chips" id="planChips">
+                  <i>P1 · Inspect</i><i>P2 · Supplies</i><i>P3 · Route</i><i>P4 · Confirm</i>
+                </div>
+              </div>
               <div class="react" id="react"><img id="plateReact" alt=""></div>
             </div>
             <div class="proposed">Proposed features. The solo mission is the complete experience.</div>
@@ -315,7 +414,9 @@
         </section>
 
         <section class="scene" id="s4" aria-label="Why the game exists">
-          <img class="plate" id="plateCapable" alt="The inventor studies a mission map, more capable now">
+          <div class="world" id="s4world">
+            <img class="plate" id="plateCapable" alt="The inventor studies a mission map, more capable now">
+          </div>
           <div class="scrim-left"></div>
           <div class="story">
             <div class="kicker">Why the game exists</div>
@@ -334,8 +435,11 @@
         </section>
 
         <section class="scene" id="s5" aria-label="What we will build">
-          <img class="plate" id="plateBench" alt="The inventor assembles the plan in his round laboratory">
-          <img class="plate" id="plateLaunch" alt="The inventor stands by a small homemade flyer, ready for home">
+          <div class="world" id="s5world">
+            <img class="plate" id="plateBench" alt="The inventor assembles the plan in his round laboratory">
+            <img class="plate" id="plateLaunch" alt="The inventor stands by a small homemade flyer, ready for home">
+            <video class="clip" id="clipLaunch" playsinline muted preload="metadata" poster="assets/workbench.jpg" aria-label="Preparing the spacecraft and launching"></video>
+          </div>
           <div class="scrim-left" id="benchScrim"></div>
           <div class="miles" id="miles">
             <div class="kicker">Hackathon implementation plan</div>
@@ -355,10 +459,14 @@
           <header class="crew-head">
             <h2 class="display">The crew behind the chaos</h2>
             <p>Six real people • One mission home</p>
+            <p class="credits-note">Project team · separate from the four player seats</p>
           </header>
           <div class="crew-grid" id="crewGrid"></div>
         </section>
 
+        <canvas id="atmosphere" aria-hidden="true"></canvas>
+        <div id="engineGlow"></div>
+        <div class="ship" id="relay" aria-hidden="true"></div>
         <div id="subtitle" aria-live="polite"></div>
         <div id="timeBug">00:00 / 01:25</div>
         <div id="pauseFlag">PAUSED</div>
@@ -369,7 +477,8 @@
           <div class="lockup">
             <div class="kicker">NASA Space Apps Cairo • Registration pitch</div>
             <h1 class="display">The Odyssey<br>of Meat-a-Roid</h1>
-            <p>An 85-second animated concept film. Proposed game. Not a NASA endorsement.</p>
+            <p>An 85-second concept film. Proposed game. Not a NASA endorsement.</p>
+            <p>Local clips play under the captions when <b>assets/clips</b> is filled. Until then, the still plates hold the shot. Moving a still is not a performance.</p>
             <p>The score starts when he wakes: a bow-string, then a playful comedy bed. Optional voice-over: <b>assets/narration.mp3</b></p>
             <button id="startBtn" type="button">Start the film</button>
           </div>
@@ -395,7 +504,10 @@
      * Arabic is the voice-over script. Drop a recording at assets/narration.mp3.
      * The score is synthesized in this page after Start. It is original: a bow-string
      * at the wake-up, then a comedy bed and effects. It is not music from another film.
-     * Replace TEAM names, titles, and photo paths. Blank photo = labeled placeholder.
+     * TEAM titles come from the handwritten role list, plus Team Lead for Omar. Blank photo = labeled placeholder.
+     * MEDIA is the clip list. Each entry has source, scene start, timeline duration,
+     * and source in-point. A missing file keeps the still plates. Those plates are
+     * not facial or body animation.
      */
     const CONFIG = {
       duration: 85,
@@ -444,13 +556,24 @@
       ]
     };
 
+    /**
+     * Names follow the portrait files. Titles are the handwritten role list,
+     * with Team Lead added for Omar Khaled.
+     * A missing photo falls back to a labeled frame.
+     */
     const TEAM = [
-      { name: "ADD NAME", title: "ADD TITLE", photo: "" },
-      { name: "ADD NAME", title: "ADD TITLE", photo: "" },
-      { name: "ADD NAME", title: "ADD TITLE", photo: "" },
-      { name: "ADD NAME", title: "ADD TITLE", photo: "" },
-      { name: "ADD NAME", title: "ADD TITLE", photo: "" },
-      { name: "ADD NAME", title: "ADD TITLE", photo: "" }
+      { name: "Omar Khaled", title: "Team Lead, Software Engineer", photo: "assets/team-01.jpg" },
+      { name: "Abdullah Waleed", title: "Art Director", photo: "assets/team-02.jpg" },
+      { name: "Shahnda Elmasry", title: "Scientific Researcher", photo: "assets/team-03.jpg" },
+      { name: "Engy Refaai", title: "Game Developer", photo: "assets/team-04.jpg" },
+      { name: "Rana Emad", title: "Data Science", photo: "assets/team-05.jpg" },
+      { name: "Rokiya Abdelsattar", title: "Content Creator", photo: "assets/team-06.jpg" }
+    ];
+
+    const MEDIA = [
+      { id: "wake", src: "assets/clips/wake.mp4", sceneStart: 0, duration: 11, inPoint: 0, label: "Waking up on the alien planet" },
+      { id: "plan", src: "assets/clips/plan.mp4", sceneStart: 11, duration: 9, inPoint: 0, label: "Reacting to the star map and planning the mission" },
+      { id: "launch", src: "assets/clips/launch.mp4", sceneStart: 57, duration: 16, inPoint: 0, label: "Preparing the spacecraft and launching" }
     ];
 
     const $ = (id) => document.getElementById(id);
@@ -479,18 +602,111 @@
     }
     const slotNodes = [...slotsHost.children];
 
+    const crewColors = ["#7af6ff", "#ff6b9d", "#ff9a62", "#d6ff7a", "#c9a6ff", "#ffd36a"];
     function mountTeam() {
       $("crewGrid").innerHTML = TEAM.map((m, i) => {
         const n = String(i + 1).padStart(2, "0");
+        const title = m.title || "Title pending";
         const media = m.photo
-          ? '<img src="' + m.photo + '" alt="' + m.name + '">'
+          ? '<img src="' + m.photo + '" alt="Portrait of ' + m.name + '">'
           : '<div class="ph"><span>PHOTO ' + n + '</span></div>';
-        return '<article class="member" data-slot="' + n + '"><div class="photo">' + media +
-          '</div><h3>' + m.name + '</h3><p class="title">' + m.title + '</p><div class="slot-id">SLOT ' + n + '</div></article>';
+        return '<article class="member" tabindex="0" role="button" aria-pressed="false" aria-label="' + m.name + ", " + title + '">' +
+          '<div class="shell"><div class="photo">' + media +
+          '<span class="sheen" aria-hidden="true"></span>' +
+          '<span class="brackets" aria-hidden="true"><i></i><i></i><i></i><i></i></span>' +
+          '<span class="lock" aria-hidden="true"><b class="idle">READY</b><b class="on">LOCKED</b></span>' +
+          '</div><h3>' + m.name + '</h3><p class="title">' + title + '</p></div></article>';
       }).join("");
-      members.splice(0, members.length, ...document.querySelectorAll(".member"));
+      members.splice(0, members.length, ...document.querySelectorAll("#crewGrid .member"));
+      members.forEach((m, i) => {
+        m.style.setProperty("--pick", crewColors[i % crewColors.length]);
+        const choose = () => {
+          const turnOn = !m.classList.contains("locked");
+          members.forEach((other) => {
+            other.classList.remove("locked");
+            other.setAttribute("aria-pressed", "false");
+          });
+          if (turnOn) {
+            m.classList.add("locked");
+            m.setAttribute("aria-pressed", "true");
+          }
+        };
+        m.addEventListener("click", choose);
+        m.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") { e.preventDefault(); choose(); }
+        });
+        const img = m.querySelector("img");
+        if (!img) return;
+        img.addEventListener("error", () => {
+          const n = String(i + 1).padStart(2, "0");
+          const ph = document.createElement("div");
+          ph.className = "ph";
+          ph.innerHTML = "<span>PHOTO " + n + "</span>";
+          img.replaceWith(ph);
+        });
+      });
     }
     mountTeam();
+
+    const CLIP_NODES = { wake: "clipWake", plan: "clipPlan", launch: "clipLaunch" };
+    MEDIA.forEach((clip) => {
+      clip.el = $(CLIP_NODES[clip.id]);
+      clip.failed = !clip.el;
+      clip.ready = false;
+      clip.blocked = false;
+      clip.seekGen = -1;
+      clip.active = false;
+      if (!clip.el) return;
+      clip.el.addEventListener("loadeddata", () => { clip.ready = true; clip.failed = false; });
+      clip.el.addEventListener("canplay", () => { clip.ready = true; });
+      clip.el.addEventListener("error", () => { clip.failed = true; clip.ready = false; try { clip.el.pause(); } catch (err) { /* already stopped */ } });
+      clip.el.src = clip.src;
+      clip.el.load();
+    });
+    let videoSeekGen = 0;
+
+    function clipById(id) { return MEDIA.find((clip) => clip.id === id); }
+    function clipCover(id, now) {
+      const clip = clipById(id);
+      if (!clip || clip.failed || clip.blocked || !clip.ready) return 0;
+      const local = now - clip.sceneStart;
+      return local >= 0 && local < clip.duration ? 1 : 0;
+    }
+    function syncVideos(now) {
+      MEDIA.forEach((clip) => {
+        const v = clip.el;
+        if (!v) return;
+        const local = now - clip.sceneStart;
+        const active = !clip.failed && local >= 0 && local < clip.duration;
+        clip.active = active;
+        if (!active || clip.failed) {
+          if (!v.paused) v.pause();
+          v.style.opacity = "0";
+          return;
+        }
+        v.style.opacity = clip.ready && !clip.blocked ? "1" : "0";
+        if (!clip.ready) return;
+        let target = clip.inPoint + Math.max(0, local);
+        if (Number.isFinite(v.duration) && v.duration > 0.2) target = Math.min(target, Math.max(0, v.duration - 0.05));
+        const drift = Math.abs((v.currentTime || 0) - target);
+        const needSeek = clip.seekGen !== videoSeekGen || drift > 0.2;
+        if (needSeek && v.readyState >= 1 && drift > 0.07) {
+          try {
+            v.currentTime = target;
+            clip.seekGen = videoSeekGen;
+          } catch (err) { /* metadata not seekable yet; try again next frame */ }
+        } else if (!needSeek || drift <= 0.07) {
+          clip.seekGen = videoSeekGen;
+        }
+        const hold = Number.isFinite(v.duration) && v.duration > 0.2 && target >= v.duration - 0.08;
+        if (playing && !hold) {
+          if (v.paused) {
+            const attempt = v.play();
+            if (attempt && attempt.catch) attempt.catch(() => { clip.blocked = true; });
+          }
+        } else if (!v.paused) v.pause();
+      });
+    }
 
     const subtitle = $("subtitle");
     const seek = $("seek");
@@ -522,47 +738,255 @@
       return Math.min(inn, out);
     }
 
+    function hash(n) {
+      const x = Math.sin(n * 127.1) * 43758.5453123;
+      return x - Math.floor(x);
+    }
+    function setCam(node, x, y, s) {
+      if (!node) return;
+      node.style.transform = "translate(" + x.toFixed(2) + "%, " + y.toFixed(2) + "%) scale(" + s.toFixed(4) + ")";
+    }
+    function pathLen(path) {
+      if (!path) return 0;
+      if (!(path._len > 1)) {
+        try {
+          const len = path.getTotalLength();
+          if (len > 1) path._len = len;
+        } catch (err) { return 0; }
+      }
+      return path._len || 0;
+    }
+    function drawPath(path, amount) {
+      if (!path) return;
+      const len = pathLen(path);
+      if (!(len > 1)) return;
+      const p = clamp(amount, 0, 1);
+      path.style.strokeDasharray = String(len);
+      path.style.strokeDashoffset = String(len * (1 - p));
+      path.style.opacity = p > 0.012 ? "1" : "0";
+    }
+    function pointOn(path, amount, host) {
+      const len = pathLen(path);
+      if (!path || !(len > 1)) return { x: 0.08, y: 0.76, ang: -12 };
+      const d = clamp(amount, 0, 1) * len;
+      const a = path.getPointAtLength(Math.max(0, d - 0.8));
+      const b = path.getPointAtLength(Math.min(len, d + 0.8));
+      const p = path.getPointAtLength(d);
+      const w = host && host.clientWidth ? host.clientWidth : 640;
+      const h = host && host.clientHeight ? host.clientHeight : 280;
+      const ang = Math.atan2((b.y - a.y) * (h / 280), (b.x - a.x) * (w / 640)) * 180 / Math.PI;
+      return { x: p.x / 640, y: p.y / 280, ang: ang };
+    }
+    function placeShip(node, pt, op, extra) {
+      if (!node) return;
+      setOp(node, op);
+      node.style.left = (pt.x * 100) + "%";
+      node.style.top = (pt.y * 100) + "%";
+      node.style.transform = "translate(-50%, -50%) rotate(" + (pt.ang + (extra || 0)) + "deg)";
+    }
+    function fitCanvas(canvas) {
+      const rect = canvas.getBoundingClientRect();
+      const w = Math.max(2, Math.round(rect.width));
+      const h = Math.max(2, Math.round(rect.height));
+      if (canvas.width !== w || canvas.height !== h) {
+        canvas.width = w;
+        canvas.height = h;
+      }
+      return { w: w, h: h, g: canvas.getContext("2d") };
+    }
+    function renderAtmosphere(now) {
+      const canvas = $("atmosphere");
+      if (!canvas) return;
+      const box = fitCanvas(canvas);
+      const g = box.g;
+      if (!g || box.w < 4) return;
+      g.clearRect(0, 0, box.w, box.h);
+      const dustN = 26;
+      for (let i = 0; i < dustN; i++) {
+        const speed = 8 + hash(i + 3) * 18;
+        const x = (hash(i + 1) * box.w + now * speed) % box.w;
+        const y = (hash(i + 11) * box.h + now * (2 + hash(i + 6) * 5)) % box.h;
+        g.globalAlpha = 0.1 + hash(i + 8) * 0.16;
+        g.fillStyle = i % 5 === 0 ? "#ffb48a" : "#f4ecff";
+        g.beginPath();
+        g.arc(x, y, 0.7 + hash(i + 4) * 1.5, 0, Math.PI * 2);
+        g.fill();
+      }
+      const launch = now >= 69.1 && now < 73;
+      if (launch) {
+        const n = 14;
+        for (let i = 0; i < n; i++) {
+          const life = (now * 3.2 + hash(i + 2)) % 1;
+          const x = box.w * (0.46 + (hash(i + 15) - 0.5) * 0.16);
+          const y = box.h * (0.72 + life * 0.28);
+          g.globalAlpha = (1 - life) * 0.55;
+          g.fillStyle = i % 2 ? "#ff9a62" : "#ff6b9d";
+          g.beginPath();
+          g.arc(x, y, 2.2 * (1 - life) + 0.6, 0, Math.PI * 2);
+          g.fill();
+        }
+      }
+      g.globalAlpha = 1;
+    }
+    function renderGrain(now) {
+      const g = $("grain");
+      if (!g) return;
+      const step = Math.floor(now * 11);
+      const gx = [0, 2.4, -1.8, 1.5, -2.2][step % 5];
+      const gy = [0, -1.6, 2.2, 1.1, -0.9][step % 5];
+      g.style.transform = "translate(" + gx + "%, " + gy + "%)";
+      g.style.opacity = now >= 76 ? "0.035" : "0.07";
+    }
+    function renderGlow(now) {
+      const pulse = 0.5 + 0.5 * Math.sin(now * 2.4);
+      const map = $("mapCard");
+      if (map) {
+        const on = now >= 11.5 && now < 15.1;
+        map.style.boxShadow = on
+          ? "0 1em 2.4em rgba(0,0,0,.35), inset 0 0 " + (0.7 + pulse * 0.9).toFixed(2) + "em rgba(122,246,255," + (0.16 + pulse * 0.28).toFixed(2) + ")"
+          : "";
+      }
+      const head = document.querySelector(".sim-head");
+      if (head) {
+        const on = now >= 20.2 && now < 38.3;
+        head.style.boxShadow = on ? "inset 0 -0.12em 0.6em rgba(122,246,255," + (0.12 + pulse * 0.28).toFixed(2) + ")" : "";
+      }
+      const engine = range(now, 69.15, 69.6) * (1 - range(now, 72.5, 73));
+      setOp($("engineGlow"), engine * (0.72 + 0.28 * Math.sin(now * 17)));
+    }
+    function placeRelay(now) {
+      const relay = $("relay");
+      if (!relay) return;
+      let op = 0;
+      let x = 50;
+      let y = 40;
+      let rot = -12;
+      let s = 1;
+      if (now >= 19.35 && now < 20.9) {
+        const p = ease(range(now, 19.35, 20.55));
+        op = range(now, 19.35, 19.6) * (1 - range(now, 20.5, 20.9));
+        x = lerp(67, 72, p);
+        y = lerp(27, 41, p);
+        rot = lerp(-24, -8, p);
+      } else if (now >= 44.2 && now < 46.15) {
+        const p = ease(range(now, 44.2, 45.75));
+        op = range(now, 44.2, 44.5) * (1 - range(now, 45.7, 46.15));
+        x = lerp(70, 28, p);
+        y = lerp(40, 48, p);
+        rot = lerp(10, -18, p);
+        s = lerp(1, 0.72, p);
+      } else if (now >= 68.6 && now < 72.9) {
+        const p = ease(range(now, 68.75, 72.3));
+        op = range(now, 68.6, 69.1) * (1 - range(now, 72.35, 72.9));
+        x = lerp(76, 56, p);
+        y = lerp(70, 32, p);
+        rot = lerp(20, -48, p);
+        s = lerp(0.75, 1.12, p);
+      }
+      relay.style.opacity = String(op);
+      relay.style.left = x + "%";
+      relay.style.top = y + "%";
+      relay.style.transform = "translate(-50%, -50%) rotate(" + rot + "deg) scale(" + s + ")";
+    }
+    function setHoldState() {
+      const ended = t >= CONFIG.duration - 0.001;
+      document.body.classList.toggle("ended", started && ended);
+      document.body.classList.toggle("paused", started && !playing && !ended);
+    }
+    function drawOrbit(now, shipPt, flying) {
+      const canvas = $("orbitFx");
+      if (!canvas || now < 19.4 || now > 45.4) return;
+      const box = fitCanvas(canvas);
+      const g = box.g;
+      if (!g || box.w < 4 || box.h < 4) return;
+      g.clearRect(0, 0, box.w, box.h);
+      for (let i = 0; i < 36; i++) {
+        const x = (hash(i + 2) * box.w + now * (2 + hash(i) * 6)) % box.w;
+        const y = hash(i + 9) * box.h;
+        g.globalAlpha = 0.2 + hash(i + 4) * 0.5;
+        g.fillStyle = "#ffffff";
+        g.fillRect(x, y, 1.3, 1.3);
+      }
+      if (flying && shipPt) {
+        const sx = shipPt.x * box.w;
+        const sy = shipPt.y * box.h;
+        const ang = (shipPt.ang + 180) * Math.PI / 180;
+        for (let i = 0; i < 8; i++) {
+          const back = 8 + i * 5;
+          g.globalAlpha = 0.45 * (1 - i / 8);
+          g.fillStyle = i % 2 ? "#ff9a62" : "#ff6b9d";
+          g.beginPath();
+          g.arc(sx + Math.cos(ang) * back, sy + Math.sin(ang) * back, 2.4 - i * 0.18, 0, Math.PI * 2);
+          g.fill();
+        }
+      }
+      g.globalAlpha = 1;
+    }
+
     function renderScene1(now) {
       const asleep = $("plateAsleep"), one = $("plateOne"), awake = $("plateAwake");
       const wide = $("plateWide"), look = $("plateLook");
+      const cover = clipCover("wake", now);
+      const plates = 1 - cover;
       const eye = range(now, 1.15, 1.55) * (1 - range(now, 2.05, 2.4));
       const both = range(now, 2.65, 3.15);
       const wideIn = range(now, 4.35, 4.55);
       const lookIn = range(now, 7.95, 8.12);
-      setOp(asleep, (1 - wideIn) * (1 - Math.max(eye, both)));
-      setOp(one, (1 - wideIn) * eye * (1 - both));
-      setOp(awake, (1 - wideIn) * both);
-      setOp(wide, wideIn * (1 - lookIn));
-      setOp(look, lookIn);
-      setOp($("morningLabel"), 1 - range(now, 3.6, 4.3));
-      setTf(asleep, "scale(" + (1.04 + range(now, 0, 4.3) * 0.06) + ")");
-      setTf(one, "scale(1.08)");
-      setTf(awake, "scale(" + (1.06 + range(now, 2.7, 4.3) * 0.04) + ")");
+      setOp(asleep, plates * (1 - wideIn) * (1 - Math.max(eye, both)));
+      setOp(one, plates * (1 - wideIn) * eye * (1 - both));
+      setOp(awake, plates * (1 - wideIn) * both);
+      setOp(wide, plates * wideIn * (1 - lookIn));
+      setOp(look, plates * lookIn);
+      setOp($("morningLabel"), (1 - range(now, 3.6, 4.3)) * (1 - lookIn));
+      let bx = 0, by = 0.4, bs = 1.14;
+      if (now < 4.35) {
+        const p = range(now, 0, 4.15);
+        bs = lerp(1.1, 1.24, p);
+        by = lerp(1.4, 0.2, p);
+      } else if (now < 7.95) {
+        const p = ease(range(now, 4.35, 7.55));
+        bs = lerp(1.2, 1, p);
+        bx = lerp(2.4, -0.8, p);
+        by = lerp(0.3, 0, p);
+      } else {
+        const p = ease(range(now, 7.95, 8.4));
+        bs = lerp(1.16, 1.045, p);
+        by = lerp(0.5, 0, p);
+      }
+      setCam($("s1world"), bx, by, bs);
+      setCam($("s1action"), bx * 0.4, by * 0.32, 1 + (bs - 1) * 0.25);
       const shadowX = -30 + range(now, 3.15, 4.35) * 160;
       setTf($("shadowPass"), "translateX(" + shadowX + "%) skewX(-14deg)");
       setOp($("shadowPass"), range(now, 3.15, 3.35) * (1 - range(now, 4.2, 4.45)) * (1 - wideIn));
-      setTf(wide, "scale(" + (1.08 - range(now, 4.4, 7.9) * 0.06) + ") translateX(" + ((0.5 - range(now, 4.4, 7.9)) * 2) + "%)");
       const wobble = Math.sin(now * 7) * 8;
       setTf($("critter"), "translateX(" + lerp(-12, 78, ease(range(now, 5.1, 7.7))) + "em) rotate(" + wobble + "deg)");
-      setOp($("critter"), wideIn * (1 - lookIn));
-      const punch = 1.12 - ease(range(now, 8, 8.35)) * 0.08;
-      setTf(look, "scale(" + (now > 8.15 && now < 10.9 ? punch : punch) + ")");
+      setOp($("critter"), plates * wideIn * (1 - lookIn));
       const meme = range(now, 8.28, 8.48) * (1 - range(now, 10.75, 10.98));
       setOp($("memeWrong"), meme);
       setTf($("memeWrong"), "translateX(-50%) rotate(" + lerp(-8, -1.4, ease(range(now, 8.28, 8.6))) + "deg) scale(" + lerp(0.86, 1, ease(range(now, 8.28, 8.55))) + ")");
     }
 
     function renderScene2(now) {
-      const l = now - 11;
       const swap = range(now, 14.45, 14.75);
-      setOp($("plateDevice"), 1 - swap);
-      setOp($("plateConfident"), swap);
-      setTf($("plateDevice"), "scale(" + (1.06 - range(l, 0, 3.4) * 0.04) + ")");
-      setTf($("plateConfident"), "scale(" + (1.08 - ease(range(now, 14.5, 19.5)) * 0.05) + ")");
-      setOp($("premise"), range(now, 11.2, 11.7));
-      setOp($("mapCard"), range(now, 11.7, 12.3) * (1 - range(now, 14.3, 14.8)));
-      setTf($("mapCard"), "translateY(" + (1 - ease(range(now, 11.7, 12.5))) * 2 + "em)");
-      setOp($("mapRoute"), range(now, 12.4, 13.1));
+      const cover = clipCover("plan", now);
+      const plates = 1 - cover;
+      setOp($("plateDevice"), plates * (1 - swap));
+      setOp($("plateConfident"), plates * swap);
+      const push = ease(range(now, 11.15, 19.4));
+      setCam($("s2world"), lerp(0.6, -1.8, push), lerp(0.3, -0.9, push), lerp(1.02, 1.1, push));
+      setCam($("s2action"), lerp(0.15, -0.45, push), lerp(0.1, -0.2, push), 1);
+      setOp($("premise"), range(now, 11.2, 11.7) * (1 - range(now, 19.35, 19.9)));
+      const mapOn = range(now, 11.7, 12.3) * (1 - range(now, 14.3, 14.8));
+      setOp($("mapCard"), mapOn);
+      const enter = 1 - ease(range(now, 11.7, 12.5));
+      const grow = ease(range(now, 11.8, 14.2));
+      setTf($("mapCard"), "translateY(" + (enter * 2) + "em) scale(" + lerp(0.98, 1.07, grow) + ")");
+      const mapPath = $("mapPath");
+      drawPath(mapPath, range(now, 12.15, 13.55));
+      const sky = document.querySelector(".map-sky");
+      const travel = ease(range(now, 12.95, 14.2));
+      const craftOn = range(now, 12.9, 13.15) * (1 - range(now, 14.25, 14.6)) * mapOn;
+      placeShip($("mapCraft"), pointOn(mapPath, travel, sky), craftOn, 0);
       const ping = 0.45 + Math.sin(now * 6) * 0.08;
       setTf($("homePin"), "scale(" + (0.8 + range(now, 12.8, 13.3) * ping) + ")");
       setOp($("draftStamp"), range(now, 15.15, 15.55) * (1 - range(now, 19.4, 19.9)));
@@ -572,20 +996,21 @@
       setTf($("memeConfidence"), "translateX(-50%) rotate(-1.2deg) scale(" + lerp(0.9, 1, ease(range(now, 16.35, 16.7))) + ")");
     }
 
-    function bars(supply, load) {
+    function bars(supply, load, fuel) {
       $("supBar").style.setProperty("--w", supply + "%");
       $("loadBar").style.setProperty("--w", load + "%");
-      $("fuelBar").style.setProperty("--w", "70%");
+      $("fuelBar").style.setProperty("--w", fuel + "%");
       $("supVal").textContent = String(Math.round(supply));
       $("loadVal").textContent = String(Math.round(load));
-      $("fuelVal").textContent = "70";
+      $("fuelVal").textContent = String(Math.round(fuel));
       $("loadRow").classList.toggle("ok", load < 80);
       $("loadRow").classList.toggle("load", load >= 80);
     }
 
     function renderScene3(now) {
+      const drift = Math.sin(now * 0.28) * 1.15;
+      setCam($("s3world"), drift, Math.cos(now * 0.22) * 0.35, 1.08);
       setOp($("plateSimBg"), 0.22);
-      setTf($("plateSimBg"), "scale(1.08)");
       const showReact = range(now, 32.25, 32.45) * (1 - range(now, 35.35, 35.6));
       const showModes = range(now, 38.25, 38.85) * (1 - range(now, 44.65, 45));
       const hideForReact = range(now, 32.15, 32.4) * (1 - range(now, 35.35, 35.65));
@@ -593,85 +1018,152 @@
       setOp($("console"), showConsole);
       setOp($("reaction"), showReact);
       setOp($("modes"), showModes);
-      $("d1").classList.toggle("on", now >= 20.4);
-      $("d2").classList.toggle("on", now >= 23.4);
-      $("d3").classList.toggle("on", now >= 28.1);
+      $("d1").classList.toggle("on", now >= 20.4 && now < 38.5);
+      $("d2").classList.toggle("on", now >= 23.4 && now < 38.5);
+      $("d3").classList.toggle("on", now >= 28.1 && now < 32.2 || (now >= 37.05 && now < 38.5));
 
       let supply = 46;
       let load = 52;
-      if (now < 23.4) { supply = 46; load = 52; }
-      else if (now < 35.6) {
+      let fuel = 70;
+      if (now < 23.4) {
+        supply = 46;
+        load = 52;
+        fuel = 70;
+      } else if (now < 35.55) {
         const p = ease(range(now, 23.5, 27.4));
         supply = lerp(46, 88, p);
         load = lerp(52, 96, p);
-      } else {
-        const p = ease(range(now, 35.7, 37.3));
+        fuel = lerp(70, 22, ease(range(now, 28.35, 31.2)));
+      } else if (now < 37.12) {
+        const p = ease(range(now, 35.6, 37.02));
         supply = lerp(88, 60, p);
         load = lerp(96, 68, p);
-      }
-      bars(supply, load);
-      $("simStatus").textContent = now > 35.7 && now < 38.4 ? "RETRY • LIGHTER LOAD" : "ILLUSTRATIVE GAME UNITS";
-
-      const ship = $("ship");
-      const puff = $("puff");
-      let x = 3, y = 8, rot = -18, shipOp = 1;
-      if (now < 28.2) shipOp = 0.35;
-      else if (now < 32.3) {
-        const p = ease(range(now, 28.3, 31.15));
-        x = lerp(3, 28, p);
-        y = 7 - Math.sin(p * Math.PI) * 4;
-        rot = lerp(-18, 20, p);
-        const crash = range(now, 31.15, 31.75);
-        if (crash > 0) { y = lerp(y, 12.2, crash); rot = lerp(rot, 76, crash); x = lerp(x, 32, crash); }
-      } else if (now < 35.6) shipOp = 0;
-      else if (now < 37.15) {
-        const p = range(now, 35.65, 37.05);
-        x = lerp(32, 4, p);
-        y = lerp(12.2, 7, p);
-        rot = lerp(76, -18, p);
-        shipOp = 1;
+        fuel = lerp(22, 70, p);
       } else {
-        const p = ease(range(now, 37.1, 38.35));
-        x = lerp(4, 40, p);
-        y = 7 - Math.sin(p * Math.PI) * 4.2;
-        rot = lerp(-16, 6, p);
+        supply = 60;
+        load = 68;
+        fuel = lerp(70, 48, ease(range(now, 37.15, 38.25)));
       }
-      setOp(ship, shipOp);
-      setTf(ship, "translate(" + x + "em," + y + "em) rotate(" + rot + "deg)");
-      setOp(puff, range(now, 31.2, 31.45) * (1 - range(now, 32.15, 32.4)));
-      setTf(puff, "translate(" + (x - 1) + "em," + (y + 1) + "em) scale(" + lerp(0.4, 1.3, range(now, 31.2, 32)) + ")");
+      bars(supply, load, fuel);
+      const sag = clamp((load - 64) / 32, 0, 1);
+      const homePath = $("routeHome");
+      const craterPath = $("routeCrater");
+      const orbit = $("orbit");
+      let progress = 0;
+      let shipOp = 0;
+      let tumble = 0;
+      let useHome = true;
+      let flying = false;
+      if (now < 28.2) {
+        drawPath(homePath, range(now, 20.55, 23) * (1 - sag));
+        drawPath(craterPath, sag * range(now, 23.55, 27.5));
+        useHome = sag < 0.55;
+        progress = 0.02;
+        shipOp = range(now, 22.2, 22.7) * showConsole;
+      } else if (now < 32.25) {
+        const p = ease(range(now, 28.3, 31.15));
+        const crash = range(now, 31.15, 31.85);
+        progress = lerp(p, 1, crash);
+        tumble = crash * 72;
+        shipOp = 1 - range(now, 31.95, 32.25);
+        useHome = false;
+        flying = crash < 0.85;
+        drawPath(homePath, 0);
+        drawPath(craterPath, Math.max(0.2, progress));
+      } else if (now < 35.55) {
+        drawPath(homePath, 0);
+        drawPath(craterPath, 1);
+        shipOp = 0;
+        useHome = false;
+        progress = 1;
+      } else if (now < 37.12) {
+        const p = range(now, 35.6, 37);
+        progress = 1 - p;
+        shipOp = showConsole > 0 ? 1 : range(now, 35.55, 35.8);
+        useHome = false;
+        drawPath(homePath, 0);
+        drawPath(craterPath, 1 - range(now, 35.65, 36.95));
+      } else {
+        progress = ease(range(now, 37.12, 38.28));
+        shipOp = (progress > 0.02 ? 1 : 0) * (1 - range(now, 38.15, 38.48));
+        useHome = true;
+        flying = progress > 0.04 && progress < 0.98;
+        drawPath(craterPath, 0);
+        drawPath(homePath, Math.max(progress, range(now, 37.1, 37.45)));
+      }
+      const route = useHome ? homePath : craterPath;
+      const pt = pointOn(route, progress, orbit);
+      placeShip($("ship"), pt, shipOp, tumble);
+      drawOrbit(now, pt, flying && shipOp > 0.2);
+      const puff = $("puff");
+      const crashPt = pointOn(craterPath, 1, orbit);
+      if (puff) {
+        puff.style.left = (crashPt.x * 100) + "%";
+        puff.style.top = (crashPt.y * 100) + "%";
+        setOp(puff, range(now, 31.15, 31.4) * (1 - range(now, 32.1, 32.4)));
+        setTf(puff, "translate(-40%, -20%) scale(" + lerp(0.4, 1.35, range(now, 31.15, 32)) + ")");
+      }
+      if (now < 23.4) {
+        $("simStatus").textContent = "ILLUSTRATIVE GAME UNITS";
+        $("eqCopy").innerHTML = "Read the ground.<br>Then pack the ship.<br>The route waits";
+      } else if (now < 32.2) {
+        $("simStatus").textContent = sag > 0.72 ? "TOO HEAVY • ROUTE DROPS" : "LOAD IS CLIMBING";
+        $("eqCopy").innerHTML = "More supplies <b>↑</b><br>More load <b>↑</b><br>The route drops";
+      } else if (now < 35.55) {
+        $("simStatus").textContent = "ILLUSTRATIVE MISS";
+        $("eqCopy").innerHTML = "More supplies <b>↑</b><br>More load <b>↑</b><br>The route drops";
+      } else if (now < 37.1) {
+        $("simStatus").textContent = "REWIND • ONE CHANGE";
+        $("eqCopy").innerHTML = "Supplies <b>↓</b><br>Load <b>↓</b><br>The route lifts";
+      } else {
+        $("simStatus").textContent = "RETRY • LIGHTER LOAD";
+        $("eqCopy").innerHTML = "Supplies down <b>↓</b><br>Load down <b>↓</b><br>The route clears";
+      }
+      const punch = lerp(1.24, 1.05, ease(range(now, 32.25, 32.72)));
+      setCam($("reactWorld"), 0, lerp(0.8, 0, ease(range(now, 32.25, 32.8))), showReact > 0.05 ? punch : 1);
       setOp($("plateFail"), 1);
-      setTf($("plateFail"), "scale(" + lerp(1.18, 1.05, ease(range(now, 32.25, 32.7))) + ")");
       const meme = range(now, 32.55, 32.8) * (1 - range(now, 35.25, 35.5));
       setOp($("memePlan"), meme);
-      setTf($("memePlan"), "translateX(-50%) rotate(-1deg)");
-      setOp($("improved"), range(now, 37.15, 37.45) * (1 - range(now, 38.2, 38.45)));
+      setTf($("memePlan"), "translateX(-50%) rotate(-1deg) scale(" + lerp(0.92, 1, ease(range(now, 32.55, 32.9))) + ")");
+      setOp($("improved"), range(now, 37.55, 37.85) * (1 - range(now, 38.2, 38.45)));
 
       const reactSwap = range(now, 42.15, 42.45);
-      if ($("plateReact").dataset.face !== (reactSwap > 0.5 ? "ok" : "wait")) {
-        $("plateReact").dataset.face = reactSwap > 0.5 ? "ok" : "wait";
-        $("plateReact").src = reactSwap > 0.5 ? CONFIG.assets.plateConfident : CONFIG.assets.plateLook;
+      const reactFace = reactSwap > 0.5 ? "ok" : "wait";
+      if ($("plateReact").dataset.face !== reactFace) {
+        $("plateReact").dataset.face = reactFace;
+        $("plateReact").src = reactFace === "ok" ? CONFIG.assets.plateConfident : CONFIG.assets.plateLook;
       }
-      setOp($("react"), range(now, 41.9, 42.2) * showModes);
+      setOp($("react"), range(now, 41.9, 42.2) * (showModes > 0.2 ? 1 : 0));
       setTf($("react"), "scale(" + lerp(0.8, 1, ease(range(now, 41.9, 42.25))) + ")");
+      setOp($("goSolo"), ease(range(now, 38.4, 38.78)));
+      setOp($("orCrew"), ease(range(now, 39.12, 39.5)));
 
       slotNodes.forEach((slot, i) => {
-        const pop = ease(range(now, 39.15 + i * 0.38, 39.48 + i * 0.38));
-        const lean = ease(range(now, 41.05, 42.15));
-        slot.style.opacity = String(pop * showModes + (showModes > 0.2 && pop > 0 ? 0 : 0));
-        slot.style.transform = "translateY(" + lerp(1.2, -0.35, lean) * (i === 0 ? 0.4 : 1) + "em) scale(" + lerp(0.4, 1, pop) + ")";
-        slot.classList.toggle("on", pop > 0.65);
+        const pop = i === 0
+          ? ease(range(now, 38.45, 38.85))
+          : ease(range(now, 39.15 + (i - 1) * 0.38, 39.52 + (i - 1) * 0.38));
+        slot.style.opacity = String(pop);
+        slot.style.transform = "translate(" + lerp(0, i * 5.35, pop) + "em, " + ((1 - pop) * 0.35) + "em) scale(" + lerp(0.45, 1, pop) + ")";
+        slot.classList.toggle("on", pop > 0.72);
       });
-      const shared = $("sharedCall");
-      if (now < 41.1) shared.innerHTML = "<b>SHARED DECISION</b><br>One slot. Then the crew shows up.";
-      else if (now < 42.2) shared.innerHTML = "<b>SHARED DECISION</b><br>All four land on the supplies call.";
-      else shared.innerHTML = "<b>SHARED DECISION</b><br>Supplies 88 → 60. Load comes down.";
+      const chips = document.querySelectorAll("#planChips i");
+      chips.forEach((chip, i) => {
+        const p = ease(range(now, 40.5 + i * 0.36, 40.9 + i * 0.36));
+        chip.style.opacity = String(p);
+        chip.style.transform = "translateY(" + ((1 - p) * 0.55) + "em)";
+      });
+      const shared = $("sharedText");
+      if (now < 39.1) shared.textContent = "One seat. Solo already completes the mission.";
+      else if (now < 40.45) shared.textContent = "That seat opens into four on the same plan.";
+      else if (now < 42.15) shared.textContent = "Each player adds one call.";
+      else shared.textContent = "Together: supplies 88 → 60. The load comes down.";
     }
 
     function renderScene4(now) {
       const l = now - 45;
       setOp($("plateCapable"), 1);
-      setTf($("plateCapable"), "scale(" + (1.06 + l * 0.004) + ") translateX(" + lerp(1.5, 0, ease(range(l, 0, 2))) + "%)");
+      const push = ease(range(l, 0, 6));
+      setCam($("s4world"), lerp(1.4, -0.2, push), 0, lerp(1.08, 1.02, push));
       ["o1", "o2", "o3", "o4"].forEach((id, i) => {
         const p = ease(range(now, 46.2 + i * 1.15, 46.7 + i * 1.15));
         setOp($(id), p);
@@ -682,11 +1174,18 @@
 
     function renderScene5(now) {
       const toLaunch = range(now, 68.7, 70.1);
-      setOp($("plateBench"), 1 - toLaunch);
-      setOp($("plateLaunch"), toLaunch);
+      const cover = clipCover("launch", now);
+      const plates = 1 - cover;
+      setOp($("plateBench"), plates * (1 - toLaunch));
+      setOp($("plateLaunch"), plates * toLaunch);
       setOp($("benchScrim"), 0.95 * (1 - toLaunch));
-      setTf($("plateBench"), "scale(" + (1.05 + range(now, 57, 69) * 0.04) + ")");
-      setTf($("plateLaunch"), "scale(" + (1.08 - range(now, 69, 73) * 0.03) + ")");
+      if (now < 69) {
+        const p = range(now, 57, 68.8);
+        setCam($("s5world"), lerp(0.8, -0.5, p), lerp(0.2, 0, p), lerp(1.03, 1.09, p));
+      } else {
+        const p = ease(range(now, 69, 72.8));
+        setCam($("s5world"), lerp(-0.4, 1.4, p), lerp(0, 1.6, p), lerp(1.12, 0.98, p));
+      }
       setOp($("miles"), 1 - range(now, 68.8, 69.8));
       [["m1", 58.2, 61.3], ["m2", 62.2, 66.2], ["m3", 66.3, 68.5]].forEach(([id, inn, tick]) => {
         const card = $(id);
@@ -698,18 +1197,16 @@
         mark.style.opacity = String(tp);
         mark.style.transform = "scale(" + lerp(0.4, 1, tp) + ")";
       });
-      setOp($("launchLabel"), range(now, 70.2, 70.7));
+      setOp($("launchLabel"), range(now, 70.2, 70.7) * (1 - range(now, 72.7, 73)));
     }
 
     function renderScene6(now) {
-      const l = now - 73;
       members.forEach((m, i) => {
-        const p = now >= 76 ? 1 : ease(range(l, 0.28 + i * 0.32, 0.78 + i * 0.32));
-        m.style.opacity = String(p);
-        m.style.transform = now >= 76 ? "none" : "translateY(" + (1 - p) * 0.8 + "em)";
+        const start = 73.25 + i * 0.38;
+        const p = now >= 76 ? 1 : ease(range(now, start, start + 0.42));
+        m.style.opacity = String(Math.max(p, now >= 76 ? 1 : 0));
+        m.style.transform = now >= 76 ? "none" : "translateY(" + ((1 - p) * 0.8) + "em)";
       });
-      const g = $("grain");
-      if (g) g.style.opacity = now >= 76 ? "0.035" : "0.07";
     }
 
     function renderSubtitles(now) {
@@ -725,6 +1222,7 @@
         sc.el.style.opacity = String(a);
         sc.el.style.visibility = a > 0.01 ? "visible" : "hidden";
       });
+      syncVideos(t);
       renderScene1(t);
       renderScene2(t);
       renderScene3(t);
@@ -732,6 +1230,11 @@
       renderScene5(t);
       renderScene6(t);
       renderSubtitles(t);
+      renderAtmosphere(t);
+      renderGrain(t);
+      renderGlow(t);
+      placeRelay(t);
+      setHoldState();
       const cuts = [4.4, 8.0, 11, 14.55, 32.3, 35.55, 45, 57, 69.2, 73];
       let flash = 0;
       cuts.forEach((c) => { const d = Math.abs(t - c); if (d < 0.07) flash = Math.max(flash, 1 - d / 0.07); });
@@ -1202,11 +1705,13 @@
     }
     function play(fromStart) {
       const restart = fromStart || t >= CONFIG.duration - 0.05;
-      if (restart) t = 0;
+      if (restart) {
+        t = 0;
+        videoSeekGen++;
+      }
       armAudio();
       started = true;
       overlay.classList.add("hidden");
-      document.body.classList.remove("paused");
       playing = true;
       origin = performance.now() - t * 1000;
       cancelAnimationFrame(raf);
@@ -1220,7 +1725,6 @@
       cancelAnimationFrame(raf);
       syncAudio(false);
       scorePrepare(t, true);
-      if (started) document.body.classList.add("paused");
       render(t);
     }
     function toggle() {
@@ -1235,7 +1739,6 @@
         playing = false;
         syncAudio(false);
         scorePrepare(t, true);
-        document.body.classList.add("paused");
         render(t);
         return;
       }
@@ -1245,6 +1748,7 @@
       raf = requestAnimationFrame(tick);
     }
     function jump(next) {
+      videoSeekGen++;
       t = clamp(next, 0, CONFIG.duration);
       origin = performance.now() - t * 1000;
       if (audioArmed) {
@@ -1293,14 +1797,21 @@
       started = true;
       overlay.classList.add("hidden");
       if (preset.has("rec")) document.body.classList.add("recording");
+      videoSeekGen++;
       render(Number(preset.get("t")) || 0);
-      document.body.classList.add("paused");
     } else render(0);
 
     window.FILM = {
-      CONFIG, TEAM, render, jump,
+      CONFIG, TEAM, MEDIA, render, jump,
       getTime: () => t,
-      members: () => members.map((m) => ({ opacity: m.style.opacity, text: m.innerText })),
+      isPlaying: () => playing,
+      media: () => MEDIA.map((c) => ({
+        id: c.id, src: c.src, sceneStart: c.sceneStart, duration: c.duration, inPoint: c.inPoint, label: c.label,
+        failed: !!c.failed, ready: !!c.ready, blocked: !!c.blocked, active: !!c.active,
+        paused: c.el ? c.el.paused : true,
+        currentTime: c.el ? Number(c.el.currentTime || 0) : 0
+      })),
+      members: () => members.map((m) => ({ opacity: m.style.opacity, text: m.innerText.replace(/\s+/g, " ").trim() })),
       audio: () => ({
         state: scoreCtx ? scoreCtx.state : "unarmed",
         muted,
