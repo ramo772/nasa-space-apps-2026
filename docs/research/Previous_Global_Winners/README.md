@@ -5,7 +5,7 @@
 **Created:** 2026-11-03   **Last reviewed:** 2026-11-05  
 **Contributor:** Rana (GitHub: @Rana2340)  
 **Source:** official NASA announcements and team project pages listed in `docs/resources/sources.md`  
-**Related:** `docs/resources/sources.md`, `docs/resources/workshop-materials.md`, `docs/workshops/2026-10-30-game-simulation-design.md`, `docs/research/previous-winner-advice-esraa-ahmed.md`
+**Related:** `docs/resources/sources.md`, `docs/resources/workshop-materials.md`, `docs/workshops/2026-10-30-game-simulation-design.md`
 
 ## Purpose
 To research previous NASA Space Apps winning projects, learn from their gameplay and storytelling approaches, and gather inspiration for designing an interactive game for the **Space Mission Design Game** challenge.
@@ -13,8 +13,6 @@ To research previous NASA Space Apps winning projects, learn from their gameplay
 The research focuses on interactive games and game-like experiences, storytelling, exploration, simulation, scientific interaction, and gameplay mechanics.
 
 This is not a complete catalogue of every game submitted to NASA Space Apps. It is a selected collection of projects with useful lessons for game design.
-
-Advice from one previous participant, Esraa Ahmed, is recorded separately in [previous-winner-advice-esraa-ahmed.md](../previous-winner-advice-esraa-ahmed.md). That page is chat notes, not a case study of a verified winning project.
 
 ## Files
 
