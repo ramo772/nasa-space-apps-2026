@@ -1,0 +1,2379 @@
+{
+  "$schema": "./nasa-spacecraft-resources.schema.json",
+  "schema_version": "1.0.0",
+  "title": "NASA Spacecraft Mission Design Resource Catalog",
+  "status": "research_reference_only",
+  "source_document": {
+    "filename": "nasa-spacecraft-mission-design-reference.md",
+    "repository_path": "../research/nasa-spacecraft-mission-design-reference.md",
+    "title": "NASA Spacecraft Mission Design Reference",
+    "last_reviewed_as_stated": "2026-11-07",
+    "sha256": "9747a697851d06b729b0938187aeebb1c07c4e2f6aabef7a613fbc330cf59004",
+    "line_count": 848
+  },
+  "extraction": {
+    "date": "2026-11-07",
+    "scope": "All explicit HTTP(S) citations, plus separately listed NASA resource names lacking a direct link, in the supplied Markdown document.",
+    "deduplication": "One record per exact cited URL after removing its fragment. Retain original URL fragments, labels and every citation occurrence. Distinct paths and legacy addresses remain separate.",
+    "editorial_metadata": "IDs, resource types, categories and descriptions organize the supplied reference. Titles and citation labels preserve its wording; descriptions and caveats summarize that document, not independently opened web pages.",
+    "unlinked_mentions": "Named resources without a direct citation URL are listed separately. Related resource IDs identify starting points actually linked in the document, not inferred endpoints."
+  },
+  "verification": {
+    "status": "extracted_from_supplied_markdown",
+    "live_urls_checked": false,
+    "scientific_claims_independently_verified": false,
+    "usage_terms_checked": false,
+    "source_register": "../research/source-register.md",
+    "note": "Domain hosting does not establish who produced every underlying value. Confirm producer, version, conditions, units, uncertainty and applicable terms at the original source before accepting scientific inputs. Source review dates and program-status notes are statements from the supplied reference."
+  },
+  "summary": {
+    "linked_resources": 73,
+    "citation_occurrences": 104,
+    "distinct_cited_urls_including_fragments": 74,
+    "named_resources_without_direct_links": 7,
+    "external_references": 2,
+    "resources_by_category": {
+      "hazards": 8,
+      "materials": 3,
+      "orbits": 5,
+      "propulsion": 10,
+      "reliability": 7,
+      "research_tools": 7,
+      "servicing": 9,
+      "small_bodies": 4,
+      "space_weather": 3,
+      "spacecraft_systems": 6,
+      "stations": 8,
+      "visual_assets": 3
+    }
+  },
+  "resources": [
+    {
+      "id": "onboard-systems",
+      "title_as_cited": "NASA Basics of Space Flight — Onboard Systems",
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter11-1/",
+      "host": "science.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "spacecraft_systems",
+      "description": "Explains spacecraft subsystem functions and their relationships.",
+      "citation_labels": [
+        "NASA Basics of Space Flight — Onboard Systems",
+        "NASA Onboard Systems"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 36,
+          "section_path": [
+            "2. The core idea: a spacecraft is not one object"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Basics of Space Flight — Onboard Systems",
+          "cited_url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter11-1/"
+        },
+        {
+          "line": 541,
+          "section_path": [
+            "13. Recommended research order"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Onboard Systems",
+          "cited_url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter11-1/"
+        }
+      ]
+    },
+    {
+      "id": "science-missions",
+      "title_as_cited": "NASA Science Missions",
+      "url": "https://science.nasa.gov/missions/",
+      "host": "science.nasa.gov",
+      "resource_type": "catalog",
+      "category": "research_tools",
+      "description": "Find mission goals and official spacecraft descriptions.",
+      "citation_labels": [
+        "NASA Science Missions"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 65,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.1 Mission and spacecraft identity"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Science Missions",
+          "cited_url": "https://science.nasa.gov/missions/"
+        }
+      ]
+    },
+    {
+      "id": "nssdca-master-catalog",
+      "title_as_cited": "NSSDCA Master Catalog",
+      "url": "https://nssdc.gsfc.nasa.gov/about/about_nmc.html",
+      "host": "nssdc.gsfc.nasa.gov",
+      "resource_type": "catalog",
+      "category": "research_tools",
+      "description": "Find spacecraft and experiment identity records.",
+      "citation_labels": [
+        "NSSDCA Master Catalog"
+      ],
+      "caveats_from_reference": [
+        "Includes NASA and non-NASA missions; preserve the actual operator."
+      ],
+      "source_occurrences": [
+        {
+          "line": 66,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.1 Mission and spacecraft identity"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NSSDCA Master Catalog",
+          "cited_url": "https://nssdc.gsfc.nasa.gov/about/about_nmc.html"
+        }
+      ]
+    },
+    {
+      "id": "ntrs",
+      "title_as_cited": "NASA Technical Reports Server — NTRS",
+      "url": "https://ntrs.nasa.gov/",
+      "host": "ntrs.nasa.gov",
+      "resource_type": "portal",
+      "category": "research_tools",
+      "description": "Find engineering, design, test, anomaly and reliability reports.",
+      "citation_labels": [
+        "NASA Technical Reports Server — NTRS",
+        "NTRS"
+      ],
+      "caveats_from_reference": [
+        "Record detail and age vary; verify each report's producer."
+      ],
+      "source_occurrences": [
+        {
+          "line": 67,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.1 Mission and spacecraft identity"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Technical Reports Server — NTRS",
+          "cited_url": "https://ntrs.nasa.gov/"
+        },
+        {
+          "line": 339,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.6 NASA sources for failure and repair knowledge"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NTRS",
+          "cited_url": "https://ntrs.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "small-spacecraft-state-of-the-art",
+      "title_as_cited": "NASA Small Spacecraft State of the Art 2026",
+      "url": "https://www.nasa.gov/smallsat-institute/sst-soa/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "spacecraft_systems",
+      "description": "Survey small-spacecraft technologies, component tables, maturity and trade-offs.",
+      "citation_labels": [
+        "NASA Small Spacecraft State of the Art 2026",
+        "NASA Small Spacecraft SoA",
+        "NASA State-of-the-Art of Small Spacecraft Technology 2026",
+        "Small Spacecraft SoA 2026"
+      ],
+      "caveats_from_reference": [
+        "The reference cites the 2026 edition and an approximate 180 kg scope; some values originate from manufacturers or public literature rather than NASA measurements."
+      ],
+      "source_occurrences": [
+        {
+          "line": 83,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.2 Mass, dimensions, and configuration"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Small Spacecraft State of the Art 2026",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/"
+        },
+        {
+          "line": 103,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.3 Electrical power and energy"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Small Spacecraft SoA",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/"
+        },
+        {
+          "line": 358,
+          "section_path": [
+            "6. Spacecraft components and their data sources"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA State-of-the-Art of Small Spacecraft Technology 2026",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/"
+        },
+        {
+          "line": 542,
+          "section_path": [
+            "13. Recommended research order"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "Small Spacecraft SoA 2026",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/"
+        },
+        {
+          "line": 732,
+          "section_path": [
+            "19. Additional NASA data worth tracking"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Small Spacecraft SoA",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/"
+        },
+        {
+          "line": 734,
+          "section_path": [
+            "19. Additional NASA data worth tracking"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Small Spacecraft SoA",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/"
+        }
+      ]
+    },
+    {
+      "id": "li-ion-battery-aging",
+      "title_as_cited": "NASA Li-ion Battery Aging Dataset",
+      "url": "https://data.nasa.gov/dataset/li-ion-battery-aging-datasets",
+      "host": "data.nasa.gov",
+      "resource_type": "dataset_landing_page",
+      "category": "reliability",
+      "description": "Study charge/discharge cycles, temperature, capacity, impedance and remaining useful life.",
+      "citation_labels": [
+        "NASA Li-ion Battery Aging Dataset",
+        "Li-ion Battery Aging"
+      ],
+      "caveats_from_reference": [
+        "Commercial cells tested on a ground testbed; not telemetry from a particular spacecraft."
+      ],
+      "source_occurrences": [
+        {
+          "line": 104,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.3 Electrical power and energy"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Li-ion Battery Aging Dataset",
+          "cited_url": "https://data.nasa.gov/dataset/li-ion-battery-aging-datasets"
+        },
+        {
+          "line": 341,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.6 NASA sources for failure and repair knowledge"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "Li-ion Battery Aging",
+          "cited_url": "https://data.nasa.gov/dataset/li-ion-battery-aging-datasets"
+        }
+      ]
+    },
+    {
+      "id": "thermal-control",
+      "title_as_cited": "NASA Small Spacecraft SoA — Thermal Control",
+      "url": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "spacecraft_systems",
+      "description": "Study passive and active thermal-control technologies and constraints.",
+      "citation_labels": [
+        "NASA Small Spacecraft SoA — Thermal Control"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 121,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.4 Thermal control"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Small Spacecraft SoA — Thermal Control",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/"
+        }
+      ]
+    },
+    {
+      "id": "maptis",
+      "title_as_cited": "MAPTIS",
+      "url": "https://maptis.nasa.gov/Features",
+      "host": "maptis.nasa.gov",
+      "resource_type": "portal",
+      "category": "materials",
+      "description": "Find materials properties, tests, exposure, outgassing and compatibility information.",
+      "citation_labels": [
+        "MAPTIS"
+      ],
+      "caveats_from_reference": [
+        "Mixed commercial, government and international origins; the reference reports restricted or fee-based non-NASA access from January 2026. Access was not rechecked."
+      ],
+      "source_occurrences": [
+        {
+          "line": 159,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.8 Structures, materials, and mechanisms"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "MAPTIS",
+          "cited_url": "https://maptis.nasa.gov/Features"
+        },
+        {
+          "line": 342,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.6 NASA sources for failure and repair knowledge"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "MAPTIS",
+          "cited_url": "https://maptis.nasa.gov/Features"
+        }
+      ]
+    },
+    {
+      "id": "outgassing-database",
+      "title_as_cited": "NASA Outgassing Database",
+      "url": "https://etd.gsfc.nasa.gov/capabilities/outgassing-database/",
+      "host": "etd.gsfc.nasa.gov",
+      "resource_type": "portal",
+      "category": "materials",
+      "description": "Find vacuum mass-loss and condensable-material test information.",
+      "citation_labels": [
+        "NASA Outgassing Database"
+      ],
+      "caveats_from_reference": [
+        "Apply results only to the tested material and conditions."
+      ],
+      "source_occurrences": [
+        {
+          "line": 160,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.8 Structures, materials, and mechanisms"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Outgassing Database",
+          "cited_url": "https://etd.gsfc.nasa.gov/capabilities/outgassing-database/"
+        }
+      ]
+    },
+    {
+      "id": "materials-and-processes-standards",
+      "title_as_cited": "NASA Materials and Processes Standards",
+      "url": "https://standards.nasa.gov/materials-and-processes-parts",
+      "host": "standards.nasa.gov",
+      "resource_type": "standards_index",
+      "category": "materials",
+      "description": "Find materials, parts, manufacturing, selection and testing requirements.",
+      "citation_labels": [
+        "NASA Materials and Processes Standards",
+        "NASA materials and manufacturing standards"
+      ],
+      "caveats_from_reference": [
+        "Requirements are distinct from measured performance or qualification evidence for a particular part."
+      ],
+      "source_occurrences": [
+        {
+          "line": 161,
+          "section_path": [
+            "3. What kinds of spacecraft data does NASA publish?",
+            "3.8 Structures, materials, and mechanisms"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Materials and Processes Standards",
+          "cited_url": "https://standards.nasa.gov/materials-and-processes-parts"
+        },
+        {
+          "line": 672,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "A compatibility gate for any proposed rebuild"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA materials and manufacturing standards",
+          "cited_url": "https://standards.nasa.gov/materials-and-processes-parts"
+        }
+      ]
+    },
+    {
+      "id": "space-launch-system",
+      "title_as_cited": "NASA Space Launch System",
+      "url": "https://www.nasa.gov/reference/space-launch-system/",
+      "host": "www.nasa.gov",
+      "resource_type": "mission_reference",
+      "category": "propulsion",
+      "description": "Find SLS architecture, core-stage propulsion and vehicle reference information.",
+      "citation_labels": [
+        "NASA Space Launch System",
+        "NASA SLS reference"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 193,
+          "section_path": [
+            "4. Propulsion and propellants: the essential picture",
+            "4.2 Launch propulsion versus in-space propulsion"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Space Launch System",
+          "cited_url": "https://www.nasa.gov/reference/space-launch-system/"
+        },
+        {
+          "line": 575,
+          "section_path": [
+            "15. Launch vehicles and spacecraft architecture"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA SLS reference",
+          "cited_url": "https://www.nasa.gov/reference/space-launch-system/"
+        }
+      ]
+    },
+    {
+      "id": "sls-solid-rocket-booster",
+      "title_as_cited": "NASA SLS Solid Rocket Booster",
+      "url": "https://www.nasa.gov/reference/sls-space-launch-system-solid-rocket-booster/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "propulsion",
+      "description": "Find SLS solid-booster propulsion and operating descriptions.",
+      "citation_labels": [
+        "NASA SLS Solid Rocket Booster"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 194,
+          "section_path": [
+            "4. Propulsion and propellants: the essential picture",
+            "4.2 Launch propulsion versus in-space propulsion"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA SLS Solid Rocket Booster",
+          "cited_url": "https://www.nasa.gov/reference/sls-space-launch-system-solid-rocket-booster/"
+        }
+      ]
+    },
+    {
+      "id": "in-space-propulsion",
+      "title_as_cited": "NASA 2026 In-Space Propulsion",
+      "url": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "propulsion",
+      "description": "Compare chemical, electric and propellantless small-spacecraft propulsion and device performance.",
+      "citation_labels": [
+        "NASA 2026 In-Space Propulsion",
+        "NASA In-Space Propulsion"
+      ],
+      "caveats_from_reference": [
+        "Preserve operating conditions, power demand, thrust and propellant together; survey values may originate from manufacturers."
+      ],
+      "source_occurrences": [
+        {
+          "line": 210,
+          "section_path": [
+            "4. Propulsion and propellants: the essential picture",
+            "4.3 Major propulsion families"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA 2026 In-Space Propulsion",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/"
+        },
+        {
+          "line": 588,
+          "section_path": [
+            "15. Launch vehicles and spacecraft architecture",
+            "Propellant compatibility and storage"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA In-Space Propulsion",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/"
+        },
+        {
+          "line": 754,
+          "section_path": [
+            "20. Turn an upgrade claim into a measurable comparison"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA In-Space Propulsion",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/"
+        },
+        {
+          "line": 835,
+          "section_path": [
+            "22. Worked examples and insight handoff",
+            "D. A component rating changes the upgrade comparison"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA In-Space Propulsion",
+          "cited_url": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/"
+        }
+      ]
+    },
+    {
+      "id": "jsc-propulsion-subsystems",
+      "title_as_cited": "NASA JSC Propulsion Subsystems",
+      "url": "https://www.nasa.gov/reference/jsc-propulsion-subsystems/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "propulsion",
+      "description": "Find tank, feed-system, valve, transfer-line and propulsion testing capabilities.",
+      "citation_labels": [
+        "NASA JSC Propulsion Subsystems"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 225,
+          "section_path": [
+            "4. Propulsion and propellants: the essential picture",
+            "4.4 Components of a propulsion system"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA JSC Propulsion Subsystems",
+          "cited_url": "https://www.nasa.gov/reference/jsc-propulsion-subsystems/"
+        }
+      ]
+    },
+    {
+      "id": "dawn-spacecraft",
+      "title_as_cited": "NASA Dawn Spacecraft",
+      "url": "https://science.nasa.gov/mission/dawn/technology/spacecraft/",
+      "host": "science.nasa.gov",
+      "resource_type": "mission_reference",
+      "category": "propulsion",
+      "description": "Find Dawn spacecraft statistics and separate launch xenon from attitude-control hydrazine.",
+      "citation_labels": [
+        "NASA Dawn Spacecraft",
+        "NASA Dawn spacecraft statistics"
+      ],
+      "caveats_from_reference": [
+        "Keep propellant role, subsystem and at-launch time basis distinct; do not treat loaded mass as remaining mass."
+      ],
+      "source_occurrences": [
+        {
+          "line": 249,
+          "section_path": [
+            "4. Propulsion and propellants: the essential picture",
+            "4.6 A useful real example"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Dawn Spacecraft",
+          "cited_url": "https://science.nasa.gov/mission/dawn/technology/spacecraft/"
+        },
+        {
+          "line": 804,
+          "section_path": [
+            "22. Worked examples and insight handoff",
+            "A. Two records called fuel are different quantities"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Dawn spacecraft statistics",
+          "cited_url": "https://science.nasa.gov/mission/dawn/technology/spacecraft/"
+        },
+        {
+          "line": 821,
+          "section_path": [
+            "22. Worked examples and insight handoff",
+            "A. Two records called fuel are different quantities"
+          ],
+          "citation_kind": "yaml_value",
+          "label": null,
+          "cited_url": "https://science.nasa.gov/mission/dawn/technology/spacecraft/"
+        }
+      ]
+    },
+    {
+      "id": "fault-detection-and-response",
+      "title_as_cited": "NASA Fault Detection and Response",
+      "url": "https://swehb.nasa.gov/spaces/SWEHBVD/pages/102695798/9.07%2BFault%2BDetection%2Band%2BResponse",
+      "host": "swehb.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "reliability",
+      "description": "Find fault-management and safe-mode guidance.",
+      "citation_labels": [
+        "NASA Fault Detection and Response"
+      ],
+      "caveats_from_reference": [
+        "Safe mode preserves vital resources while recovery is assessed; it does not establish that a fault is repaired."
+      ],
+      "source_occurrences": [
+        {
+          "line": 307,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.3 How a spacecraft handles a fault"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Fault Detection and Response",
+          "cited_url": "https://swehb.nasa.gov/spaces/SWEHBVD/pages/102695798/9.07%2BFault%2BDetection%2Band%2BResponse"
+        }
+      ]
+    },
+    {
+      "id": "human-systems-hardware-and-equipment",
+      "title_as_cited": "NASA Human Systems Integration — Hardware and Equipment",
+      "url": "https://www.nasa.gov/reference/9-0-hardware-and-equipment-vol-2/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "reliability",
+      "description": "Find maintainability information, procedures, equipment state and restoration checks.",
+      "citation_labels": [
+        "NASA Human Systems Integration — Hardware and Equipment"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 331,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.5 Maintenance categories"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Human Systems Integration — Hardware and Equipment",
+          "cited_url": "https://www.nasa.gov/reference/9-0-hardware-and-equipment-vol-2/"
+        }
+      ]
+    },
+    {
+      "id": "lessons-learned",
+      "title_as_cited": "NASA Lessons Learned",
+      "url": "https://llis.nasa.gov/",
+      "host": "llis.nasa.gov",
+      "resource_type": "portal",
+      "category": "reliability",
+      "description": "Find documented events, causes and engineering recommendations.",
+      "citation_labels": [
+        "NASA Lessons Learned"
+      ],
+      "caveats_from_reference": [
+        "Does not provide complete telemetry for every mission."
+      ],
+      "source_occurrences": [
+        {
+          "line": 337,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.6 NASA sources for failure and repair knowledge"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Lessons Learned",
+          "cited_url": "https://llis.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "nesc-lessons-learned",
+      "title_as_cited": "NESC Lessons Learned",
+      "url": "https://www.nasa.gov/nesc/knowledge-products/lessons-learned/",
+      "host": "www.nasa.gov",
+      "resource_type": "portal",
+      "category": "reliability",
+      "description": "Find technical lessons involving hardware, leaks, wiring and software.",
+      "citation_labels": [
+        "NESC Lessons Learned"
+      ],
+      "caveats_from_reference": [
+        "A technical case collection rather than a commercial parts catalog."
+      ],
+      "source_occurrences": [
+        {
+          "line": 338,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.6 NASA sources for failure and repair knowledge"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NESC Lessons Learned",
+          "cited_url": "https://www.nasa.gov/nesc/knowledge-products/lessons-learned/"
+        }
+      ]
+    },
+    {
+      "id": "nepp",
+      "title_as_cited": "NEPP",
+      "url": "https://nepp.nasa.gov/",
+      "host": "nepp.nasa.gov",
+      "resource_type": "portal",
+      "category": "reliability",
+      "description": "Find electronic-parts performance, failure modes, reliability and radiation test information.",
+      "citation_labels": [
+        "NEPP",
+        "NASA NEPP"
+      ],
+      "caveats_from_reference": [
+        "Electronic-parts evidence does not cover every mechanical subsystem or establish an arbitrary spacecraft failure rate."
+      ],
+      "source_occurrences": [
+        {
+          "line": 340,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.6 NASA sources for failure and repair knowledge"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NEPP",
+          "cited_url": "https://nepp.nasa.gov/"
+        },
+        {
+          "line": 620,
+          "section_path": [
+            "17. Hazards by environment and mission phase"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA NEPP",
+          "cited_url": "https://nepp.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "nasa-standards",
+      "title_as_cited": "NASA Standards",
+      "url": "https://standards.nasa.gov/",
+      "host": "standards.nasa.gov",
+      "resource_type": "standards_index",
+      "category": "research_tools",
+      "description": "Find design, verification, safety and fault-tolerance requirements.",
+      "citation_labels": [
+        "NASA Standards"
+      ],
+      "caveats_from_reference": [
+        "A requirement is distinct from a measured result."
+      ],
+      "source_occurrences": [
+        {
+          "line": 343,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.6 NASA sources for failure and repair knowledge"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Standards",
+          "cited_url": "https://standards.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "satellite-servicing",
+      "title_as_cited": "Satellite Servicing",
+      "url": "https://technology.nasa.gov/satellite-servicing",
+      "host": "technology.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "servicing",
+      "description": "Explore rendezvous, capture, inspection, repair and refueling technologies.",
+      "citation_labels": [
+        "Satellite Servicing"
+      ],
+      "caveats_from_reference": [
+        "Does not supply failure records for every satellite."
+      ],
+      "source_occurrences": [
+        {
+          "line": 344,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.6 NASA sources for failure and repair knowledge"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "Satellite Servicing",
+          "cited_url": "https://technology.nasa.gov/satellite-servicing"
+        }
+      ]
+    },
+    {
+      "id": "isam-consortium-announcement",
+      "title_as_cited": "NASA ISAM overview",
+      "url": "https://www.nasa.gov/news-release/nasa-creates-in-space-servicing-assembly-manufacturing-consortium/",
+      "host": "www.nasa.gov",
+      "resource_type": "program_overview",
+      "category": "servicing",
+      "description": "Read the NASA ISAM consortium announcement and servicing scope.",
+      "citation_labels": [
+        "NASA ISAM overview"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 348,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.7 Robotic repair and refueling in orbit"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA ISAM overview",
+          "cited_url": "https://www.nasa.gov/news-release/nasa-creates-in-space-servicing-assembly-manufacturing-consortium/"
+        }
+      ]
+    },
+    {
+      "id": "osam-1",
+      "title_as_cited": "NASA OSAM-1",
+      "url": "https://www.nasa.gov/mission/on-orbit-servicing-assembly-and-manufacturing-1/",
+      "host": "www.nasa.gov",
+      "resource_type": "mission_reference",
+      "category": "servicing",
+      "description": "Find historical robotic servicing technology documentation.",
+      "citation_labels": [
+        "NASA OSAM-1"
+      ],
+      "caveats_from_reference": [
+        "The reference states the project was discontinued in 2024; treat it as historical technical material and verify any current-status claim separately."
+      ],
+      "source_occurrences": [
+        {
+          "line": 352,
+          "section_path": [
+            "5. Health, faults, repair, and maintenance",
+            "5.7 Robotic repair and refueling in orbit"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA OSAM-1",
+          "cited_url": "https://www.nasa.gov/mission/on-orbit-servicing-assembly-and-manufacturing-1/"
+        }
+      ]
+    },
+    {
+      "id": "open-apis",
+      "title_as_cited": "NASA Open APIs",
+      "url": "https://api.nasa.gov/",
+      "host": "api.nasa.gov",
+      "resource_type": "portal",
+      "category": "research_tools",
+      "description": "Find NASA API discovery and documentation, including the NeoWs starting point.",
+      "citation_labels": [
+        "NASA Open APIs"
+      ],
+      "caveats_from_reference": [
+        "A listing on the portal alone does not establish NASA production of the listed data; the reference identifies an external TLE service."
+      ],
+      "source_occurrences": [
+        {
+          "line": 398,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.1 Asteroids and comets"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Open APIs",
+          "cited_url": "https://api.nasa.gov/"
+        },
+        {
+          "line": 763,
+          "section_path": [
+            "21. How an agent should handle unfamiliar or updated data",
+            "21.1 Verify the source before adapting the project"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Open APIs",
+          "cited_url": "https://api.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "small-body-database",
+      "title_as_cited": "SBDB",
+      "url": "https://ssd-api.jpl.nasa.gov/doc/sbdb.html",
+      "host": "ssd-api.jpl.nasa.gov",
+      "resource_type": "api_documentation",
+      "category": "small_bodies",
+      "description": "Find small-body orbit solutions, physical properties, classifications and uncertainty.",
+      "citation_labels": [
+        "SBDB",
+        "NASA/JPL Small-Body Database"
+      ],
+      "caveats_from_reference": [
+        "Preserve object designation, solution context and uncertainty; distinguish object records from encounter records."
+      ],
+      "source_occurrences": [
+        {
+          "line": 399,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.1 Asteroids and comets"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "SBDB",
+          "cited_url": "https://ssd-api.jpl.nasa.gov/doc/sbdb.html"
+        },
+        {
+          "line": 827,
+          "section_path": [
+            "22. Worked examples and insight handoff",
+            "B. Two sources refer to the same asteroid for different reasons"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA/JPL Small-Body Database",
+          "cited_url": "https://ssd-api.jpl.nasa.gov/doc/sbdb.html"
+        }
+      ]
+    },
+    {
+      "id": "close-approach-data",
+      "title_as_cited": "CAD",
+      "url": "https://ssd-api.jpl.nasa.gov/doc/cad.html",
+      "host": "ssd-api.jpl.nasa.gov",
+      "resource_type": "api_documentation",
+      "category": "small_bodies",
+      "description": "Find calculated small-body close approaches to planets and the Moon.",
+      "citation_labels": [
+        "CAD",
+        "NASA/JPL Close-Approach Data"
+      ],
+      "caveats_from_reference": [
+        "An Earth close approach does not supply a collision probability for a player's spacecraft."
+      ],
+      "source_occurrences": [
+        {
+          "line": 400,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.1 Asteroids and comets"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "CAD",
+          "cited_url": "https://ssd-api.jpl.nasa.gov/doc/cad.html"
+        },
+        {
+          "line": 827,
+          "section_path": [
+            "22. Worked examples and insight handoff",
+            "B. Two sources refer to the same asteroid for different reasons"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA/JPL Close-Approach Data",
+          "cited_url": "https://ssd-api.jpl.nasa.gov/doc/cad.html"
+        }
+      ]
+    },
+    {
+      "id": "cneos",
+      "title_as_cited": "CNEOS",
+      "url": "https://cneos.jpl.nasa.gov/",
+      "host": "cneos.jpl.nasa.gov",
+      "resource_type": "portal",
+      "category": "small_bodies",
+      "description": "Find near-Earth-object monitoring and the Sentry research starting point.",
+      "citation_labels": [
+        "CNEOS"
+      ],
+      "caveats_from_reference": [
+        "Keep predicted Earth-impact monitoring separate from an encounter with a specific spacecraft."
+      ],
+      "source_occurrences": [
+        {
+          "line": 401,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.1 Asteroids and comets"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "CNEOS",
+          "cited_url": "https://cneos.jpl.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "mission-design",
+      "title_as_cited": "JPL Mission Design",
+      "url": "https://ssd-api.jpl.nasa.gov/doc/mdesign.html",
+      "host": "ssd-api.jpl.nasa.gov",
+      "resource_type": "api_documentation",
+      "category": "small_bodies",
+      "description": "Find theoretical small-body trajectory and mission-opportunity information.",
+      "citation_labels": [
+        "JPL Mission Design"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 402,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.1 Asteroids and comets"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "JPL Mission Design",
+          "cited_url": "https://ssd-api.jpl.nasa.gov/doc/mdesign.html"
+        }
+      ]
+    },
+    {
+      "id": "horizons",
+      "title_as_cited": "Horizons",
+      "url": "https://ssd-api.jpl.nasa.gov/doc/horizons.html",
+      "host": "ssd-api.jpl.nasa.gov",
+      "resource_type": "api_documentation",
+      "category": "orbits",
+      "description": "Find position and velocity information for solar-system bodies and selected spacecraft.",
+      "citation_labels": [
+        "Horizons"
+      ],
+      "caveats_from_reference": [
+        "Preserve epoch, time scale, reference center, frame and units."
+      ],
+      "source_occurrences": [
+        {
+          "line": 408,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.2 Spacecraft position and trajectory"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "Horizons",
+          "cited_url": "https://ssd-api.jpl.nasa.gov/doc/horizons.html"
+        }
+      ]
+    },
+    {
+      "id": "naif-about",
+      "title_as_cited": "NASA/JPL NAIF",
+      "url": "https://naif.jpl.nasa.gov/naif/about.html",
+      "host": "naif.jpl.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "orbits",
+      "description": "Understand SPICE mission geometry for position, orientation, shape, time and field of view.",
+      "citation_labels": [
+        "NASA/JPL NAIF"
+      ],
+      "caveats_from_reference": [
+        "Geometry requires appropriate kernels, versions, reference frames and time definitions."
+      ],
+      "source_occurrences": [
+        {
+          "line": 409,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.2 Spacecraft position and trajectory"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA/JPL NAIF",
+          "cited_url": "https://naif.jpl.nasa.gov/naif/about.html"
+        }
+      ]
+    },
+    {
+      "id": "sscweb-rest",
+      "title_as_cited": "NASA SSCWeb",
+      "url": "https://sscweb.gsfc.nasa.gov/WebServices/REST/",
+      "host": "sscweb.gsfc.nasa.gov",
+      "resource_type": "api_documentation",
+      "category": "orbits",
+      "description": "Find scientific-spacecraft orbit information near Earth and in the magnetosphere.",
+      "citation_labels": [
+        "NASA SSCWeb"
+      ],
+      "caveats_from_reference": [
+        "Coverage is narrower than a general satellite TLE catalog; preserve time, reference body, frame and units."
+      ],
+      "source_occurrences": [
+        {
+          "line": 410,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.2 Spacecraft position and trajectory"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA SSCWeb",
+          "cited_url": "https://sscweb.gsfc.nasa.gov/WebServices/REST/"
+        }
+      ]
+    },
+    {
+      "id": "donki",
+      "title_as_cited": "NASA DONKI",
+      "url": "https://ccmc.gsfc.nasa.gov/DONKI/",
+      "host": "ccmc.gsfc.nasa.gov",
+      "resource_type": "portal",
+      "category": "space_weather",
+      "description": "Find solar flares, coronal mass ejections, storms, shocks and energetic-particle event records.",
+      "citation_labels": [
+        "NASA DONKI"
+      ],
+      "caveats_from_reference": [
+        "Event records are distinct from instrument measurements and complete spacecraft health telemetry."
+      ],
+      "source_occurrences": [
+        {
+          "line": 416,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.3 Space weather and environment"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA DONKI",
+          "cited_url": "https://ccmc.gsfc.nasa.gov/DONKI/"
+        },
+        {
+          "line": 620,
+          "section_path": [
+            "17. Hazards by environment and mission phase"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA DONKI",
+          "cited_url": "https://ccmc.gsfc.nasa.gov/DONKI/"
+        }
+      ]
+    },
+    {
+      "id": "ccmc-service-updates",
+      "title_as_cited": "CCMC service update",
+      "url": "https://ccmc.gsfc.nasa.gov/news/major-updates/",
+      "host": "ccmc.gsfc.nasa.gov",
+      "resource_type": "service_notice",
+      "category": "space_weather",
+      "description": "Find CCMC service-change notices relevant to space-weather data intake.",
+      "citation_labels": [
+        "CCMC service update"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 416,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.3 Space weather and environment"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "CCMC service update",
+          "cited_url": "https://ccmc.gsfc.nasa.gov/news/major-updates/"
+        }
+      ]
+    },
+    {
+      "id": "spdf",
+      "title_as_cited": "NASA SPDF",
+      "url": "https://spdf.gsfc.nasa.gov/",
+      "host": "spdf.gsfc.nasa.gov",
+      "resource_type": "portal",
+      "category": "space_weather",
+      "description": "Find scientific fields, particle and plasma measurements and the CDAWeb starting point.",
+      "citation_labels": [
+        "NASA SPDF"
+      ],
+      "caveats_from_reference": [
+        "Scientific instrument data are distinct from complete spacecraft engineering telemetry."
+      ],
+      "source_occurrences": [
+        {
+          "line": 417,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.3 Space weather and environment"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA SPDF",
+          "cited_url": "https://spdf.gsfc.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "planetary-data-system",
+      "title_as_cited": "NASA PDS",
+      "url": "https://pds.nasa.gov/",
+      "host": "pds.nasa.gov",
+      "resource_type": "portal",
+      "category": "research_tools",
+      "description": "Find planetary mission, instrument, small-body surface and geometry archives.",
+      "citation_labels": [
+        "NASA PDS",
+        "NASA Planetary Data System"
+      ],
+      "caveats_from_reference": [
+        "Includes some international partner contributions; verify the credited producer for each product."
+      ],
+      "source_occurrences": [
+        {
+          "line": 418,
+          "section_path": [
+            "7. Orbit, asteroid, and space-environment data",
+            "7.3 Space weather and environment"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA PDS",
+          "cited_url": "https://pds.nasa.gov/"
+        },
+        {
+          "line": 733,
+          "section_path": [
+            "19. Additional NASA data worth tracking"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Planetary Data System",
+          "cited_url": "https://pds.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "orion-spacecraft",
+      "title_as_cited": "NASA Orion reference",
+      "url": "https://www.nasa.gov/reference/orion-spacecraft/",
+      "host": "www.nasa.gov",
+      "resource_type": "mission_reference",
+      "category": "spacecraft_systems",
+      "description": "Find Orion architecture, spacecraft roles and reference specifications.",
+      "citation_labels": [
+        "NASA Orion reference"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 575,
+          "section_path": [
+            "15. Launch vehicles and spacecraft architecture"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Orion reference",
+          "cited_url": "https://www.nasa.gov/reference/orion-spacecraft/"
+        }
+      ]
+    },
+    {
+      "id": "launch-services-performance",
+      "title_as_cited": "NASA Launch Services Program performance site",
+      "url": "https://elvperf.ksc.nasa.gov/Pages/Default.aspx",
+      "host": "elvperf.ksc.nasa.gov",
+      "resource_type": "portal",
+      "category": "propulsion",
+      "description": "Find launch payload-to-orbit and trajectory performance resources.",
+      "citation_labels": [
+        "NASA Launch Services Program performance site"
+      ],
+      "caveats_from_reference": [
+        "Capacity depends on launcher configuration, orbit, inclination and injection energy."
+      ],
+      "source_occurrences": [
+        {
+          "line": 575,
+          "section_path": [
+            "15. Launch vehicles and spacecraft architecture"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Launch Services Program performance site",
+          "cited_url": "https://elvperf.ksc.nasa.gov/Pages/Default.aspx"
+        }
+      ]
+    },
+    {
+      "id": "goddard-gevs",
+      "title_as_cited": "NASA Goddard GEVS",
+      "url": "https://standards.nasa.gov/standard/GSFC/GSFC-STD-7000",
+      "host": "standards.nasa.gov",
+      "resource_type": "standard",
+      "category": "spacecraft_systems",
+      "description": "Find the Goddard General Environmental Verification Standard.",
+      "citation_labels": [
+        "NASA Goddard GEVS"
+      ],
+      "caveats_from_reference": [
+        "Verification requirements are distinct from a particular vehicle's predicted loads or observed flight results."
+      ],
+      "source_occurrences": [
+        {
+          "line": 575,
+          "section_path": [
+            "15. Launch vehicles and spacecraft architecture"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Goddard GEVS",
+          "cited_url": "https://standards.nasa.gov/standard/GSFC/GSFC-STD-7000"
+        },
+        {
+          "line": 754,
+          "section_path": [
+            "20. Turn an upgrade claim into a measurable comparison"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Goddard GEVS",
+          "cited_url": "https://standards.nasa.gov/standard/GSFC/GSFC-STD-7000"
+        }
+      ]
+    },
+    {
+      "id": "f-1-history",
+      "title_as_cited": "NASA F-1 history",
+      "url": "https://ssfl.msfc.nasa.gov/history/programs",
+      "host": "ssfl.msfc.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "propulsion",
+      "description": "Find historical F-1 engine and Saturn V propulsion context.",
+      "citation_labels": [
+        "NASA F-1 history"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 588,
+          "section_path": [
+            "15. Launch vehicles and spacecraft architecture",
+            "Propellant compatibility and storage"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA F-1 history",
+          "cited_url": "https://ssfl.msfc.nasa.gov/history/programs"
+        }
+      ]
+    },
+    {
+      "id": "orion-esm-propulsion-report",
+      "title_as_cited": "NASA Orion ESM flight propulsion report",
+      "url": "https://ntrs.nasa.gov/citations/20240003648",
+      "host": "ntrs.nasa.gov",
+      "resource_type": "report",
+      "category": "propulsion",
+      "description": "Find the Orion European Service Module flight propulsion report.",
+      "citation_labels": [
+        "NASA Orion ESM flight propulsion report"
+      ],
+      "caveats_from_reference": [
+        "Preserve the reported configuration and MMH/MON-3 pairing when using propulsion evidence."
+      ],
+      "source_occurrences": [
+        {
+          "line": 588,
+          "section_path": [
+            "15. Launch vehicles and spacecraft architecture",
+            "Propellant compatibility and storage"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Orion ESM flight propulsion report",
+          "cited_url": "https://ntrs.nasa.gov/citations/20240003648"
+        }
+      ]
+    },
+    {
+      "id": "cryogenic-fluid-management",
+      "title_as_cited": "NASA Cryogenic Fluid Management",
+      "url": "https://www.nasa.gov/space-technology-mission-directorate/tdm/cryogenic-fluid-management-cfm/",
+      "host": "www.nasa.gov",
+      "resource_type": "program_overview",
+      "category": "propulsion",
+      "description": "Find cryogenic storage, thermal-loss and fluid-management technology information.",
+      "citation_labels": [
+        "NASA Cryogenic Fluid Management"
+      ],
+      "caveats_from_reference": [
+        "Distinguish storage and transfer objectives from demonstrated outcomes for the specific hardware and fluid."
+      ],
+      "source_occurrences": [
+        {
+          "line": 588,
+          "section_path": [
+            "15. Launch vehicles and spacecraft architecture",
+            "Propellant compatibility and storage"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Cryogenic Fluid Management",
+          "cited_url": "https://www.nasa.gov/space-technology-mission-directorate/tdm/cryogenic-fluid-management-cfm/"
+        }
+      ]
+    },
+    {
+      "id": "iss-assembly-elements",
+      "title_as_cited": "NASA ISS assembly elements",
+      "url": "https://www.nasa.gov/international-space-station/international-space-station-assembly-elements/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "stations",
+      "description": "Find ISS modules, truss, arrays and assembled station elements.",
+      "citation_labels": [
+        "NASA ISS assembly elements"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 604,
+          "section_path": [
+            "16. Space stations, satellites and orbital facilities"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA ISS assembly elements",
+          "cited_url": "https://www.nasa.gov/international-space-station/international-space-station-assembly-elements/"
+        }
+      ]
+    },
+    {
+      "id": "iss-facts-and-figures",
+      "title_as_cited": "NASA ISS facts",
+      "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "stations",
+      "description": "Find ISS scale, infrastructure and station reference facts.",
+      "citation_labels": [
+        "NASA ISS facts"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 604,
+          "section_path": [
+            "16. Space stations, satellites and orbital facilities"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA ISS facts",
+          "cited_url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"
+        }
+      ]
+    },
+    {
+      "id": "eclss",
+      "title_as_cited": "NASA ECLSS",
+      "url": "https://www.nasa.gov/reference/environmental-control-and-life-support-systems-eclss/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "stations",
+      "description": "Find environmental-control and life-support system descriptions.",
+      "citation_labels": [
+        "NASA ECLSS"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 604,
+          "section_path": [
+            "16. Space stations, satellites and orbital facilities"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA ECLSS",
+          "cited_url": "https://www.nasa.gov/reference/environmental-control-and-life-support-systems-eclss/"
+        }
+      ]
+    },
+    {
+      "id": "gateway",
+      "title_as_cited": "NASA Gateway architecture",
+      "url": "https://www.nasa.gov/mission/gateway/",
+      "host": "www.nasa.gov",
+      "resource_type": "mission_reference",
+      "category": "stations",
+      "description": "Find Gateway architecture references for a cislunar outpost.",
+      "citation_labels": [
+        "NASA Gateway architecture"
+      ],
+      "caveats_from_reference": [
+        "The reference requests a separate program-status check; architecture documentation alone does not establish current operational capability."
+      ],
+      "source_occurrences": [
+        {
+          "line": 604,
+          "section_path": [
+            "16. Space stations, satellites and orbital facilities"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Gateway architecture",
+          "cited_url": "https://www.nasa.gov/mission/gateway/"
+        }
+      ]
+    },
+    {
+      "id": "commercial-space",
+      "title_as_cited": "NASA Commercial Space",
+      "url": "https://www.nasa.gov/humans-in-space/commercial-space/",
+      "host": "www.nasa.gov",
+      "resource_type": "program_overview",
+      "category": "stations",
+      "description": "Find NASA commercial-space programs and provider context.",
+      "citation_labels": [
+        "NASA Commercial Space"
+      ],
+      "caveats_from_reference": [
+        "Preserve actual operator, development stage and demonstrated services for each facility or vehicle."
+      ],
+      "source_occurrences": [
+        {
+          "line": 604,
+          "section_path": [
+            "16. Space stations, satellites and orbital facilities"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Commercial Space",
+          "cited_url": "https://www.nasa.gov/humans-in-space/commercial-space/"
+        }
+      ]
+    },
+    {
+      "id": "earth-satellite-orbits",
+      "title_as_cited": "NASA Earth satellite orbit catalog",
+      "url": "https://science.nasa.gov/earth/earth-observatory/catalog-of-earth-satellite-orbits/",
+      "host": "science.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "orbits",
+      "description": "Understand Earth satellite orbit families and observation geometry.",
+      "citation_labels": [
+        "NASA Earth satellite orbit catalog"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 604,
+          "section_path": [
+            "16. Space stations, satellites and orbital facilities"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Earth satellite orbit catalog",
+          "cited_url": "https://science.nasa.gov/earth/earth-observatory/catalog-of-earth-satellite-orbits/"
+        }
+      ]
+    },
+    {
+      "id": "orbital-debris-modeling",
+      "title_as_cited": "NASA debris models",
+      "url": "https://orbitaldebris.jsc.nasa.gov/modeling/",
+      "host": "orbitaldebris.jsc.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "hazards",
+      "description": "Find orbital debris environment modeling resources, including the ORDEM research starting point.",
+      "citation_labels": [
+        "NASA debris models",
+        "NASA Orbital Debris Program Office models"
+      ],
+      "caveats_from_reference": [
+        "Environmental flux under stated conditions is distinct from the probability of a particular conjunction."
+      ],
+      "source_occurrences": [
+        {
+          "line": 620,
+          "section_path": [
+            "17. Hazards by environment and mission phase"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA debris models",
+          "cited_url": "https://orbitaldebris.jsc.nasa.gov/modeling/"
+        },
+        {
+          "line": 628,
+          "section_path": [
+            "17. Hazards by environment and mission phase",
+            "17.1 Meteoroids, meteors, and orbital debris"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Orbital Debris Program Office models",
+          "cited_url": "https://orbitaldebris.jsc.nasa.gov/modeling/"
+        }
+      ]
+    },
+    {
+      "id": "sporadic-meteoroid-environment",
+      "title_as_cited": "NASA Meteoroid Engineering Model",
+      "url": "https://www.nasa.gov/meteoroid-environment-office/sporadic-meteoroid-environment/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "hazards",
+      "description": "Find the natural meteoroid environment and MEM research starting point.",
+      "citation_labels": [
+        "NASA Meteoroid Engineering Model",
+        "NASA sporadic meteoroid environment"
+      ],
+      "caveats_from_reference": [
+        "Exposure estimates depend on trajectory and particle population; shield response and damage require separate evidence."
+      ],
+      "source_occurrences": [
+        {
+          "line": 620,
+          "section_path": [
+            "17. Hazards by environment and mission phase"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Meteoroid Engineering Model",
+          "cited_url": "https://www.nasa.gov/meteoroid-environment-office/sporadic-meteoroid-environment/"
+        },
+        {
+          "line": 626,
+          "section_path": [
+            "17. Hazards by environment and mission phase",
+            "17.1 Meteoroids, meteors, and orbital debris"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA sporadic meteoroid environment",
+          "cited_url": "https://www.nasa.gov/meteoroid-environment-office/sporadic-meteoroid-environment/"
+        }
+      ]
+    },
+    {
+      "id": "cara",
+      "title_as_cited": "NASA CARA",
+      "url": "https://www.nasa.gov/cara/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "hazards",
+      "description": "Find conjunction assessment and collision-avoidance guidance.",
+      "citation_labels": [
+        "NASA CARA"
+      ],
+      "caveats_from_reference": [
+        "Apply encounter probabilities to their particular screening solution; keep tracked conjunctions separate from background flux."
+      ],
+      "source_occurrences": [
+        {
+          "line": 620,
+          "section_path": [
+            "17. Hazards by environment and mission phase"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA CARA",
+          "cited_url": "https://www.nasa.gov/cara/"
+        },
+        {
+          "line": 628,
+          "section_path": [
+            "17. Hazards by environment and mission phase",
+            "17.1 Meteoroids, meteors, and orbital debris"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA CARA",
+          "cited_url": "https://www.nasa.gov/cara/"
+        }
+      ]
+    },
+    {
+      "id": "bennu-sampling-case",
+      "title_as_cited": "NASA Bennu sampling case",
+      "url": "https://www.nasa.gov/missions/surprise-again-asteroid-bennu-reveals-its-surface-is-like-a-plastic-ball-pit/",
+      "host": "www.nasa.gov",
+      "resource_type": "case_study",
+      "category": "hazards",
+      "description": "Read the Bennu sampling case describing an unexpectedly loose surface.",
+      "citation_labels": [
+        "NASA Bennu sampling case"
+      ],
+      "caveats_from_reference": [
+        "The documented result applies to that measured environment."
+      ],
+      "source_occurrences": [
+        {
+          "line": 620,
+          "section_path": [
+            "17. Hazards by environment and mission phase"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Bennu sampling case",
+          "cited_url": "https://www.nasa.gov/missions/surprise-again-asteroid-bennu-reveals-its-surface-is-like-a-plastic-ball-pit/"
+        }
+      ]
+    },
+    {
+      "id": "meteors-and-meteorites",
+      "title_as_cited": "NASA Meteors and Meteorites",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/",
+      "host": "science.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "hazards",
+      "description": "Distinguish meteoroids in space, atmospheric meteors and surviving meteorites.",
+      "citation_labels": [
+        "NASA Meteors and Meteorites"
+      ],
+      "caveats_from_reference": [
+        "Human-made orbital debris and cataloged asteroid close approaches are separate populations or event types."
+      ],
+      "source_occurrences": [
+        {
+          "line": 624,
+          "section_path": [
+            "17. Hazards by environment and mission phase",
+            "17.1 Meteoroids, meteors, and orbital debris"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Meteors and Meteorites",
+          "cited_url": "https://science.nasa.gov/solar-system/meteors-meteorites/"
+        }
+      ]
+    },
+    {
+      "id": "shower-meteoroid-environment",
+      "title_as_cited": "NASA shower meteoroid environment",
+      "url": "https://www.nasa.gov/meteoroid-environment-office/shower-meteoroid-environment/",
+      "host": "www.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "hazards",
+      "description": "Find shower forecasts and supported spacecraft exposure mitigations.",
+      "citation_labels": [
+        "NASA shower meteoroid environment"
+      ],
+      "caveats_from_reference": [
+        "Apply forecasts and mitigations only within documented coverage and hardware capabilities."
+      ],
+      "source_occurrences": [
+        {
+          "line": 627,
+          "section_path": [
+            "17. Hazards by environment and mission phase",
+            "17.1 Meteoroids, meteors, and orbital debris"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA shower meteoroid environment",
+          "cited_url": "https://www.nasa.gov/meteoroid-environment-office/shower-meteoroid-environment/"
+        }
+      ]
+    },
+    {
+      "id": "webb-micrometeoroid-impact",
+      "title_as_cited": "NASA Webb impact report",
+      "url": "https://science.nasa.gov/blogs/webb/2022/06/08/webb-engineered-to-endure-micrometeoroid-impacts/",
+      "host": "science.nasa.gov",
+      "resource_type": "case_study",
+      "category": "hazards",
+      "description": "Read the Webb mirror-segment impact and performance case.",
+      "citation_labels": [
+        "NASA Webb impact report"
+      ],
+      "caveats_from_reference": [
+        "The reference describes the May 2022 impact; the measured outcome is specific to Webb and that event."
+      ],
+      "source_occurrences": [
+        {
+          "line": 630,
+          "section_path": [
+            "17. Hazards by environment and mission phase",
+            "17.1 Meteoroids, meteors, and orbital debris"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Webb impact report",
+          "cited_url": "https://science.nasa.gov/blogs/webb/2022/06/08/webb-engineered-to-endure-micrometeoroid-impacts/"
+        }
+      ]
+    },
+    {
+      "id": "isam-state-of-play",
+      "title_as_cited": "NASA ISAM and State of Play",
+      "url": "https://www.nasa.gov/isam/",
+      "host": "www.nasa.gov",
+      "resource_type": "program_overview",
+      "category": "servicing",
+      "description": "Find NASA in-space servicing, assembly and manufacturing reference material.",
+      "citation_labels": [
+        "NASA ISAM and State of Play"
+      ],
+      "caveats_from_reference": [
+        "Distinguish research objectives, demonstrations and routine operations."
+      ],
+      "source_occurrences": [
+        {
+          "line": 672,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "A compatibility gate for any proposed rebuild"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA ISAM and State of Play",
+          "cited_url": "https://www.nasa.gov/isam/"
+        }
+      ]
+    },
+    {
+      "id": "hubble-servicing-missions",
+      "title_as_cited": "NASA Hubble servicing missions",
+      "url": "https://science.nasa.gov/mission/hubble/observatory/missions-to-hubble/",
+      "host": "science.nasa.gov",
+      "resource_type": "mission_reference",
+      "category": "servicing",
+      "description": "Find flight examples of Hubble instrument, gyro and battery replacement.",
+      "citation_labels": [
+        "NASA Hubble servicing missions"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 672,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "A compatibility gate for any proposed rebuild"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Hubble servicing missions",
+          "cited_url": "https://science.nasa.gov/mission/hubble/observatory/missions-to-hubble/"
+        }
+      ]
+    },
+    {
+      "id": "hubble-one-gyro-mode",
+      "title_as_cited": "NASA Hubble one-gyro mode",
+      "url": "https://science.nasa.gov/mission/hubble/observatory/design/hubble-one-gyro-mode/",
+      "host": "science.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "servicing",
+      "description": "Find Hubble's operational one-gyro workaround.",
+      "citation_labels": [
+        "NASA Hubble one-gyro mode"
+      ],
+      "caveats_from_reference": [
+        "An operational workaround is distinct from physical replacement or restored full capability."
+      ],
+      "source_occurrences": [
+        {
+          "line": 672,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "A compatibility gate for any proposed rebuild"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Hubble one-gyro mode",
+          "cited_url": "https://science.nasa.gov/mission/hubble/observatory/design/hubble-one-gyro-mode/"
+        }
+      ]
+    },
+    {
+      "id": "rrm3-flight-results",
+      "title_as_cited": "NASA RRM3 flight results",
+      "url": "https://www.nasa.gov/missions/station/nasas-refueling-mission-completes-second-set-of-robotic-tool-operations-in-space/",
+      "host": "www.nasa.gov",
+      "resource_type": "case_study",
+      "category": "servicing",
+      "description": "Find RRM3 methane-storage and robotic tool/hose operation results.",
+      "citation_labels": [
+        "NASA RRM3 flight results",
+        "NASA RRM3 flight update"
+      ],
+      "caveats_from_reference": [
+        "The reference states planned cryogenic transfer was prevented by an equipment issue; do not label it a demonstrated generic refueling capability."
+      ],
+      "source_occurrences": [
+        {
+          "line": 672,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "A compatibility gate for any proposed rebuild"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA RRM3 flight results",
+          "cited_url": "https://www.nasa.gov/missions/station/nasas-refueling-mission-completes-second-set-of-robotic-tool-operations-in-space/"
+        },
+        {
+          "line": 831,
+          "section_path": [
+            "22. Worked examples and insight handoff",
+            "C. A mission announcement and a flight result describe different evidence"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA RRM3 flight update",
+          "cited_url": "https://www.nasa.gov/missions/station/nasas-refueling-mission-completes-second-set-of-robotic-tool-operations-in-space/"
+        }
+      ]
+    },
+    {
+      "id": "isam-technical-report",
+      "title_as_cited": "NASA ISAM technical report",
+      "url": "https://ntrs.nasa.gov/citations/20250008988",
+      "host": "ntrs.nasa.gov",
+      "resource_type": "report",
+      "category": "servicing",
+      "description": "Find NASA ISAM technical evidence for servicing capabilities and demonstration outcomes.",
+      "citation_labels": [
+        "NASA ISAM technical report"
+      ],
+      "caveats_from_reference": [
+        "Keep the hardware, fluid, interface, operating conditions and demonstrated outcome attached to each claim."
+      ],
+      "source_occurrences": [
+        {
+          "line": 672,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "A compatibility gate for any proposed rebuild"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA ISAM technical report",
+          "cited_url": "https://ntrs.nasa.gov/citations/20250008988"
+        },
+        {
+          "line": 831,
+          "section_path": [
+            "22. Worked examples and insight handoff",
+            "C. A mission announcement and a flight result describe different evidence"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA ISAM technical report",
+          "cited_url": "https://ntrs.nasa.gov/citations/20250008988"
+        }
+      ]
+    },
+    {
+      "id": "architecture-standards",
+      "title_as_cited": "NASA architecture and docking standards",
+      "url": "https://www.nasa.gov/architecture-standards/",
+      "host": "www.nasa.gov",
+      "resource_type": "standards_index",
+      "category": "servicing",
+      "description": "Find architecture, docking and interface standards.",
+      "citation_labels": [
+        "NASA architecture and docking standards",
+        "NASA architecture and interface standards"
+      ],
+      "caveats_from_reference": [
+        "Mechanical docking compatibility does not establish power, data, crew or fluid-transfer compatibility."
+      ],
+      "source_occurrences": [
+        {
+          "line": 672,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "A compatibility gate for any proposed rebuild"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA architecture and docking standards",
+          "cited_url": "https://www.nasa.gov/architecture-standards/"
+        },
+        {
+          "line": 701,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "18.2 Define what a station can do at a checkpoint"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA architecture and interface standards",
+          "cited_url": "https://www.nasa.gov/architecture-standards/"
+        }
+      ]
+    },
+    {
+      "id": "iss-commercial-resupply",
+      "title_as_cited": "NASA ISS commercial resupply",
+      "url": "https://www.nasa.gov/international-space-station/commercial-resupply/",
+      "host": "www.nasa.gov",
+      "resource_type": "program_overview",
+      "category": "stations",
+      "description": "Find ISS cargo resupply and visiting-vehicle operational context.",
+      "citation_labels": [
+        "NASA ISS commercial resupply"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 701,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "18.2 Define what a station can do at a checkpoint"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA ISS commercial resupply",
+          "cited_url": "https://www.nasa.gov/international-space-station/commercial-resupply/"
+        }
+      ]
+    },
+    {
+      "id": "cygnus-crs-24-overview",
+      "title_as_cited": "NASA Cygnus mission overview",
+      "url": "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-24-mission-overview/",
+      "host": "www.nasa.gov",
+      "resource_type": "mission_reference",
+      "category": "stations",
+      "description": "Find the Cygnus CRS-24 mission and robotic capture/installation example.",
+      "citation_labels": [
+        "NASA Cygnus mission overview"
+      ],
+      "caveats_from_reference": [
+        "The reference distinguishes Cygnus capture and installation from direct Dragon docking."
+      ],
+      "source_occurrences": [
+        {
+          "line": 701,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "18.2 Define what a station can do at a checkpoint"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Cygnus mission overview",
+          "cited_url": "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-24-mission-overview/"
+        }
+      ]
+    },
+    {
+      "id": "iss-pump-failure-and-recovery",
+      "title_as_cited": "NASA ISS pump failure and recovery",
+      "url": "https://ntrs.nasa.gov/citations/20150004079",
+      "host": "ntrs.nasa.gov",
+      "resource_type": "report",
+      "category": "reliability",
+      "description": "Find the 2010 ISS cooling-loop failure, reduced operations and pump replacement case.",
+      "citation_labels": [
+        "NASA ISS pump failure and recovery"
+      ],
+      "caveats_from_reference": [
+        "A stored orbital replacement unit and suitable installation access enabled the documented repair."
+      ],
+      "source_occurrences": [
+        {
+          "line": 705,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "18.3 Spare parts and service-point logistics"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA ISS pump failure and recovery",
+          "cited_url": "https://ntrs.nasa.gov/citations/20150004079"
+        }
+      ]
+    },
+    {
+      "id": "iss-maintenance-audit",
+      "title_as_cited": "NASA OIG ISS maintenance audit",
+      "url": "https://oig.nasa.gov/wp-content/uploads/2024/09/ig-24-020.pdf",
+      "host": "oig.nasa.gov",
+      "resource_type": "report",
+      "category": "stations",
+      "description": "Find NASA OIG evidence on ISS maintenance, spares, consumables and cargo scheduling.",
+      "citation_labels": [
+        "NASA OIG ISS maintenance audit",
+        "NASA OIG ISS operations and maintenance audit"
+      ],
+      "caveats_from_reference": [
+        "Preserve the cited page-18 locator; the report does not establish arbitrary game inventories, prices or service times."
+      ],
+      "source_occurrences": [
+        {
+          "line": 705,
+          "section_path": [
+            "18. What can be repaired, replaced, assembled or manufactured in space?",
+            "18.3 Spare parts and service-point logistics"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA OIG ISS maintenance audit",
+          "cited_url": "https://oig.nasa.gov/wp-content/uploads/2024/09/ig-24-020.pdf#page=18"
+        },
+        {
+          "line": 730,
+          "section_path": [
+            "19. Additional NASA data worth tracking"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA OIG ISS operations and maintenance audit",
+          "cited_url": "https://oig.nasa.gov/wp-content/uploads/2024/09/ig-24-020.pdf"
+        }
+      ]
+    },
+    {
+      "id": "deep-space-network",
+      "title_as_cited": "NASA Deep Space Network",
+      "url": "https://www.nasa.gov/communicating-with-missions/dsn/",
+      "host": "www.nasa.gov",
+      "resource_type": "program_overview",
+      "category": "spacecraft_systems",
+      "description": "Find ground-contact and deep-space communication context.",
+      "citation_labels": [
+        "NASA Deep Space Network"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 731,
+          "section_path": [
+            "19. Additional NASA data worth tracking"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Deep Space Network",
+          "cited_url": "https://www.nasa.gov/communicating-with-missions/dsn/"
+        }
+      ]
+    },
+    {
+      "id": "techport",
+      "title_as_cited": "NASA TechPort",
+      "url": "https://techport.nasa.gov/",
+      "host": "techport.nasa.gov",
+      "resource_type": "portal",
+      "category": "research_tools",
+      "description": "Find NASA technology-development and demonstration research leads.",
+      "citation_labels": [
+        "NASA TechPort"
+      ],
+      "caveats_from_reference": [
+        "Distinguish research, ground tests, flight demonstrations and routine operation."
+      ],
+      "source_occurrences": [
+        {
+          "line": 732,
+          "section_path": [
+            "19. Additional NASA data worth tracking"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA TechPort",
+          "cited_url": "https://techport.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "naif-spice",
+      "title_as_cited": "NASA/JPL SPICE",
+      "url": "https://naif.jpl.nasa.gov/naif/",
+      "host": "naif.jpl.nasa.gov",
+      "resource_type": "portal",
+      "category": "orbits",
+      "description": "Find SPICE mission-geometry resources and small-body geometry starting points.",
+      "citation_labels": [
+        "NASA/JPL SPICE"
+      ],
+      "caveats_from_reference": [
+        "This is a separate cited page from the NAIF overview; preserve kernel versions, domains and inputs."
+      ],
+      "source_occurrences": [
+        {
+          "line": 733,
+          "section_path": [
+            "19. Additional NASA data worth tracking"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA/JPL SPICE",
+          "cited_url": "https://naif.jpl.nasa.gov/naif/"
+        }
+      ]
+    },
+    {
+      "id": "orbital-debris-program-office",
+      "title_as_cited": "NASA Orbital Debris Program Office",
+      "url": "https://orbitaldebris.jsc.nasa.gov/",
+      "host": "orbitaldebris.jsc.nasa.gov",
+      "resource_type": "portal",
+      "category": "hazards",
+      "description": "Find orbital-debris and end-of-life research resources.",
+      "citation_labels": [
+        "NASA Orbital Debris Program Office"
+      ],
+      "caveats_from_reference": [],
+      "source_occurrences": [
+        {
+          "line": 734,
+          "section_path": [
+            "19. Additional NASA data worth tracking"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Orbital Debris Program Office",
+          "cited_url": "https://orbitaldebris.jsc.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "3d-resources",
+      "title_as_cited": "NASA 3D Resources",
+      "url": "https://science.nasa.gov/3d-resources/",
+      "host": "science.nasa.gov",
+      "resource_type": "visual_asset_catalog",
+      "category": "visual_assets",
+      "description": "Find spacecraft, launch-vehicle and orbital-infrastructure visual references.",
+      "citation_labels": [
+        "NASA 3D Resources"
+      ],
+      "caveats_from_reference": [
+        "Catalog models are visual references; verify engineering dimensions and interface fit separately and check each asset's credits and terms."
+      ],
+      "source_occurrences": [
+        {
+          "line": 738,
+          "section_path": [
+            "19. Additional NASA data worth tracking",
+            "19.1 NASA 3D models and visual references"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA 3D Resources",
+          "cited_url": "https://science.nasa.gov/3d-resources/"
+        }
+      ]
+    },
+    {
+      "id": "ames-3d-resources",
+      "title_as_cited": "Original Ames URL",
+      "url": "https://nasa3d.arc.nasa.gov/",
+      "host": "nasa3d.arc.nasa.gov",
+      "resource_type": "visual_asset_catalog",
+      "category": "visual_assets",
+      "description": "Preserve the original Ames 3D resource address cited by the reference.",
+      "citation_labels": [
+        "Original Ames URL"
+      ],
+      "caveats_from_reference": [
+        "The reference states this redirects to the NASA Science catalog; the redirect was not independently checked."
+      ],
+      "source_occurrences": [
+        {
+          "line": 738,
+          "section_path": [
+            "19. Additional NASA data worth tracking",
+            "19.1 NASA 3D models and visual references"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "Original Ames URL",
+          "cited_url": "https://nasa3d.arc.nasa.gov/"
+        }
+      ]
+    },
+    {
+      "id": "media-usage-guidelines",
+      "title_as_cited": "NASA media usage guidelines",
+      "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "host": "www.nasa.gov",
+      "resource_type": "usage_guidance",
+      "category": "visual_assets",
+      "description": "Find NASA image and media usage guidance.",
+      "citation_labels": [
+        "NASA media usage guidelines"
+      ],
+      "caveats_from_reference": [
+        "Check individual asset credits and usage terms before reuse."
+      ],
+      "source_occurrences": [
+        {
+          "line": 738,
+          "section_path": [
+            "19. Additional NASA data worth tracking",
+            "19.1 NASA 3D models and visual references"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA media usage guidelines",
+          "cited_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+        }
+      ]
+    },
+    {
+      "id": "ideal-rocket-equation",
+      "title_as_cited": "NASA Glenn ideal rocket equation",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/",
+      "host": "www1.grc.nasa.gov",
+      "resource_type": "technical_reference",
+      "category": "propulsion",
+      "description": "Find the ideal rocket equation for specific impulse and mass-ratio comparisons.",
+      "citation_labels": [
+        "NASA Glenn ideal rocket equation"
+      ],
+      "caveats_from_reference": [
+        "Ideal delta-v is distinct from travel time; real transfers also require trajectory, thrust profile, losses and operational constraints."
+      ],
+      "source_occurrences": [
+        {
+          "line": 754,
+          "section_path": [
+            "20. Turn an upgrade claim into a measurable comparison"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Glenn ideal rocket equation",
+          "cited_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/"
+        },
+        {
+          "line": 835,
+          "section_path": [
+            "22. Worked examples and insight handoff",
+            "D. A component rating changes the upgrade comparison"
+          ],
+          "citation_kind": "markdown_link",
+          "label": "NASA Glenn ideal rocket equation",
+          "cited_url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/"
+        }
+      ]
+    }
+  ],
+  "named_resources_without_direct_links": [
+    {
+      "id": "neows",
+      "name": "NeoWs",
+      "source_lines": [
+        398
+      ],
+      "related_resource_ids": [
+        "open-apis"
+      ],
+      "note": "The document links to the NASA API portal, rather than a direct NeoWs endpoint."
+    },
+    {
+      "id": "sentry",
+      "name": "CNEOS Sentry",
+      "source_lines": [
+        401,
+        438
+      ],
+      "related_resource_ids": [
+        "cneos"
+      ],
+      "note": "The document links to CNEOS, rather than direct Sentry documentation."
+    },
+    {
+      "id": "cdaweb",
+      "name": "CDAWeb",
+      "source_lines": [
+        417,
+        420,
+        440,
+        449,
+        546
+      ],
+      "related_resource_ids": [
+        "spdf"
+      ],
+      "note": "The document links to SPDF, rather than a direct CDAWeb URL."
+    },
+    {
+      "id": "radhome",
+      "name": "Radhome",
+      "source_lines": [
+        433
+      ],
+      "related_resource_ids": [
+        "nepp"
+      ],
+      "note": "Named alongside NEPP in the source map; no direct URL is supplied."
+    },
+    {
+      "id": "osdr",
+      "name": "OSDR",
+      "source_lines": [
+        457
+      ],
+      "related_resource_ids": [],
+      "note": "Named in the mixed-origin warning; no URL is supplied."
+    },
+    {
+      "id": "ordem",
+      "name": "ORDEM",
+      "source_lines": [
+        612
+      ],
+      "related_resource_ids": [
+        "orbital-debris-modeling"
+      ],
+      "note": "Named in the debris-modeling discussion; no direct model URL is supplied."
+    },
+    {
+      "id": "jpl-ssd",
+      "name": "JPL SSD",
+      "source_lines": [
+        546
+      ],
+      "related_resource_ids": [],
+      "note": "Named in the research order; no direct umbrella-site URL is supplied."
+    }
+  ],
+  "external_references": [
+    {
+      "name": "TLE API / tle.ivanstanojevic.me",
+      "domain_as_cited": "tle.ivanstanojevic.me",
+      "source_lines": [
+        461
+      ],
+      "reason": "The reference explicitly classifies this NASA-API-listed service as externally sourced."
+    },
+    {
+      "name": "CelesTrak",
+      "domain_as_cited": null,
+      "source_lines": [
+        461
+      ],
+      "reason": "Named as the upstream source of the external TLE service; no URL is supplied."
+    }
+  ]
+}
