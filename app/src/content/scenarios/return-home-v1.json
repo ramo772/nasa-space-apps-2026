@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "id": "return-home",
+  "version": "1.0.0",
+  "reviewStatus": "owner-approved-mentor-review-pending",
+  "title": "Return from a high elliptical orbit",
+  "fictionalFraming": "The M.E.A.T.-A-R.O.I.D. depot, Dr. Nadir, RIVO and their workshop are fictional. The servicing and assembly framing is inspired by documented in-space servicing, assembly and manufacturing concepts. NASA does not operate or endorse this fictional depot.",
+  "values": [
+    { "id": "earth-gm", "label": "Earth's gravity constant (GM)", "amount": 398600.435507, "unit": "km³/s²", "provenance": "nasa-source", "sourceIds": ["data-015"], "transformation": "None.", "limitation": "Two-body model: no Moon or Sun." },
+    { "id": "standard-gravity", "label": "Standard gravity (g₀)", "amount": 9.8, "unit": "m/s²", "provenance": "nasa-source", "sourceIds": ["data-026"], "transformation": "None.", "limitation": "Rounded by the source." },
+    { "id": "earth-radius", "label": "Earth's radius", "amount": 6378.137, "unit": "km", "provenance": "nasa-source", "sourceIds": ["data-016"], "transformation": "None.", "limitation": "Equatorial radius." },
+    { "id": "start-perigee", "label": "Starting closest point to Earth", "amount": 123787.3326, "unit": "km", "provenance": "nasa-source", "sourceIds": ["data-014"], "transformation": "None. Distance from Earth's center.", "limitation": "TESS's orbit on 2026-10-01 sets the scale. The workshop is not TESS." },
+    { "id": "start-apogee", "label": "Starting farthest point from Earth", "amount": 362530.5369, "unit": "km", "provenance": "nasa-source", "sourceIds": ["data-014"], "transformation": "None. Distance from Earth's center.", "limitation": "TESS's orbit on 2026-10-01 sets the scale. The workshop is not TESS." },
+    { "id": "low-altitude", "label": "Low orbit altitude", "amount": 415, "unit": "km", "provenance": "game-rule", "sourceIds": ["data-028"], "transformation": "Midpoint of NASA's 370–460 km.", "limitation": "The space station's band is only an example." },
+    { "id": "geo-altitude", "label": "Geosynchronous altitude", "amount": 35785.373, "unit": "km", "provenance": "nasa-source", "sourceIds": ["data-024"], "transformation": "22,236 miles × 1.609344 km per mile.", "limitation": "Rounded by the source." },
+    { "id": "chemical-isp", "label": "Chemical engine efficiency (Isp)", "amount": 235, "unit": "s", "provenance": "nasa-source", "sourceIds": ["data-018"], "transformation": "Top of hydrazine's typical 200–235 s.", "limitation": "From a survey of spacecraft up to 180 kg." },
+    { "id": "electric-isp", "label": "Electric engine efficiency (Isp)", "amount": 1500, "unit": "s", "provenance": "game-rule", "sourceIds": ["data-018"], "transformation": "Chosen inside the Hall-effect range, 200–1,920 s.", "limitation": "From a survey of spacecraft up to 180 kg." },
+    { "id": "thrust-per-kw", "label": "Electric thrust per kilowatt", "amount": 75, "unit": "mN/kW", "provenance": "game-rule", "sourceIds": ["data-018"], "transformation": "Upper bound of NASA's \"below 75 mN/kW\".", "limitation": "Optimistic on purpose, and the workshop would need dozens of thrusters." },
+    { "id": "array-specific-power", "label": "Solar array power per kilogram", "amount": 30, "unit": "W/kg", "provenance": "nasa-source", "sourceIds": ["data-019"], "transformation": "Where NASA's dataset clusters.", "limitation": "Figures not independently verified by NASA." },
+    { "id": "dry-mass", "label": "Workshop mass, without array or propellant", "amount": 6000, "unit": "kg", "provenance": "fiction", "sourceIds": ["team-fiction"], "transformation": "Chosen for the trade-off.", "limitation": "Invented vehicle." },
+    { "id": "chemical-load", "label": "Chemical propellant load", "amount": 26000, "unit": "kg", "provenance": "fiction", "sourceIds": ["team-fiction"], "transformation": "Chosen for the trade-off.", "limitation": "Invented vehicle." },
+    { "id": "electric-load", "label": "Electric propellant load", "amount": 3000, "unit": "kg", "provenance": "fiction", "sourceIds": ["team-fiction"], "transformation": "Chosen for the trade-off.", "limitation": "Invented vehicle." },
+    { "id": "life-support", "label": "Life-support power", "amount": 5, "unit": "kW", "provenance": "fiction", "sourceIds": ["team-fiction"], "transformation": "Chosen for the trade-off.", "limitation": "Invented vehicle." },
+    { "id": "supplies-limit", "label": "Supplies on board", "amount": 180, "unit": "days", "provenance": "fiction", "sourceIds": ["team-fiction"], "transformation": "Chosen for the trade-off.", "limitation": "Invented vehicle." },
+    { "id": "array-small", "label": "Small array output", "amount": 10, "unit": "kW", "provenance": "fiction", "sourceIds": ["team-fiction"], "transformation": "Chosen for the trade-off.", "limitation": "Invented vehicle." },
+    { "id": "array-large", "label": "Large array output", "amount": 40, "unit": "kW", "provenance": "fiction", "sourceIds": ["team-fiction"], "transformation": "Chosen for the trade-off.", "limitation": "Invented vehicle." }
+  ],
+  "decisions": [
+    {
+      "id": "destination",
+      "options": [
+        { "id": "low", "effect": { "type": "destination", "altitude": "low-altitude", "onArrival": "feasible" } },
+        { "id": "geosynchronous", "effect": { "type": "destination", "altitude": "geo-altitude", "onArrival": "partial" } }
+      ]
+    },
+    {
+      "id": "engine",
+      "options": [
+        { "id": "chemical", "effect": { "type": "engine", "mode": "chemical", "isp": "chemical-isp", "load": "chemical-load" } },
+        { "id": "electric", "effect": { "type": "engine", "mode": "electric", "isp": "electric-isp", "load": "electric-load" } }
+      ]
+    },
+    {
+      "id": "array",
+      "options": [
+        { "id": "small", "effect": { "type": "array", "power": "array-small" } },
+        { "id": "large", "effect": { "type": "array", "power": "array-large" } }
+      ]
+    }
+  ],
+  "limitations": [
+    "The workshop is far heavier than the small spacecraft these NASA surveys cover, and would need many more engines.",
+    "The electric route uses the same speed change as two short burns. A real low-thrust spiral needs more, so its time is a best case.",
+    "Changing orbital plane costs nothing here, though a real return would pay for it.",
+    "Burns by the chemical engine are treated as instant.",
+    "Eclipses, radiation exposure, and the wait to reach the top of the orbit are left out.",
+    "The fictional values were chosen to create this trade-off, and small changes would flip some results."
+  ]
+}

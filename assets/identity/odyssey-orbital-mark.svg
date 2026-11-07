@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">The Odyssey of a Meat-a-roid orbital mark</title>
+  <desc id="desc">A capsule follows an open cyan orbit through three connected decision nodes.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#071A33" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <circle cx="120" cy="120" r="106" fill="#071A33"/>
+  <path d="M35 143C60 73 137 42 199 75C222 88 224 113 211 131" fill="none" stroke="#18D2F2" stroke-width="12" stroke-linecap="round"/>
+  <path d="M51 166C90 201 158 202 199 161" fill="none" stroke="#2D5C7A" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 14"/>
+  <path d="M60 121L105 151L153 129" fill="none" stroke="#FFF3D6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="60" cy="121" r="13" fill="#071A33" stroke="#FFF3D6" stroke-width="7"/>
+  <circle cx="105" cy="151" r="13" fill="#FF8A1F" stroke="#FFF3D6" stroke-width="7"/>
+  <circle cx="153" cy="129" r="13" fill="#071A33" stroke="#FFF3D6" stroke-width="7"/>
+  <g transform="translate(178 53) rotate(23)" filter="url(#shadow)">
+    <path d="M0 20C0 8 9 0 23 0h17c14 0 23 8 23 20v21H0z" fill="#FFF3D6"/>
+    <path d="M8 41h47v12H8z" fill="#FF8A1F"/>
+    <path d="M12 18C16 9 22 7 31 7s15 2 20 11z" fill="#15375A"/>
+    <path d="M-14 44H1v8h-15zM62 44h15v8H62z" fill="#18D2F2"/>
+  </g>
+</svg>
+

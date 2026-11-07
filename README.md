@@ -1,6 +1,6 @@
 # NASA Space Apps 2026 — Team Foundation (temporary title)
 
-A **challenge-agnostic** engineering and coordination foundation for six teammates. This is **not** the competition solution; choose the challenge and observe organizer rules before implementing challenge work. Repository and Project names can be changed later.
+The engineering and coordination foundation for six teammates working on the challenge **Space Mission Design Game** as The Odyssey of a Meat-a-roid. The competition solution is **not** implemented yet; observe organizer rules before implementing challenge work. Repository and Project names can be changed later.
 
 ## Start here
 
@@ -31,5 +31,9 @@ A **challenge-agnostic** engineering and coordination foundation for six teammat
 
 **Safety:** skills use approval gates; they cannot access GitHub without a connected CLI/MCP and adequate permissions. An instruction is not a guarantee that an agent read every file; verify the documents actually read in its response and PR.
 
+## Playable prototype
+
+`game/` is a first voyage for the Space Mission Design challenge, under the team name The Odyssey of a Meat-a-roid. It is preserved as it is, and the new implementation is planned for `app/` (DEC-003). Run it with `python server.py` from that folder. The product brief in `docs/product/challenge-and-mvp.md` is still the place for an approved MVP. See `game/README.md`.
+
 ## After choosing the challenge
-Change repository and Project titles, update `docs/product/challenge-and-mvp.md`, approved design tokens, and actual references in `project-config.md`. Do not rename existing issue identifiers or erase decision history.
+The challenge is chosen, and `docs/product/challenge-and-mvp.md`, approved design tokens and `project-config.md` have been updated. Repository and Project titles can still change. Do not rename existing issue identifiers or erase decision history.

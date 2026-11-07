@@ -1,0 +1,51 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "status": "candidate-a-orbital-workshop",
+  "meta": {
+    "name": "The Odyssey of a Meat-a-roid — Orbital Workshop",
+    "approved": false,
+    "note": "Review docs/design/identity-exploration.md before promoting these values to design/tokens.json."
+  },
+  "color": {
+    "background": "#071A33",
+    "surface": "#0E2A4B",
+    "surfaceRaised": "#15375A",
+    "text": "#FFF3D6",
+    "textOnLight": "#071A33",
+    "mutedText": "#B9D3E4",
+    "primary": "#18D2F2",
+    "accent": "#FF8A1F",
+    "danger": "#FF625E",
+    "success": "#69D59D",
+    "focus": "#FFE15C",
+    "border": "#2D5C7A"
+  },
+  "typography": {
+    "displayFamily": "Space Grotesk, Inter, system-ui, sans-serif",
+    "bodyFamily": "Inter, system-ui, sans-serif",
+    "weightRegular": 400,
+    "weightMedium": 500,
+    "weightBold": 700
+  },
+  "radius": {
+    "sm": "8px",
+    "md": "12px",
+    "lg": "18px",
+    "pill": "999px"
+  },
+  "spacing": {
+    "unit": "4px",
+    "controlMinHeight": "44px"
+  },
+  "stroke": {
+    "thin": "1px",
+    "standard": "2px",
+    "emphasis": "4px"
+  },
+  "motion": {
+    "quick": "120ms",
+    "standard": "220ms",
+    "deliberate": "360ms"
+  }
+}
+

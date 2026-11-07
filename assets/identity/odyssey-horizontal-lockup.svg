@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">The Odyssey of a Meat-a-roid horizontal lockup</title>
+  <desc id="desc">Orbital mission mark beside the team and game name.</desc>
+  <rect width="1200" height="320" rx="28" fill="#071A33"/>
+  <g transform="translate(24 40) scale(1)">
+    <path d="M20 145C45 75 122 44 184 77C207 90 209 115 196 133" fill="none" stroke="#18D2F2" stroke-width="12" stroke-linecap="round"/>
+    <path d="M45 123L90 153L138 131" fill="none" stroke="#FFF3D6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="45" cy="123" r="13" fill="#071A33" stroke="#FFF3D6" stroke-width="7"/>
+    <circle cx="90" cy="153" r="13" fill="#FF8A1F" stroke="#FFF3D6" stroke-width="7"/>
+    <circle cx="138" cy="131" r="13" fill="#071A33" stroke="#FFF3D6" stroke-width="7"/>
+    <g transform="translate(163 55) rotate(23)">
+      <path d="M0 20C0 8 9 0 23 0h17c14 0 23 8 23 20v21H0z" fill="#FFF3D6"/>
+      <path d="M8 41h47v12H8z" fill="#FF8A1F"/>
+      <path d="M12 18C16 9 22 7 31 7s15 2 20 11z" fill="#15375A"/>
+    </g>
+  </g>
+  <text x="280" y="118" fill="#FFF3D6" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="700" letter-spacing="4">THE ODYSSEY OF A</text>
+  <text x="276" y="224" fill="#FF8A1F" font-family="Space Grotesk, Inter, system-ui, sans-serif" font-size="100" font-weight="700" letter-spacing="-2">MEAT-A-ROID</text>
+  <path d="M282 255H1080" stroke="#18D2F2" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1110" cy="255" r="11" fill="#18D2F2"/>
+</svg>
+

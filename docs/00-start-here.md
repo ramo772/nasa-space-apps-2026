@@ -4,9 +4,10 @@
 
 | Task | Canonical sources |
 |---|---|
-| Project challenge, mission and MVP | `docs/product/challenge-and-mvp.md` (still TBD), linked approved Feature issue |
+| Project challenge, mission and MVP | `docs/product/challenge-and-mvp.md`, `docs/product/award-strategy.md`, `docs/product/implementation-plan.md`, linked approved Feature issue |
 | Verified NASA facts / datasets | `docs/research/source-register.md`, original challenge sources |
-| UI / identity / visual assets | `docs/design/identity.md`, `docs/design/art-direction.md`, `design/tokens.json` |
+| Proposed scientific model (for review, not approved) | `docs/research/mission-model-proposal.md` |
+| UI / identity / visual assets | `docs/design/identity.md`, `docs/design/characters.md`, `docs/design/audio-and-comedy.md`, `docs/design/art-direction.md`, `design/tokens.json` |
 | API / architecture / decisions | `docs/technical/architecture.md`, `docs/technical/decisions.md`, accepted ADRs |
 | Team process / work status | `docs/team/working-agreement.md`, `docs/team/board.md`, `docs/team/project-config.md` |
 | GitHub initial configuration | `docs/team/github-setup.md` |
