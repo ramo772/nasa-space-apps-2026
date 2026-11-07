@@ -22,6 +22,7 @@
 | Creative Content and Authenticity — Farah Khaled (session date 2026-10-30) | `docs/workshops/2026-10-30-creative-content-authenticity.md` |
 | Smart AI Use Cases — Understanding AI Models and Agents (session date 2026-10-30) | `docs/workshops/2026-10-30-smart-ai-use-cases.md` |
 | Previous Space Apps winners (game design research) | `docs/research/Previous_Global_Winners/README.md`, `docs/resources/sources.md` — draft research |
+| Previous participant advice — Esraa Ahmed (chat notes, not a decision) | `docs/research/previous-winner-advice-esraa-ahmed.md` — draft notes |
 | Team resources and workshop links | `docs/resources/README.md` |
 | AI skills / planning | `docs/process/ai-workflows.md`, installed `SKILL.md` files |
 | Final submission / pitch | `docs/submission/checklist.md` |
