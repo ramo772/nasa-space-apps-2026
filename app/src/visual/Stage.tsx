@@ -15,11 +15,15 @@ const canUseWebGL = () => {
   }
 };
 
-class SceneBoundary extends Component<{ fallback: ReactNode; children: ReactNode }, { failed: boolean }> {
+class SceneBoundary extends Component<{ fallback: ReactNode; onFail: () => void; children: ReactNode }, { failed: boolean }> {
   state = { failed: false };
 
   static getDerivedStateFromError() {
     return { failed: true };
+  }
+
+  componentDidCatch() {
+    this.props.onFail();
   }
 
   render() {
@@ -42,6 +46,8 @@ export function Stage({ stage, reducedMotion, crew, names }: { stage: StageState
   const [webgl] = useState(canUseWebGL);
   const [lost, setLost] = useState(false);
   const [ready, setReady] = useState(false);
+  const [failed, setFailed] = useState(false);
+  const unavailable = !webgl || lost || failed;
   const flat = <WorkshopStage stage={stage} />;
   const { t } = i18n;
   const labels = useMemo(
@@ -57,16 +63,24 @@ export function Stage({ stage, reducedMotion, crew, names }: { stage: StageState
   );
 
   return (
-    <div className="stage" role="img" aria-label={describe(stage, i18n)} data-ready={ready}>
-      {webgl && !lost ? (
-        <SceneBoundary fallback={flat}>
-          <Suspense fallback={flat}>
-            <Stage3D stage={stage} reducedMotion={reducedMotion} crew={crew} names={names} labels={labels} onReady={() => setReady(true)} onContextLost={() => setLost(true)} />
-          </Suspense>
-        </SceneBoundary>
-      ) : (
-        flat
+    <>
+      <div className="stage" role="img" aria-label={describe(stage, i18n)} data-ready={ready}>
+        {webgl && !lost ? (
+          <SceneBoundary fallback={flat} onFail={() => setFailed(true)}>
+            <Suspense fallback={flat}>
+              <Stage3D stage={stage} reducedMotion={reducedMotion} crew={crew} names={names} labels={labels} onReady={() => setReady(true)} onContextLost={() => setLost(true)} />
+            </Suspense>
+          </SceneBoundary>
+        ) : (
+          flat
+        )}
+      </div>
+      {unavailable && (
+        <div className="stage-notice" role="status" data-testid="stage-notice">
+          <p>{t("stage.unavailable")}</p>
+          <button type="button" className="ghost-button" onClick={() => window.location.reload()}>{t("ui.reload")}</button>
+        </div>
       )}
-    </div>
+    </>
   );
 }

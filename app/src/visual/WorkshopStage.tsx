@@ -45,6 +45,27 @@ export function WorkshopStage({ stage }: { stage: StageState }) {
           {t(`flat.${stage.engine ?? "none"}` as TranslationKey)}
         </text>
 
+        {stage.orbit && (
+          <g data-testid="flat-orbit">
+            <ellipse className="s-orbit" cx="800" cy="520" rx="240" ry="66" />
+            <circle className="f-primary" cx="880" cy="515" r="16" />
+            <circle className="f-accent" cx="566" cy="530" r="13" />
+          </g>
+        )}
+
+        <g data-testid="flat-capsule">
+          <path className="f-text" d="M1420 700V470a90 90 0 0 1 180 0v230z" />
+          <rect className="f-accent" x="1420" y="610" width="180" height="26" />
+          <rect className="f-bg" x="1450" y="480" width="120" height="70" rx="10" />
+        </g>
+
+        <g data-testid="flat-rivo">
+          <circle className="f-text" cx="1010" cy="400" r="88" />
+          <image href={asset(`rivo-${stage.rivoFace}`)} x="942" y="358" width="136" height="93" />
+          <rect className="f-accent" x="914" y="382" width="16" height="44" rx="6" />
+          <rect className="f-accent" x="1090" y="382" width="16" height="44" rx="6" />
+        </g>
+
         <image href={asset("nadir-pose")} x="180" y="280" width="290" height="580" />
       </svg>
     </div>

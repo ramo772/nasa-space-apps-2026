@@ -369,6 +369,8 @@ export const ar: Partial<Record<TranslationKey, string>> = {
   "stage.electric": "الموتور الكهربائي في مكانه.",
   "stage.none": "مكان الموتور فاضي.",
   "stage.workshop": "الورشة المدارية.",
+  "stage.unavailable": "الورشة التلاتية الأبعاد مش متاحة، فده العرض البسيط. اختياراتك ونتايجك زي ما هي.",
+  "ui.reload": "حمّل الصفحة تاني",
   "stage.nadir.confident": "دكتور نادر واقف بثقة.",
   "stage.nadir.delighted": "دكتور نادر مبسوط.",
   "stage.nadir.panic": "دكتور نادر متخض.",

@@ -922,6 +922,35 @@
   font-weight: var(--font-weight-bold);
 }
 
+/* Shown only when the 3D scene can't run */
+.stage-notice {
+  position: absolute;
+  z-index: 3;
+  top: 64px;
+  inset-inline: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing-unit) * 3);
+  width: fit-content;
+  max-width: min(620px, calc(100vw - 32px));
+  margin-inline: auto;
+  padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+  border-inline-start: var(--stroke-emphasis) solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+  font-size: 0.9375rem;
+}
+
+.flat-stage .s-orbit { fill: none; stroke: var(--color-accent); stroke-width: 5; }
+
+/* In right-to-left the title stays clear of Dr. Nadir, who stands on the left of the room. */
+[dir="rtl"] .title-scene {
+  inset-inline-end: auto;
+  inset-inline-start: clamp(16px, 4vw, 64px);
+}
+
 /* Setup */
 .setup-head {
   display: flex;

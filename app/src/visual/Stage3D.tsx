@@ -888,7 +888,7 @@ function Scene({ stage, reducedMotion, labels, crew, names }: SceneProps) {
       <Capsule open={stage.capsuleOpen} reducedMotion={reducedMotion} />
       <Props stage={stage} reducedMotion={reducedMotion} />
       <Nadir stage={stage} reducedMotion={reducedMotion} />
-      {stage.crewVisible && <Crew crew={crew} names={names} review={stage.shot === "review" || stage.shot === "reviewRtl"} pulse={stage.pulse} reducedMotion={reducedMotion} />}
+      {stage.crewVisible && <Crew crew={crew} names={names} review={stage.shot === "review" || stage.shot === "reviewRtl"} rtl={stage.rtl} pulse={stage.pulse} reducedMotion={reducedMotion} />}
       <Rivo stage={stage} reducedMotion={reducedMotion} />
     </>
   );

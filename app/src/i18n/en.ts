@@ -363,6 +363,8 @@ export const en = {
   "stage.electric": "The electric engine sits in its cradle.",
   "stage.none": "The engine cradle is empty.",
   "stage.workshop": "The Orbital Workshop.",
+  "stage.unavailable": "The 3D workshop isn't available, so this is the simple view. Your choices and results stay the same.",
+  "ui.reload": "Reload the page",
   "stage.nadir.confident": "Dr. Nadir stands confidently.",
   "stage.nadir.delighted": "Dr. Nadir is delighted.",
   "stage.nadir.panic": "Dr. Nadir is panicking.",

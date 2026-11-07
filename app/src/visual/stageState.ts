@@ -42,7 +42,9 @@ export interface StageState {
   nadir: "table" | "window" | "bay" | "spine" | "capsule" | "hidden";
   nadirFace: NadirFace;
   nadirSpeaking: boolean;
-  rivo: "title" | "review" | "table" | "tableRtl" | "window" | "engine" | "capsule";
+  rivo: "title" | "review" | "table" | "tableRtl" | "window" | "windowRtl" | "engine" | "capsule";
+  /** The interface is mirrored, so the characters stand where the panels aren't. */
+  rtl: boolean;
   rivoFace: RivoFace;
   /** Counts applied choices, so the stage fires each one-off response exactly once. */
   pulse: number;
@@ -104,6 +106,7 @@ export function stageFor(state: GameState): StageState {
     nadirFace: "confident",
     nadirSpeaking: false,
     rivo: "table",
+    rtl,
     rivoFace: "neutral",
     pulse: state.pulse,
     shake: 0,
@@ -172,8 +175,8 @@ export function stageFor(state: GameState): StageState {
         orbit: true,
         sector: key === "array" ? "spine" : key === "engine" ? "propulsion" : "table",
         // Dr. Nadir and RIVO walk to the part of the depot the player is deciding about.
-        nadir: key === "engine" ? "bay" : key === "array" ? "spine" : "table",
-        rivo: key === "array" ? "window" : key === "engine" ? "engine" : rtl ? "tableRtl" : "table",
+        nadir: key === "engine" ? "bay" : key === "array" ? (rtl ? "window" : "spine") : "table",
+        rivo: key === "array" ? (rtl ? "windowRtl" : "window") : key === "engine" ? "engine" : rtl ? "tableRtl" : "table",
         rivoFace: choosing ? "curious" : "pride",
         nadirFace: reaction?.speaker === "nadir" ? reaction.face : "confident",
         nadirSpeaking: Boolean(reaction),

@@ -53,6 +53,14 @@ async function fly(page: Page, destination: RegExp, engine: RegExp, array: RegEx
   await expect(page.getByTestId("result-title")).toBeVisible();
 }
 
+/** The simple view is playable, so a broken 3D scene would otherwise pass every other test. */
+async function expectReal3D(page: Page) {
+  await expect(page.locator(".stage canvas")).toBeVisible({ timeout: 30000 });
+  await expect(page.locator(".stage[data-ready=true]")).toBeVisible();
+  await expect(page.getByTestId("flat-stage")).toHaveCount(0);
+  await expect(page.getByTestId("stage-notice")).toHaveCount(0);
+}
+
 test.describe("the mission", () => {
   test("a chemical route home, with no console errors", async ({ page }) => {
     const errors: string[] = [];
@@ -62,9 +70,11 @@ test.describe("the mission", () => {
     });
 
     await toDecisions(page);
+    await expectReal3D(page);
     await fly(page, /^Low orbit/, /^Chemical engine/, /^Keep the small array/);
     await expect(page.getByTestId("result-title")).toHaveText("Feasible: Dr. Nadir gets home");
     await expect(page.getByTestId("causal-list")).toContainText("25,619 kg");
+    await expectReal3D(page);
     expect(errors).toEqual([]);
   });
 
@@ -333,6 +343,9 @@ test("no WebGL falls back to a playable flat workshop", async ({ page }) => {
   });
   await toDecisions(page);
   await expect(page.getByTestId("flat-stage")).toBeVisible();
+  await expect(page.getByTestId("stage-notice")).toBeVisible();
+  await expect(page.getByTestId("flat-rivo")).toBeVisible();
+  await expect(page.getByTestId("flat-orbit")).toBeVisible();
   await fly(page, /^Low orbit/, /^Chemical engine/, /^Keep the small array/);
   await expect(page.getByTestId("result-title")).toHaveText("Feasible: Dr. Nadir gets home");
 });
@@ -341,6 +354,7 @@ test("a failed 3D download falls back to a playable flat workshop", async ({ pag
   await page.route("**/src/visual/Stage3D.tsx*", (route) => route.abort());
   await toDecisions(page);
   await expect(page.getByTestId("flat-stage")).toBeVisible();
+  await expect(page.getByTestId("stage-notice")).toBeVisible();
   await fly(page, /^Low orbit/, /^Chemical engine/, /^Keep the small array/);
 });
 

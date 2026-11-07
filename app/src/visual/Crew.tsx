@@ -12,6 +12,7 @@ const FIGURE_HEIGHT = 3.7;
 
 type Vec3 = [number, number, number];
 const MISSION_SPOTS: readonly Vec3[] = [[5.6, 0, 2.8], [7, 0, 1], [-6.7, 0, 1.2], [-7.9, 0, -0.8]];
+const MISSION_SPOTS_RTL: readonly Vec3[] = [[5.2, 0, -0.4], [6.8, 0, 0.6], [-6.7, 0, 1.2], [-7.9, 0, -0.8]];
 const REVIEW_SPOTS: readonly Vec3[] = [[-1.2, 0, 4], [0.2, 0, 3.6], [-6.4, 0, 3.6], [-7.6, 0, 3]];
 
 /** Draws one crew member in their chosen avatar and suit color, with their name above them. */
@@ -106,8 +107,8 @@ function Member({ member, name, spot, reducedMotion, delay, pulse }: { member: C
 }
 
 /** The player's own character in the room: separate from Dr. Nadir, in the avatar and suit they chose. */
-export function Crew({ crew, names, review, pulse, reducedMotion }: { crew: readonly CrewMember[]; names: readonly string[]; review: boolean; pulse: number; reducedMotion: boolean }) {
-  const spots = review ? REVIEW_SPOTS : MISSION_SPOTS;
+export function Crew({ crew, names, review, rtl, pulse, reducedMotion }: { crew: readonly CrewMember[]; names: readonly string[]; review: boolean; rtl: boolean; pulse: number; reducedMotion: boolean }) {
+  const spots = review ? REVIEW_SPOTS : rtl ? MISSION_SPOTS_RTL : MISSION_SPOTS;
   return (
     <group>
       {crew.map((member, index) => (
