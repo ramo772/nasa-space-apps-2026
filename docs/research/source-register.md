@@ -19,3 +19,18 @@ Every important scientific/data claim must trace to a source. AI summaries are l
 
 For each dataset, capture coverage, units, coordinate reference system (if applicable), refresh frequency, missing data, attribution requirements and rate limits when relevant.
 If using Perplexity/Manus, open original linked sources and verify them before acceptance.
+
+## Mission-design resource leads — pending verification
+
+The [spacecraft resource catalog](../resources/nasa-spacecraft-resources.json)
+extracts the NASA/JPL resources cited in the contributor-supplied
+`nasa-spacecraft-mission-design-reference.md` (document review date: 2026-11-07).
+Its [JSON Schema](../resources/nasa-spacecraft-resources.schema.json) describes
+the record structure. The catalog preserves citation labels, line numbers,
+section paths, URL fragments and the source document's SHA-256 fingerprint.
+
+These are research leads. The extraction has not independently checked live
+URLs, scientific claims or usage terms. Names lacking a direct link and the
+document's external TLE references are listed separately. Before accepting a
+scientific input, inspect its original source and add or update a verified
+entry above; reuse an existing entry for the same evidence.
