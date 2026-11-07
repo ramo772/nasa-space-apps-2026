@@ -24,7 +24,8 @@ If using Perplexity/Manus, open original linked sources and verify them before a
 
 The [spacecraft resource catalog](../resources/nasa-spacecraft-resources.json)
 extracts the NASA/JPL resources cited in the contributor-supplied
-`nasa-spacecraft-mission-design-reference.md` (document review date: 2026-11-07).
+[mission-design reference](nasa-spacecraft-mission-design-reference.md)
+(document review date: 2026-11-07).
 Its [JSON Schema](../resources/nasa-spacecraft-resources.schema.json) describes
 the record structure. The catalog preserves citation labels, line numbers,
 section paths, URL fragments and the source document's SHA-256 fingerprint.

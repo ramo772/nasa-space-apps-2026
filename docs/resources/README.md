@@ -27,6 +27,7 @@ One place where teammates find links to workshop and reference material instead 
 | [Official Space Apps links](official.md) | Competition links, and what is still TBD about rules, dates and challenges |
 | [Workshop materials](workshop-materials.md) | Workshop pages, speakers, materials links and past winners |
 | [NASA data and APIs](nasa-data-and-apis.md) | NASA API documentation, datasets and quick pointers |
+| [Spacecraft mission-design reference](../research/nasa-spacecraft-mission-design-reference.md) | Original contributor-supplied research reference; scenario examples are research guidance, not approved implementation scope. |
 | [Spacecraft resource catalog (JSON)](nasa-spacecraft-resources.json) | Resources extracted from the supplied mission-design reference, with source locations and caveats; structure defined by its [JSON Schema](nasa-spacecraft-resources.schema.json). Extraction only; links and scientific claims have not been independently verified. |
 | [Tools and AI tools](tools.md) | Tools named in the workshops; none chosen |
 | [Winner research sources](sources.md) | Official award announcements, team and project pages, and verification notes for `docs/research/Previous_Global_Winners/` |

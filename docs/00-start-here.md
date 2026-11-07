@@ -6,6 +6,7 @@
 |---|---|
 | Project challenge, mission and MVP | `docs/product/challenge-and-mvp.md` (still TBD), linked approved Feature issue |
 | Verified NASA facts / datasets | `docs/research/source-register.md`, original challenge sources |
+| Spacecraft mission-design research | [Original reference](research/nasa-spacecraft-mission-design-reference.md), [JSON resource catalog](resources/nasa-spacecraft-resources.json) — research guidance, not approved implementation scope |
 | UI / identity / visual assets | `docs/design/identity.md`, `docs/design/art-direction.md`, `design/tokens.json` |
 | API / architecture / decisions | `docs/technical/architecture.md`, `docs/technical/decisions.md`, accepted ADRs |
 | Team process / work status | `docs/team/working-agreement.md`, `docs/team/board.md`, `docs/team/project-config.md` |

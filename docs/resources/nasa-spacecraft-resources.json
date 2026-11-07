@@ -5,6 +5,7 @@
   "status": "research_reference_only",
   "source_document": {
     "filename": "nasa-spacecraft-mission-design-reference.md",
+    "repository_path": "../research/nasa-spacecraft-mission-design-reference.md",
     "title": "NASA Spacecraft Mission Design Reference",
     "last_reviewed_as_stated": "2026-11-07",
     "sha256": "9747a697851d06b729b0938187aeebb1c07c4e2f6aabef7a613fbc330cf59004",
