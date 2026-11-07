@@ -6,8 +6,8 @@
 **Created:** 2026-11-06  
 **Last reviewed:** 2026-11-06  
 **Contributor:** Rokiya Abdelsattar (GitHub: @RokiyaAbdElsatar)  
-**Source:** NASA Space Apps Cairo 2026 Bootcamp talk featuring Farah Khaled. Content summarized from the provided session summary in the contributor's own words.  
-**Related:** `docs/resources/README.md`, `docs/workshops/`
+**Source:** NASA Space Apps Cairo 2026 Bootcamp talk by Farah Khaled (session date: 2026-10-30), published in this post on 2026-11-05: https://lnkd.in/p/e8MFdyPA. Summarised from a short post about the talk, not from the full session.  
+**Related:** `docs/resources/README.md`, `docs/workshops/`, `docs/workshops/2026-11-03-project-pitch-session.md`
 
 **Speaker:** Farah Khaled  
 **Role:** Head of AI & Innovation at MO4 Network and Content Creator  
@@ -106,9 +106,14 @@ Based on the session, participants are encouraged to:
 - Accept that mistakes and imperfect first attempts are part of learning.
 - Avoid rejecting opportunities simply because they are unfamiliar.
 
+## Open Questions / Uncertainty
+
+- The page is based on a short post about the talk and may not cover the whole session.
+- The pitch session notes (`docs/workshops/2026-11-03-project-pitch-session.md`) are also credited to Farah Khaled on the same date.
+
 ## Sources and Attribution
 
-- Session summary: Provided file titled `3.3K views · 72 reactions — A Bootcamp moment with Farah Khaled`.
+- Post about the talk: https://lnkd.in/p/e8MFdyPA
 - Speaker: Farah Khaled.
 - Role: Head of AI & Innovation at MO4 Network and Content Creator.
 - Event: NASA Space Apps Cairo 2026 Bootcamp at Nile University.
