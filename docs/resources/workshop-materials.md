@@ -30,6 +30,17 @@ Workshop pages, speakers, materials links, and past winners from the sessions. A
 | NASA 2025 global winners | <https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/> | — | Official award announcement — checked 2026-11-03 |
 | NASA 2024 global winners | <https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/> | — | Official award announcement — checked 2026-11-03 |
 
+## NASA Session Material
+
+Resource links collected from the session spreadsheet.
+
+| Name | Link | Type |
+|---|---|---|
+| Prompts | [Google Doc](https://docs.google.com/document/d/1LfyCGCxsMYtYnzAaLoBTcYQSKPFgWzs0HVF3VnYMoN4/edit?usp=sharing) | Google Docs |
+| N8N Course | [YouTube playlist](https://youtube.com/playlist?list=PLLHIYYlcgk6KN58UnPm8q1btNHLDJlYto&si=cDd2heo_eJBHhf3f) | YouTube playlist |
+| Advanced N8N course | [YouTube playlist](https://youtube.com/playlist?list=PLLHIYYlcgk6KUa7VI3Fvi1Tuy4FsR27fd&si=MNrOIn_T82Zi7Qyz) | YouTube playlist |
+| Presentation Link | [Google Slides](https://docs.google.com/presentation/d/1s9gmuyT7ZXtuVlUPywZKzdpxLmoxurMNpMOzoKl1oXQ/edit?usp=sharing) | Google Slides |
+
 ## Slide files in this repository
 
 | File | Workshop | Speaker | Size | Permission |
